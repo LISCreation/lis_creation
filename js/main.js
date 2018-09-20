@@ -36,6 +36,7 @@ $(document).ready(function() {
     });
     var owl = $('.owl-carousel.work-header-slider_area');
     owl.owlCarousel({
-        items: 1
+        items: 1,
+        dots: true
     });
 });
