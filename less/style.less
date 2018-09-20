@@ -17,34 +17,70 @@
 
 //tmpstyle: Fonts
 //Raleway
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700,900');
+
+@font-face {
+  font-family: 'Raleway';
+  src: local('Raleway ExtraLight'), local('Raleway-ExtraLight'), url('../fonts/ralewayextralight.woff2') format('woff2'), url('../fonts/ralewayextralight.woff') format('woff'), url('../fonts/ralewayextralight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: local('Raleway Light'), local('Raleway-Light'), url('../fonts/ralewaylight.woff2') format('woff2'), url('../fonts/ralewaylight.woff') format('woff'), url('../fonts/ralewaylight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: local('Raleway Regular'), local('Raleway-Regular'), url('../fonts/ralewayregular.woff2') format('woff2'), url('../fonts/ralewayregular.woff') format('woff'), url('../fonts/ralewayregular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: local('Raleway Medium'), local('Raleway-Medium'), url('../fonts/ralewaymedium.woff2') format('woff2'), url('../fonts/ralewaymedium.woff') format('woff'), url('../fonts/ralewaymedium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: local('Raleway Bold'), local('Raleway-Bold'), url('../fonts/ralewaybold.woff2') format('woff2'), url('../fonts/ralewaybold.woff') format('woff'), url('../fonts/ralewaybold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: local('Raleway Black'), local('Raleway-Black'), url('../fonts/ralewayblack.woff2') format('woff2'), url('../fonts/ralewayblack.woff') format('woff'), url('../fonts/ralewayblack.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
 //Caveat
 @import "http://fonts.fontstorage.com/import/caveat.css";
 
 
 //tmpstyle: Fonts Models
 .light() {
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: Raleway, Arial, sans-serif;
   font-weight: 300;
 }
 .regular() {
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: Raleway, Arial, sans-serif;
   font-weight: 400;
 }
 .medium() {
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: Raleway, Arial, sans-serif;
   font-weight: 500;
 }
 .semi-bold() {
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: Raleway, Arial, sans-serif;
   font-weight: 600;
 }
 .bold() {
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: Raleway, Arial, sans-serif;
   font-weight: 700;
 }
 .black() {
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: Raleway, Arial, sans-serif;
   font-weight: 900;
 }
 .caveat() {
@@ -105,6 +141,9 @@ ul {
 a {
   text-decoration: none!important;
   color: @light;
+  &:hover, &:focus {
+    color: @emotion;
+  }
 }
 img, video, iframe {
   max-width: 100%;
@@ -502,6 +541,10 @@ input, button, .btn {
 body {
   .regular;
   color: @dark;
+  letter-spacing: 1.1px;
+  &.work {
+    letter-spacing: 2.5px;
+  }
 }
 .header {
   .container-fluid{
@@ -1779,48 +1822,48 @@ body {
   background: url(../img/why-bg.jpg) no-repeat center / cover;
   color: @light;
   &-header {
-    /*&-back {
-      &_image {
-        width: 70px;
-      }
-    }*/
+    height: 100vh;
+    overflow: hidden;
     &-init {
-      margin-top: 80px;
+      margin: 25px 0 25px;
       text-align: center;
+      .light;
+      font-size: 18px;
+      &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 25px;
+        p {
+          margin: 0;
+        }
+      }
       &_service {
         font-size: 25px;
         .light;
         margin: 0;
       }
       &_title {
-        margin: 25px 0;
-        text-transform: uppercase;
         .bold;
-        font-size: 40px;
-        white-space: pre-line;
-      }
-      &_link {
-        font-size: 20px;
-        .light;
-      }
-      &_type {
-        margin: 30px 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        p {
-          .medium;
-          font-size: 25px;
-          margin: 0 20px 0 0;
-        }
+        margin: 16px 0 0;
+        text-transform: uppercase;
+        font-size: 30px;
       }
     }
     &-slider {
       &_area {
+        height: 585px;
         .item {
-          height: 60vh;
+          height: 580px;
           object-fit: cover;
         }
+      }
+    }
+    &-list {
+      display: flex;
+      &_item {
+        height: 50px;
+        margin-bottom: 30px;
       }
     }
   }
