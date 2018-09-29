@@ -15,8 +15,8 @@
     <session id="-1009149581">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="33" />
-          <entry key="project.open.time.0" value="2" />
+          <entry key="project.closed" value="37" />
+          <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.1" value="5" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.110" value="1" />
@@ -28,6 +28,7 @@
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.36" value="1" />
@@ -36,23 +37,26 @@
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.40" value="1" />
           <entry key="project.open.time.42" value="1" />
+          <entry key="project.open.time.43" value="1" />
           <entry key="project.open.time.46" value="1" />
           <entry key="project.open.time.47" value="1" />
           <entry key="project.open.time.48" value="2" />
-          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.52" value="1" />
           <entry key="project.open.time.55" value="1" />
           <entry key="project.open.time.58" value="1" />
           <entry key="project.open.time.66" value="1" />
-          <entry key="project.open.time.8" value="2" />
+          <entry key="project.open.time.77" value="1" />
+          <entry key="project.open.time.8" value="3" />
           <entry key="project.open.time.85" value="1" />
           <entry key="project.open.time.9" value="3" />
-          <entry key="project.opened" value="42" />
+          <entry key="project.opened" value="48" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="4" />
+          <entry key="gitignore" value="1" />
           <entry key="html" value="12" />
           <entry key="js" value="4" />
           <entry key="less" value="7" />
@@ -69,16 +73,17 @@
           <entry key="JavaScript" value="4" />
           <entry key="Less" value="7" />
           <entry key="PHP" value="10" />
-          <entry key="PLAIN_TEXT" value="8" />
+          <entry key="PLAIN_TEXT" value="9" />
           <entry key="RNG Compact" value="1" />
           <entry key="SVG" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="gitignore" value="6" />
           <entry key="html" value="9591" />
           <entry key="js" value="1808" />
-          <entry key="less" value="25749" />
+          <entry key="less" value="25978" />
           <entry key="php" value="3987" />
         </counts>
       </usages-collector>
@@ -86,19 +91,20 @@
         <counts>
           <entry key="HTML" value="9591" />
           <entry key="JavaScript" value="1808" />
-          <entry key="Less" value="25749" />
+          <entry key="Less" value="25978" />
           <entry key="PHP" value="3987" />
+          <entry key="PLAIN_TEXT" value="6" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="169" column="49" selection-start-line="169" selection-start-column="49" selection-end-line="169" selection-end-column="49" />
+            <state relative-caret-position="2754">
+              <caret line="153" column="18" selection-start-line="153" selection-start-column="18" selection-end-line="153" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -106,17 +112,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/portfolio.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
+            <state relative-caret-position="504">
               <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/less/style.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="538">
-              <caret line="1868" column="47" selection-start-line="1868" selection-start-column="47" selection-end-line="1868" selection-end-column="47" />
+            <state relative-caret-position="190">
+              <caret line="2150" column="3" lean-forward="true" selection-start-line="2150" selection-start-column="3" selection-end-line="2150" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/less/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -124,7 +139,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="663">
+            <state relative-caret-position="702">
               <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
             </state>
           </provider>
@@ -133,7 +148,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/work.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="703">
+            <state relative-caret-position="2052">
               <caret line="114" column="95" selection-start-line="114" selection-start-column="95" selection-end-line="114" selection-end-column="95" />
             </state>
           </provider>
@@ -150,11 +165,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>grid</find>
-      <find>.footer</find>
-      <find>&amp;-label</find>
-      <find>.portfolio</find>
-      <find>0d021c</find>
       <find>@keyframes</find>
       <find>.mono</find>
       <find>overflow: auto</find>
@@ -180,6 +190,11 @@
       <find>sliderslider</find>
       <find>@space-over</find>
       <find>dots</find>
+      <find>.header</find>
+      <find>MEDIA</find>
+      <find>(max-width: 444px)</find>
+      <find>680</find>
+      <find>max-height:</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -198,6 +213,7 @@
         <option value="$PROJECT_DIR$/work.html" />
         <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/less/style.less" />
+        <option value="$PROJECT_DIR$/less/.gitignore" />
       </list>
     </option>
   </component>
@@ -207,57 +223,18 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1759" />
-    <option name="width" value="1296" />
-    <option name="height" value="694" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="626" />
+    <option name="y" value="282" />
+    <option name="width" value="1228" />
+    <option name="height" value="751" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="lis-creation.loc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lis-creation.loc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lis-creation.loc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lis-creation.loc" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lis-creation.loc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lis-creation.loc" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="style.css" type="620a8d5e:NestingTreeNode" />
-            </path>
-            <path>
-              <item name="lis-creation.loc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lis-creation.loc" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lis-creation.loc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lis-creation.loc" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="main.js" type="620a8d5e:NestingTreeNode" />
-            </path>
-            <path>
-              <item name="lis-creation.loc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lis-creation.loc" type="462c0819:PsiDirectoryNode" />
-              <item name="less" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="NewWatcherDialog.advanced.open" value="true" />
@@ -338,11 +315,18 @@
       <workItem from="1535812765248" duration="602000" />
       <workItem from="1535870810950" duration="107000" />
       <workItem from="1537454743886" duration="13932000" />
+      <workItem from="1537552647328" duration="27000" />
+      <workItem from="1537552752064" duration="1080000" />
+      <workItem from="1537559338918" duration="409000" />
+      <workItem from="1538145027788" duration="1375000" />
+      <workItem from="1538149577561" duration="372000" />
+      <workItem from="1538239661210" duration="338000" />
+      <workItem from="1538242819539" duration="1978000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="199464000" />
+    <option name="totallyTimeSpent" value="205043000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -354,7 +338,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-8" width="1296" height="1000" extended-state="6" />
+    <frame x="626" y="282" width="1228" height="751" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
@@ -363,7 +347,7 @@
       <window_info anchor="bottom" id="Command Line Tools Console" order="0" weight="0.3293979" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="2" weight="0.32967034" />
-      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" weight="0.32902032" />
+      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" weight="0.32750398" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
       <window_info anchor="bottom" id="Database Changes" order="6" show_stripe_button="false" />
@@ -373,7 +357,7 @@
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
       <window_info anchor="bottom" id="File Transfer" order="12" weight="0.23167156" />
-      <window_info anchor="bottom" id="TODO" order="13" weight="0.32231405" />
+      <window_info anchor="bottom" id="TODO" order="13" weight="0.32114467" />
       <window_info anchor="right" id="Remote Host" order="0" weight="0.19112903" />
       <window_info anchor="right" id="Database" order="1" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
@@ -450,45 +434,46 @@
     <entry file="file://A:/Temp/Tmp/fz3temp-3/info.txt" />
     <entry file="file://A:/Temp/Tmp/fz3temp-3/check.php" />
     <entry file="file://A:/Temp/Tmp/fz3temp-3/index.php" />
-    <entry file="file://A:/Temp/Tmp/Rar$DIa0.569/raleway.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="27" lean-forward="true" selection-end-line="36" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://A:/Temp/Tmp/Rar$DIa0.569/raleway.css" />
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="169" column="49" selection-start-line="169" selection-start-column="49" selection-end-line="169" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/work.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
-          <caret line="114" column="95" selection-start-line="114" selection-start-column="95" selection-end-line="114" selection-end-column="95" />
+        <state relative-caret-position="2754">
+          <caret line="153" column="18" selection-start-line="153" selection-start-column="18" selection-end-line="153" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/portfolio.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
+        <state relative-caret-position="504">
           <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
+        <state relative-caret-position="702">
           <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2052">
+          <caret line="114" column="95" selection-start-line="114" selection-start-column="95" selection-end-line="114" selection-end-column="95" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/less/style.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="1868" column="47" selection-start-line="1868" selection-start-column="47" selection-end-line="1868" selection-end-column="47" />
+        <state relative-caret-position="190">
+          <caret line="2150" column="3" lean-forward="true" selection-start-line="2150" selection-start-column="3" selection-end-line="2150" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/less/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
