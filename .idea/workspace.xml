@@ -81,17 +81,17 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="6" />
-          <entry key="html" value="9591" />
-          <entry key="js" value="1808" />
-          <entry key="less" value="25978" />
+          <entry key="html" value="9816" />
+          <entry key="js" value="2554" />
+          <entry key="less" value="27327" />
           <entry key="php" value="3987" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="9591" />
-          <entry key="JavaScript" value="1808" />
-          <entry key="Less" value="25978" />
+          <entry key="HTML" value="9816" />
+          <entry key="JavaScript" value="2554" />
+          <entry key="Less" value="27327" />
           <entry key="PHP" value="3987" />
           <entry key="PLAIN_TEXT" value="6" />
         </counts>
@@ -103,44 +103,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2754">
+            <state relative-caret-position="126">
               <caret line="153" column="18" selection-start-line="153" selection-start-column="18" selection-end-line="153" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/portfolio.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/less/style.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="2150" column="3" lean-forward="true" selection-start-line="2150" selection-start-column="3" selection-end-line="2150" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/less/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="702">
-              <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -148,8 +112,30 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/work.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2052">
-              <caret line="114" column="95" selection-start-line="114" selection-start-column="95" selection-end-line="114" selection-end-column="95" />
+            <state relative-caret-position="462">
+              <caret line="45" column="123" selection-start-line="45" selection-start-column="111" selection-end-line="45" selection-end-column="123" />
+              <caret line="49" column="55" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="55" />
+              <caret line="53" column="117" selection-start-line="53" selection-start-column="105" selection-end-line="53" selection-end-column="117" />
+              <caret line="57" column="115" selection-start-line="57" selection-start-column="103" selection-end-line="57" selection-end-column="115" />
+              <caret line="61" column="55" selection-start-line="61" selection-start-column="43" selection-end-line="61" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/less/style.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="1472" column="32" selection-start-line="1472" selection-start-column="32" selection-end-line="1472" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="354">
+              <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -165,15 +151,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>@keyframes</find>
-      <find>.mono</find>
-      <find>overflow: auto</find>
-      <find>max-height</find>
-      <find>header-main-desci</find>
-      <find>&amp;-des</find>
-      <find>&amp;-description</find>
-      <find>button</find>
-      <find>btn</find>
       <find>Наша команда</find>
       <find>services-list</find>
       <find>&lt;article</find>
@@ -195,6 +172,15 @@
       <find>(max-width: 444px)</find>
       <find>680</find>
       <find>max-height:</find>
+      <find>`</find>
+      <find>work-header_more</find>
+      <find>.work</find>
+      <find>&amp;_more</find>
+      <find>.item {</find>
+      <find>&amp;-slider`</find>
+      <find>work-header-slider</find>
+      <find>global-wrapper work</find>
+      <find>//</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -210,10 +196,10 @@
         <option value="A:/Temp/Tmp/Rar$DIa0.569/raleway.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/portfolio.html" />
-        <option value="$PROJECT_DIR$/work.html" />
-        <option value="$PROJECT_DIR$/js/main.js" />
-        <option value="$PROJECT_DIR$/less/style.less" />
         <option value="$PROJECT_DIR$/less/.gitignore" />
+        <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/work.html" />
+        <option value="$PROJECT_DIR$/less/style.less" />
       </list>
     </option>
   </component>
@@ -224,10 +210,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="626" />
-    <option name="y" value="282" />
+    <option name="x" value="627" />
+    <option name="y" value="290" />
     <option name="width" value="1228" />
-    <option name="height" value="751" />
+    <option name="height" value="739" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -321,12 +307,12 @@
       <workItem from="1538145027788" duration="1375000" />
       <workItem from="1538149577561" duration="372000" />
       <workItem from="1538239661210" duration="338000" />
-      <workItem from="1538242819539" duration="1978000" />
+      <workItem from="1538242819539" duration="12306000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="205043000" />
+    <option name="totallyTimeSpent" value="215371000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -338,7 +324,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="626" y="282" width="1228" height="751" extended-state="0" />
+    <frame x="627" y="290" width="1228" height="739" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
@@ -352,12 +338,12 @@
       <window_info anchor="bottom" id="Find" order="5" />
       <window_info anchor="bottom" id="Database Changes" order="6" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" weight="0.32902032" />
-      <window_info anchor="bottom" id="Run" order="8" weight="0.31523022" />
+      <window_info active="true" anchor="bottom" id="Run" order="8" visible="true" weight="0.31205675" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
       <window_info anchor="bottom" id="File Transfer" order="12" weight="0.23167156" />
-      <window_info anchor="bottom" id="TODO" order="13" weight="0.32114467" />
+      <window_info anchor="bottom" id="TODO" order="13" weight="0.32" />
       <window_info anchor="right" id="Remote Host" order="0" weight="0.19112903" />
       <window_info anchor="right" id="Database" order="1" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
@@ -435,45 +421,49 @@
     <entry file="file://A:/Temp/Tmp/fz3temp-3/check.php" />
     <entry file="file://A:/Temp/Tmp/fz3temp-3/index.php" />
     <entry file="file://A:/Temp/Tmp/Rar$DIa0.569/raleway.css" />
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/less/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2754">
-          <caret line="153" column="18" selection-start-line="153" selection-start-column="18" selection-end-line="153" selection-end-column="18" />
+        <state relative-caret-position="18">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/portfolio.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+        <state relative-caret-position="190">
+          <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="153" column="18" selection-start-line="153" selection-start-column="18" selection-end-line="153" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
+        <state relative-caret-position="354">
+          <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/work.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2052">
-          <caret line="114" column="95" selection-start-line="114" selection-start-column="95" selection-end-line="114" selection-end-column="95" />
+        <state relative-caret-position="462">
+          <caret line="45" column="123" selection-start-line="45" selection-start-column="111" selection-end-line="45" selection-end-column="123" />
+          <caret line="49" column="55" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="55" />
+          <caret line="53" column="117" selection-start-line="53" selection-start-column="105" selection-end-line="53" selection-end-column="117" />
+          <caret line="57" column="115" selection-start-line="57" selection-start-column="103" selection-end-line="57" selection-end-column="115" />
+          <caret line="61" column="55" selection-start-line="61" selection-start-column="43" selection-end-line="61" selection-end-column="55" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/less/style.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="2150" column="3" lean-forward="true" selection-start-line="2150" selection-start-column="3" selection-end-line="2150" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/less/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="192">
+          <caret line="1472" column="32" selection-start-line="1472" selection-start-column="32" selection-end-line="1472" selection-end-column="32" />
         </state>
       </provider>
     </entry>

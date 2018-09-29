@@ -37,6 +37,7 @@ $(document).ready(function() {
     var owl = $('.owl-carousel.work-header-slider_area');
     owl.owlCarousel({
         items: 1,
+        nav: true,
         dots: true
     });
 });
