@@ -38,6 +38,10 @@ $(document).ready(function() {
     owl.owlCarousel({
         items: 1,
         nav: true,
-        dots: true
+        dots: true,
+        mouseDrag: false,
+        touchDrag: false,
+        loop: true,
+        autoplay: true
     });
 });
