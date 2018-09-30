@@ -44,4 +44,12 @@ $(document).ready(function() {
         loop: true,
         autoplay: true
     });
+    //Work
+    var moreButton = $('.work-header_more'),
+        list       = $('.work-header-list');
+    moreButton.click(function() {
+        $(this).toggleClass('pressed');
+        list.toggleClass('opened');
+
+    })
 });
