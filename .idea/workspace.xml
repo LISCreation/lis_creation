@@ -15,7 +15,7 @@
     <session id="-1009149581">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="37" />
+          <entry key="project.closed" value="40" />
           <entry key="project.open.time.0" value="3" />
           <entry key="project.open.time.1" value="5" />
           <entry key="project.open.time.11" value="1" />
@@ -27,15 +27,17 @@
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.25" value="1" />
+          <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.32" value="1" />
-          <entry key="project.open.time.33" value="1" />
+          <entry key="project.open.time.33" value="2" />
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.36" value="1" />
           <entry key="project.open.time.37" value="2" />
           <entry key="project.open.time.39" value="2" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.40" value="1" />
+          <entry key="project.open.time.41" value="1" />
           <entry key="project.open.time.42" value="1" />
           <entry key="project.open.time.43" value="1" />
           <entry key="project.open.time.46" value="1" />
@@ -50,17 +52,17 @@
           <entry key="project.open.time.8" value="3" />
           <entry key="project.open.time.85" value="1" />
           <entry key="project.open.time.9" value="3" />
-          <entry key="project.opened" value="48" />
+          <entry key="project.opened" value="51" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="4" />
           <entry key="gitignore" value="1" />
-          <entry key="html" value="12" />
+          <entry key="html" value="13" />
           <entry key="js" value="4" />
           <entry key="less" value="7" />
-          <entry key="php" value="10" />
+          <entry key="php" value="14" />
           <entry key="rnc" value="1" />
           <entry key="svg" value="4" />
           <entry key="txt" value="8" />
@@ -69,10 +71,10 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="4" />
-          <entry key="HTML" value="12" />
+          <entry key="HTML" value="13" />
           <entry key="JavaScript" value="4" />
           <entry key="Less" value="7" />
-          <entry key="PHP" value="10" />
+          <entry key="PHP" value="14" />
           <entry key="PLAIN_TEXT" value="9" />
           <entry key="RNG Compact" value="1" />
           <entry key="SVG" value="4" />
@@ -81,18 +83,18 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="6" />
-          <entry key="html" value="10006" />
-          <entry key="js" value="2932" />
-          <entry key="less" value="29416" />
-          <entry key="php" value="3987" />
+          <entry key="html" value="10114" />
+          <entry key="js" value="3042" />
+          <entry key="less" value="31653" />
+          <entry key="php" value="4024" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="10006" />
-          <entry key="JavaScript" value="2932" />
-          <entry key="Less" value="29416" />
-          <entry key="PHP" value="3987" />
+          <entry key="HTML" value="10114" />
+          <entry key="JavaScript" value="3042" />
+          <entry key="Less" value="31653" />
+          <entry key="PHP" value="4024" />
           <entry key="PLAIN_TEXT" value="6" />
         </counts>
       </usages-collector>
@@ -104,7 +106,7 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
-              <caret line="153" column="18" selection-start-line="153" selection-start-column="18" selection-end-line="153" selection-end-column="18" />
+              <caret line="129" column="38" lean-forward="true" selection-start-line="129" selection-start-column="38" selection-end-line="129" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -112,8 +114,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/work.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="67" column="45" lean-forward="true" selection-start-line="67" selection-start-column="45" selection-end-line="67" selection-end-column="45" />
+            <state relative-caret-position="543">
+              <caret line="41" column="14" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -121,8 +123,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/less/style.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="1674" column="21" selection-start-line="1674" selection-start-column="21" selection-end-line="1674" selection-end-column="21" />
+            <state relative-caret-position="401">
+              <caret line="2234" column="18" selection-start-line="2234" selection-start-column="18" selection-end-line="2234" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -130,8 +132,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="651">
-              <caret line="51" column="32" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
+            <state relative-caret-position="486">
+              <caret line="42" column="10" selection-start-line="42" selection-start-column="10" selection-end-line="42" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -147,28 +149,11 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>sidebar</find>
-      <find>&amp;-init {</find>
-      <find>&amp;-init</find>
-      <find>init_type</find>
-      <find>a {</find>
-      <find>Узнать по</find>
-      <find>&amp;-header</find>
-      <find>work-header-</find>
-      <find>work-header-list</find>
-      <find>slider</find>
-      <find>sliderslider</find>
-      <find>@space-over</find>
-      <find>dots</find>
-      <find>.header</find>
-      <find>MEDIA</find>
-      <find>(max-width: 444px)</find>
       <find>680</find>
       <find>max-height:</find>
       <find>`</find>
       <find>work-header_more</find>
       <find>.work</find>
-      <find>&amp;_more</find>
       <find>.item {</find>
       <find>&amp;-slider`</find>
       <find>work-header-slider</find>
@@ -177,6 +162,23 @@
       <find>z-index: 2</find>
       <find>gliss</find>
       <find>_more</find>
+      <find>team-button</find>
+      <find>pressed</find>
+      <find>&amp;_more</find>
+      <find>1250</find>
+      <find>gallery-list_item-month</find>
+      <find>setlocale</find>
+      <find>Date</find>
+      <find>Date:</find>
+      <find>&amp;-list</find>
+      <find>991</find>
+      <find>&amp;_column</find>
+      <find>1100</find>
+      <find>575</find>
+      <find>620</find>
+      <find>animation</find>
+      <find>linear-g</find>
+      <find>767</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -193,8 +195,9 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/portfolio.html" />
         <option value="$PROJECT_DIR$/less/.gitignore" />
-        <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="A:/Temp/Tmp/fz3temp-2/index 2.php" />
         <option value="$PROJECT_DIR$/work.html" />
+        <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/less/style.less" />
       </list>
     </option>
@@ -206,16 +209,30 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1954" />
-    <option name="width" value="1228" />
-    <option name="height" value="739" />
+    <option name="x" value="1904" />
+    <option name="y" value="-7" />
+    <option name="width" value="1304" />
+    <option name="height" value="781" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="lis-creation.loc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lis-creation.loc" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="NewWatcherDialog.advanced.open" value="true" />
@@ -302,12 +319,15 @@
       <workItem from="1538145027788" duration="1375000" />
       <workItem from="1538149577561" duration="372000" />
       <workItem from="1538239661210" duration="338000" />
-      <workItem from="1538242819539" duration="21988000" />
+      <workItem from="1538242819539" duration="22588000" />
+      <workItem from="1538345123780" duration="982000" />
+      <workItem from="1538420254706" duration="124000" />
+      <workItem from="1538938605776" duration="12204000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="225053000" />
+    <option name="totallyTimeSpent" value="238963000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -323,7 +343,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.3722826" weight="0.21854839" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.3722826" type="SLIDING" weight="0.21784566" />
       <window_info id="Structure" order="2" sideWeight="0.6277174" side_tool="true" weight="0.30445546" />
       <window_info anchor="bottom" id="Command Line Tools Console" order="0" weight="0.3293979" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
@@ -333,12 +353,12 @@
       <window_info anchor="bottom" id="Find" order="5" />
       <window_info anchor="bottom" id="Database Changes" order="6" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" weight="0.32902032" />
-      <window_info anchor="bottom" id="Run" order="8" weight="0.31205675" />
+      <window_info anchor="bottom" id="Run" order="8" weight="0.31151515" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
       <window_info anchor="bottom" id="File Transfer" order="12" weight="0.23167156" />
-      <window_info anchor="bottom" id="TODO" order="13" weight="0.32" />
+      <window_info anchor="bottom" id="TODO" order="13" weight="0.31757575" />
       <window_info anchor="right" id="Remote Host" order="0" weight="0.19112903" />
       <window_info anchor="right" id="Database" order="1" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
@@ -416,13 +436,7 @@
     <entry file="file://A:/Temp/Tmp/fz3temp-3/check.php" />
     <entry file="file://A:/Temp/Tmp/fz3temp-3/index.php" />
     <entry file="file://A:/Temp/Tmp/Rar$DIa0.569/raleway.css" />
-    <entry file="file://$PROJECT_DIR$/less/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/less/.gitignore" />
     <entry file="file://$PROJECT_DIR$/portfolio.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -430,31 +444,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://A:/Temp/Tmp/fz3temp-2/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="153" column="18" selection-start-line="153" selection-start-column="18" selection-end-line="153" selection-end-column="18" />
+          <caret line="129" column="38" lean-forward="true" selection-start-line="129" selection-start-column="38" selection-end-line="129" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/main.js">
+    <entry file="file://A:/Temp/Tmp/fz3temp-2/index 2.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="51" column="32" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
+        <state relative-caret-position="294">
+          <caret line="1003" column="51" selection-start-line="1003" selection-start-column="51" selection-end-line="1003" selection-end-column="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/work.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="67" column="45" lean-forward="true" selection-start-line="67" selection-start-column="45" selection-end-line="67" selection-end-column="45" />
+        <state relative-caret-position="543">
+          <caret line="41" column="14" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="42" column="10" selection-start-line="42" selection-start-column="10" selection-end-line="42" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/less/style.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="1674" column="21" selection-start-line="1674" selection-start-column="21" selection-end-line="1674" selection-end-column="21" />
+        <state relative-caret-position="401">
+          <caret line="2234" column="18" selection-start-line="2234" selection-start-column="18" selection-end-line="2234" selection-end-column="18" />
         </state>
       </provider>
     </entry>

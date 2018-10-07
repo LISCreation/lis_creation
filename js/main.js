@@ -39,10 +39,20 @@ $(document).ready(function() {
         items: 1,
         nav: true,
         dots: true,
-        mouseDrag: false,
-        touchDrag: false,
         loop: true,
-        autoplay: true
+        //autoplay: true,
+        responsive : {
+            767 : {
+                autoHeight: false,
+                mouseDrag: false,
+                touchDrag: false
+            },
+            0: {
+                mouseDrag: true,
+                touchDrag: true,
+                autoHeight: true,
+            }
+        }
     });
     //Work
     var moreButton = $('.work-header_more'),
