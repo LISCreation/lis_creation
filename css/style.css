@@ -1390,7 +1390,7 @@ body.work {
   color: #06f856;
 }
 .work {
-  background-color: #190537;
+  background: url(../img/light.jpg) no-repeat top / cover;
   color: #ffffff;
 }
 .work a {
@@ -1695,6 +1695,9 @@ body.work {
   .header.portfolio .portfolio-list {
     grid-auto-rows: 60px;
     grid-gap: 15px;
+  }
+  .work {
+    min-height: 100vh;
   }
   .work-header_more.pressed {
     -webkit-transform: none;
@@ -2005,8 +2008,14 @@ body.work {
     display: flex;
     flex-direction: column;
   }
+  .work-header-init {
+    padding: 15px;
+  }
+  .work-header-init_title {
+    margin-bottom: 0;
+  }
   .work-header-init_wrapper {
-    padding-bottom: 30px;
+    padding-bottom: 0;
   }
   .work-header-init__list {
     flex-wrap: wrap;
@@ -2015,8 +2024,8 @@ body.work {
   }
   .work-header-init_link,
   .work-header-init_type {
-    width: 40%;
-    margin: 0 5%;
+    width: 46%;
+    margin: 10px;
     display: flex;
     justify-content: center;
   }
@@ -2031,14 +2040,7 @@ body.work {
     position: static;
   }
   .work-header-slider .owl-nav {
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
-  }
-  .work-header-slider .owl-item.active {
-    animation: none;
+    top: 20%;
   }
   .work-header-slider_item {
     height: auto;
@@ -2129,6 +2131,12 @@ body.work {
   .work-header-init_link {
     width: 100%;
   }
+  .work-header-init_link {
+    justify-content: flex-start;
+  }
+  .work-header-init_type {
+    justify-content: flex-end;
+  }
   .work-header-init_want {
     margin: 20px 0;
   }
@@ -2172,6 +2180,12 @@ body.work {
   }
   .team-desc p:nth-child(2)::before {
     left: 0;
+  }
+  .work-header-init_service {
+    font-size: 15px;
+  }
+  .work-header-init_title {
+    font-size: 22px;
   }
 }
 @media (max-width: 575px) {
@@ -2224,7 +2238,7 @@ body.work {
     width: 100%;
   }
   .work-header-list {
-    max-height: 60vh;
+    max-height: 80vh;
     column-count: auto;
   }
 }
@@ -2237,6 +2251,16 @@ body.work {
 @media (max-width: 420px) {
   .header-menu-list {
     font-size: 4.5vw;
+  }
+  .work-header-init_service {
+    font-size: 3.7vw;
+  }
+  .work-header-init_title {
+    font-size: 5.3vw;
+  }
+  .work-header-init_link,
+  .work-header-init_type {
+    justify-content: center;
   }
 }
 @media (max-width: 400px) {

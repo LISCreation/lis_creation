@@ -1470,7 +1470,7 @@ body {
 
 //tmpstyle: Work
 .work {
-  background-color: @space-dark;
+  background: url(../img/light.jpg) no-repeat top / cover;
   color: #ffffff;
   a {
     color: @emotion;
@@ -1778,6 +1778,7 @@ body {
     }
   }
   .work {
+    min-height: 100vh;
     &-header {
       &_more {
         &.pressed {
@@ -2172,8 +2173,12 @@ body {
       display: flex;
       flex-direction: column;
       &-init {
+        padding: 15px;
+        &_title {
+          margin-bottom: 0;
+        }
         &_wrapper {
-          padding-bottom: 30px;
+          padding-bottom: 0;
         }
         &__list {
           flex-wrap: wrap;
@@ -2181,8 +2186,8 @@ body {
           order: 3;
         }
         &_link, &_type {
-          width: 40%;
-          margin: 0 5%;
+          width: 46%;
+          margin: 10px;
           display: flex;
           justify-content: center;
         }
@@ -2198,15 +2203,9 @@ body {
         position: static;
         .owl {
           &-nav {
-            -webkit-transform: translateY(-50%);
-            -moz-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-            -o-transform: translateY(-50%);
-            transform: translateY(-50%);
+            top: 20%;
           }
         }
-        //Remove
-        .owl-item.active {animation:none;}
         &_item {
           height: auto;
           img {;
@@ -2318,6 +2317,12 @@ body {
         &_type, &_link {
           width: 100%;
         }
+        &_link {
+          justify-content: flex-start;
+        }
+        &_type {
+          justify-content: flex-end;
+        }
         &_want {
           margin: 20px 0;
         }
@@ -2368,6 +2373,18 @@ body {
           &::before {
             left: 0;
           }
+        }
+      }
+    }
+  }
+  .work {
+    &-header {
+      &-init {
+        &_service {
+          font-size: 15px;
+        }
+        &_title {
+          font-size: 22px;
         }
       }
     }
@@ -2455,7 +2472,7 @@ body {
   .work {
     &-header {
       &-list {
-        max-height: 60vh;
+        max-height: 80vh;
         column-count: auto;
       }
     }
@@ -2480,6 +2497,21 @@ body {
     &-menu {
       &-list {
         font-size: 4.5vw;
+      }
+    }
+  }
+  .work {
+    &-header {
+      &-init {
+        &_service {
+          font-size: 3.7vw;
+        }
+        &_title {
+          font-size: 5.3vw;
+        }
+        &_link, &_type {
+          justify-content: center;
+        }
       }
     }
   }

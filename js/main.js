@@ -40,7 +40,7 @@ $(document).ready(function() {
         nav: true,
         dots: true,
         loop: true,
-        //autoplay: true,
+        autoplay: true,
         responsive : {
             767 : {
                 autoHeight: false,
