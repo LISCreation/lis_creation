@@ -1691,6 +1691,66 @@ body.work {
   -o-transform: none;
   transform: none;
 }
+.serv-header {
+  position: relative;
+  vertical-align: middle;
+}
+.serv-header-content {
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+  max-width: 1400px;
+}
+.serv-header-content_wrapper {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.serv-header-main .logo {
+  width: 100px;
+  display: block;
+  margin: 0 auto 75px;
+}
+.serv-header-main .logo_wrapper {
+  text-align: center;
+}
+.serv-header-main .title {
+  display: inline-block;
+  position: relative;
+  font-family: Raleway, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+.serv-header-main .title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 150px;
+  height: 2px;
+  background-color: #fff;
+  opacity: .5;
+}
+.serv-header-main .title_wrapper {
+  display: inline-block;
+}
+.serv-header-main .info {
+  white-space: pre-line;
+  margin-bottom: 40px;
+}
+.serv-header-image_wrapper {
+  width: 50%;
+}
 @media (max-width: 1250px) {
   .header.portfolio .portfolio-list {
     grid-auto-rows: 60px;
