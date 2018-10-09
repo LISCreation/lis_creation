@@ -1691,6 +1691,15 @@ body.work {
   -o-transform: none;
   transform: none;
 }
+.serv-header-main .logo {
+  width: 100px;
+}
+.serv-header-main_title {
+  font-family: Raleway, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+  text-transform: uppercase;
+}
 @media (max-width: 1250px) {
   .header.portfolio .portfolio-list {
     grid-auto-rows: 60px;
