@@ -1787,6 +1787,36 @@ body.work {
 .serv .tasks-list_item-designation {
   margin-top: 35px;
 }
+.serv .process .container {
+  position: relative;
+}
+.serv .process-info {
+  padding: 100px 0 0;
+}
+.serv .process-text {
+  margin-bottom: 40px;
+}
+.serv .process-numbers {
+  margin-bottom: 40px;
+}
+.serv .process-numbers p {
+  margin: 0;
+}
+.serv .process-numbers p > span {
+  font-family: Raleway, Arial, sans-serif;
+  font-weight: 700;
+}
+.serv .process-image_wrapper {
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  -webkit-transform: translateX(15%);
+  -moz-transform: translateX(15%);
+  -ms-transform: translateX(15%);
+  -o-transform: translateX(15%);
+  transform: translateX(15%);
+  width: 870px;
+}
 @media (max-width: 1250px) {
   .header.portfolio .portfolio-list {
     grid-auto-rows: 60px;

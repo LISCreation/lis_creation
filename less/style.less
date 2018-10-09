@@ -1866,6 +1866,39 @@ body {
       }
     }
   }
+  .process {
+    .container {
+      position: relative;
+    }
+    &-info {
+      padding: 100px 0 0;
+    }
+    &-text {
+      margin-bottom: 40px;
+    }
+    &-numbers {
+      margin-bottom: 40px;
+      p {
+        margin: 0;
+        > span {
+          .bold;
+        }
+      }
+    }
+    &-image {
+      &_wrapper {
+        position: absolute;
+        bottom: 20px;
+        right: 0;
+        -webkit-transform: translateX(15%);
+        -moz-transform: translateX(15%);
+        -ms-transform: translateX(15%);
+        -o-transform: translateX(15%);
+        transform: translateX(15%);
+        width: 870px;
+      }
+    }
+  }
 }
 
 //tmpstyle: MEDIA
