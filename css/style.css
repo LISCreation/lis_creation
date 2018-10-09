@@ -1454,12 +1454,36 @@ body.work {
 .work .owl-next {
   z-index: 3;
   position: relative;
+  -webkit-transition: all ease-out 0.5s;
+  -moz-transition: all ease-out 0.5s;
+  -ms-transition: all ease-out 0.5s;
+  -o-transition: all ease-out 0.5s;
+  transition: all ease-out 0.5s;
+}
+.work .owl-prev > span,
+.work .owl-next > span {
+  padding-top: 30vh;
+  padding-bottom: 30vh;
 }
 .work .owl-prev {
   left: 40px;
 }
+.work .owl-prev > span {
+  padding-left: 20px;
+  padding-right: 20vw;
+}
+.work .owl-prev:hover {
+  left: calc(40px - 10px);
+}
 .work .owl-next {
   right: 40px;
+}
+.work .owl-next > span {
+  padding-left: 20vw;
+  padding-right: 20px;
+}
+.work .owl-next:hover {
+  right: calc(40px - 10px);
 }
 .work .owl-stage-outer {
   z-index: 2;

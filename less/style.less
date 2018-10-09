@@ -1534,13 +1534,34 @@ body {
     &-prev, &-next {
       z-index: 3;
       position: relative;
+      .transition-5;
+      > span {
+        //padding: 30vh 80px 30vh 20px;
+        padding-top: 30vh;
+        padding-bottom: 30vh;
+      }
     }
     @arrow-offset: 40px;
+    @arrow-move: 10px;
     &-prev {
       left: @arrow-offset;
+      > span { //Left arrow [image]
+        padding-left: 20px;
+        padding-right: 20vw;
+      }
+      &:hover {
+        left: calc(@arrow-offset - @arrow-move);
+      }
     }
     &-next {
       right: @arrow-offset;
+      > span { //Right arrow [image]
+        padding-left: 20vw;
+        padding-right: 20px;
+      }
+      &:hover {
+        right: calc(@arrow-offset - @arrow-move);
+      }
     }
     &-stage-outer {
       z-index: 2;
