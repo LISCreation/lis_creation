@@ -1998,8 +1998,8 @@ body {
   .work {
     &-header {
       &-list {
-        width: calc(100% - 30px);
-        &_item {
+        &_wrapper {
+          width: calc(100% - 30px);
         }
       }
     }
@@ -2371,27 +2371,65 @@ body {
       }
       &-list {
         font-size: 12px;
-        &.opened {
-          bottom: 0;
+        &_wrapper {
           width: 100%;
-          left: 0;
+          right: 0;
+          &.opened {
+            bottom: 0;
+            width: 100%;
+            left: 0;
+            .work-header_more {
+              top: auto;
+              bottom: 0;
+              width: 50px;
+              height: 50px;
+              -webkit-transform: none;
+              -moz-transform: none;
+              -ms-transform: none;
+              -o-transform: none;
+              transform: none;
+              p {
+                display: none;
+              }
+              img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-right: 0;
+                -webkit-transform: translate(-50%, -50%);
+                -moz-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                -o-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+              }
+              &:hover {
+                -webkit-transform: none;
+                -moz-transform: none;
+                -ms-transform: none;
+                -o-transform: none;
+                transform: none;
+                img {
+                  top: 55%;
+                }
+              }
+            }
+          }
         }
       }
       &_more {
-        position: fixed;
         font-size: 14px;
         width: 100%;
+        align-items: flex-end;
         justify-content: center;
-        right: 0;
-        bottom: 0;
+        top: 0;
         &.pressed {
-          bottom: 0;
+          /*bottom: 0;
           width: 50px;
           left: auto;
           right: 0;
           &:hover {
             bottom: 0;
-          }
+          }*/
         }
       }
     }
