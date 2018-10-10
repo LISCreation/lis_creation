@@ -1775,16 +1775,16 @@ body.work {
 .serv-header-image_wrapper {
   width: 50%;
 }
-.serv .tasks {
+.serv .listing {
   padding-top: 60px;
 }
-.serv .tasks-list_item {
+.serv .listing-list_item {
   text-align: center;
 }
-.serv .tasks-list_item-icon img {
+.serv .listing-list_item-icon img {
   width: 110px;
 }
-.serv .tasks-list_item-designation {
+.serv .listing-list_item-designation {
   margin-top: 35px;
 }
 .serv .process .container {
