@@ -56,9 +56,8 @@ $(document).ready(function() {
     });
     //Work
     var moreButton = $('.work-header_more'),
-        list       = $('.work-header-list');
+        list       = $('.work-header-list_wrapper');
     moreButton.click(function() {
-        $(this).toggleClass('pressed');
         list.toggleClass('opened');
 
     })
