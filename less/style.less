@@ -1740,6 +1740,7 @@ body {
             -ms-transform: translateY(-75%) rotate(15deg);
             -o-transform: translateY(-75%) rotate(15deg);
             transform: translateY(-75%) rotate(15deg);
+            background-color: rgba(83, 19, 184, .8);
             right: -5px;
             &:hover {
               -webkit-transform: translateY(-75%) rotate(12deg);
@@ -2380,7 +2381,8 @@ body {
             left: 0;
             .work-header_more {
               top: auto;
-              bottom: 0;
+              padding-top: 10px;
+              padding-bottom: 10px;
               width: 50px;
               height: 50px;
               -webkit-transform: none;
@@ -2419,7 +2421,8 @@ body {
       &_more {
         font-size: 14px;
         width: 100%;
-        align-items: flex-end;
+        padding-top: 20px;
+        padding-bottom: 20px;
         justify-content: center;
         top: 0;
         &.pressed {
@@ -2655,6 +2658,19 @@ body {
       &-list {
         max-height: 80vh;
         column-count: auto;
+      }
+      .owl {
+        &-prev, &-next {
+          span {
+            padding: 0;
+          }
+        }
+        &-prev {
+          left: 20px;
+        }
+        &-next {
+          right: 20px;
+        }
       }
     }
   }
