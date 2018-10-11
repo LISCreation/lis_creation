@@ -329,7 +329,7 @@ input, button, .btn {
 .section {
   &-info {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
   }
   &-header {
     margin: 0;
@@ -337,7 +337,7 @@ input, button, .btn {
     .bold;
     position: relative;
     font-size: 35px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     &::after {
       content: '';
       position: absolute;
@@ -355,7 +355,8 @@ input, button, .btn {
     }
   }
   &-description {
-    padding-top: 20px;
+    padding-top: 30px;
+    margin: 0;
     font-size: 16px;
     position: relative;
     white-space: pre-line;
@@ -1405,7 +1406,7 @@ body {
   }
 }
 .callback {
-  padding: 110px 0 160px;
+  padding: 110px 0 160px!important;
   .section {
     &-info {
       margin-bottom: 80px;
@@ -1795,6 +1796,10 @@ body {
 }
 //tmpstyle: Service
 .serv {
+  section {
+    padding-top: 150px;
+    padding-bottom: 0;
+  }
   &-header {
     position: relative;
     vertical-align: middle;
@@ -1803,16 +1808,7 @@ body {
       height: 145px;
     }
     &-content {
-      &_wrapper {
-        position: absolute;
-        top: 50%;
-        width: 100%;
-        -webkit-transform: translateY(-50%);
-        -moz-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        -o-transform: translateY(-50%);
-        transform: translateY(-50%);
-      }
+      padding-top: 100px;
       display: flex;
       margin: auto;
       justify-content: space-around;
@@ -1853,23 +1849,21 @@ body {
       }
       .info {
         white-space: pre-line;
-        margin-bottom: 40px;
+        margin-bottom: 45px;
       }
     }
     &-image {
-      &_wrapper {
-        width: 50%;
-      }
+      width: 900px;
     }
   }
   .listing {
-    padding-top: 60px;
+    padding-top: 120px;
     &-list {
       &_item {
         text-align: center;
         &-icon {
           img {
-            width: 110px;
+            width: 120px;
           }
         }
         &-designation {
@@ -1877,19 +1871,29 @@ body {
         }
       }
     }
+    &.offer {
+      .section {
+        &-info {
+          padding-bottom: 65px;
+        }
+      }
+    }
   }
   .process {
+    padding-bottom: 100px;
     .container {
       position: relative;
     }
     &-info {
-      padding: 100px 0 0;
+      padding: 80px 0 0;
+      width: 50%;
     }
     &-text {
-      margin-bottom: 40px;
+      margin-bottom: 35px;
+      white-space: pre-line;
     }
     &-numbers {
-      margin-bottom: 40px;
+      margin-bottom: 55px;
       p {
         margin: 0;
         > span {
@@ -1898,16 +1902,16 @@ body {
       }
     }
     &-image {
+      -webkit-transform: scaleY(1.2);
+      -moz-transform: scaleY(1.2);
+      -ms-transform: scaleY(1.2);
+      -o-transform: scaleY(1.2);
+      transform: scaleY(1.2);
       &_wrapper {
         position: absolute;
-        bottom: 20px;
-        right: 0;
-        -webkit-transform: translateX(15%);
-        -moz-transform: translateX(15%);
-        -ms-transform: translateX(15%);
-        -o-transform: translateX(15%);
-        transform: translateX(15%);
-        width: 870px;
+        bottom: 25px;
+        right: -150px;
+        width: 800px;
       }
     }
   }

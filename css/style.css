@@ -231,7 +231,7 @@ button:focus,
 }
 .section-info {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 .section-header {
   margin: 0;
@@ -240,7 +240,7 @@ button:focus,
   font-weight: 700;
   position: relative;
   font-size: 35px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 .section-header::after {
   content: '';
@@ -258,7 +258,8 @@ button:focus,
   opacity: .5;
 }
 .section-description {
-  padding-top: 20px;
+  padding-top: 30px;
+  margin: 0;
   font-size: 16px;
   position: relative;
   white-space: pre-line;
@@ -1326,7 +1327,7 @@ body.work {
   margin: 0;
 }
 .callback {
-  padding: 110px 0 160px;
+  padding: 110px 0 160px!important;
 }
 .callback .section-info {
   margin-bottom: 80px;
@@ -1723,6 +1724,10 @@ body.work {
   -o-transform: translate(-100%, -50%);
   transform: translate(-100%, -50%);
 }
+.serv section {
+  padding-top: 150px;
+  padding-bottom: 0;
+}
 .serv-header {
   position: relative;
   vertical-align: middle;
@@ -1732,22 +1737,13 @@ body.work {
   height: 145px;
 }
 .serv-header-content {
+  padding-top: 100px;
   display: flex;
   margin: auto;
   justify-content: space-around;
   width: 100%;
   align-items: center;
   max-width: 1400px;
-}
-.serv-header-content_wrapper {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
 }
 .serv-header-main .logo {
   width: 100px;
@@ -1782,34 +1778,42 @@ body.work {
 }
 .serv-header-main .info {
   white-space: pre-line;
-  margin-bottom: 40px;
+  margin-bottom: 45px;
 }
-.serv-header-image_wrapper {
-  width: 50%;
+.serv-header-image {
+  width: 900px;
 }
 .serv .listing {
-  padding-top: 60px;
+  padding-top: 120px;
 }
 .serv .listing-list_item {
   text-align: center;
 }
 .serv .listing-list_item-icon img {
-  width: 110px;
+  width: 120px;
 }
 .serv .listing-list_item-designation {
   margin-top: 35px;
+}
+.serv .listing.offer .section-info {
+  padding-bottom: 65px;
+}
+.serv .process {
+  padding-bottom: 100px;
 }
 .serv .process .container {
   position: relative;
 }
 .serv .process-info {
-  padding: 100px 0 0;
+  padding: 80px 0 0;
+  width: 50%;
 }
 .serv .process-text {
-  margin-bottom: 40px;
+  margin-bottom: 35px;
+  white-space: pre-line;
 }
 .serv .process-numbers {
-  margin-bottom: 40px;
+  margin-bottom: 55px;
 }
 .serv .process-numbers p {
   margin: 0;
@@ -1818,16 +1822,18 @@ body.work {
   font-family: Raleway, Arial, sans-serif;
   font-weight: 700;
 }
+.serv .process-image {
+  -webkit-transform: scaleY(1.2);
+  -moz-transform: scaleY(1.2);
+  -ms-transform: scaleY(1.2);
+  -o-transform: scaleY(1.2);
+  transform: scaleY(1.2);
+}
 .serv .process-image_wrapper {
   position: absolute;
-  bottom: 20px;
-  right: 0;
-  -webkit-transform: translateX(15%);
-  -moz-transform: translateX(15%);
-  -ms-transform: translateX(15%);
-  -o-transform: translateX(15%);
-  transform: translateX(15%);
-  width: 870px;
+  bottom: 25px;
+  right: -150px;
+  width: 800px;
 }
 @media (max-width: 1250px) {
   .header.portfolio .portfolio-list {
