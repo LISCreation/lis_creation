@@ -1727,6 +1727,10 @@ body.work {
   position: relative;
   vertical-align: middle;
 }
+.serv-header::after {
+  background-image: url(../img/wave_serv.png);
+  height: 145px;
+}
 .serv-header-content {
   display: flex;
   margin: auto;
