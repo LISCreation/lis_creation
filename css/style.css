@@ -1959,12 +1959,8 @@ body.work {
   .work-header-init_click {
     padding: 16px 34px;
   }
-  .work-header-list {
-    display: block;
-    column-count: 2;
-  }
   .work-header-list_item {
-    width: auto;
+    width: 42.6%;
     margin-bottom: 30px;
   }
   .team-slider_item:last-child {
