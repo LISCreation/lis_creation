@@ -2071,6 +2071,13 @@ body.work {
   .serv .listing-list_item {
     padding: 30px 0;
   }
+  .serv-header-main .logo {
+    margin-bottom: 50px;
+  }
+  .serv-header-main .info {
+    white-space: normal;
+    max-width: 450px;
+  }
   .serv-header-image_wrapper {
     width: 500px;
     top: 100px;
@@ -2107,8 +2114,17 @@ body.work {
   .team-desc p::before {
     display: none;
   }
+  .serv .listing {
+    padding-top: 0;
+  }
+  .serv .process {
+    padding: 100px 0;
+  }
   .serv .process-info {
     width: 90%;
+  }
+  .serv section {
+    padding: 100px 0 0;
   }
   .serv-header {
     height: auto;
@@ -2161,7 +2177,6 @@ body.work {
   }
   .section-description {
     font-size: 15px;
-    width: 400px;
     margin: 0 auto;
     white-space: normal;
   }
@@ -2569,8 +2584,21 @@ body.work {
   .work-header .owl-next {
     right: 20px;
   }
+  .serv-header-image_wrapper {
+    margin: 40px 0;
+  }
+  .serv-header .container-self {
+    padding: 0 10px;
+  }
+  .serv-header-main {
+    padding-left: 30px;
+  }
   .serv-header-main .title {
     width: 100%;
+  }
+  .serv .listing-list_item {
+    width: 300px;
+    margin: 0 auto;
   }
 }
 @media (max-width: 460px) {
@@ -2631,6 +2659,12 @@ body.work {
     margin-bottom: 10px;
   }
 }
+@media (min-height: 1080px) {
+  .serv-header {
+    height: auto;
+    padding-bottom: 90px;
+  }
+}
 @media (max-height: 790px) {
   .global-sidebar_middle .mono {
     padding-top: 0;
@@ -2649,16 +2683,17 @@ body.work {
     margin-bottom: 40px !important;
   }
 }
-@media (max-height: 740px) {
-  .header {
+@media (min-width: 871px) and (max-height: 830px) {
+  .serv-header {
     height: auto;
-    padding-bottom: 20px;
   }
+  .serv-header::after {
+    display: none;
+  }
+}
+@media (max-height: 740px) {
   .header-main-title {
     top: 50%;
-  }
-  .header::after {
-    display: none;
   }
   .header_mouse__wrapper {
     bottom: 5vh;
