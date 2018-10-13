@@ -2468,6 +2468,24 @@ body {
       white-space: normal;
     }
   }
+  .header {
+    &-menu {
+      &-list {
+        &_item {
+          .submenu {
+            &_wrapper {
+
+              -webkit-transform: translate(-80%, 100%);
+              -moz-transform: translate(-80%, 100%);
+              -ms-transform: translate(-80%, 100%);
+              -o-transform: translate(-80%, 100%);
+              transform: translate(-80%, 100%);
+            }
+          }
+        }
+      }
+    }
+  }
   .team {
     text-align: center;
     .section {
@@ -2871,7 +2889,21 @@ body {
         position: static;
         max-width: 100%;
         padding: 15px;
+        width: 100%;
         font-size: 4vw;
+        &_item {
+          .submenu {
+            &_wrapper {
+              left: auto;
+              right: 0;
+              -webkit-transform: translateY(100%);
+              -moz-transform: translateY(100%);
+              -ms-transform: translateY(100%);
+              -o-transform: translateY(100%);
+              transform: translateY(100%);
+            }
+          }
+        }
       }
     }
     &-main {
