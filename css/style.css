@@ -1843,7 +1843,6 @@ body.work {
   position: relative;
   font-family: Raleway, Arial, sans-serif;
   font-weight: 700;
-  font-size: 35px;
   text-transform: uppercase;
   margin-bottom: 30px;
   padding-bottom: 30px;
@@ -1873,6 +1872,9 @@ body.work {
 }
 .serv-header-button {
   margin-bottom: 40px;
+}
+.serv-header-button input {
+  min-width: 250px;
 }
 .serv .listing {
   padding-top: 120px;
@@ -2261,6 +2263,13 @@ body.work {
     margin: 0 auto;
     white-space: normal;
   }
+  .header-menu-list_item .submenu_wrapper {
+    -webkit-transform: translate(-80%, 100%);
+    -moz-transform: translate(-80%, 100%);
+    -ms-transform: translate(-80%, 100%);
+    -o-transform: translate(-80%, 100%);
+    transform: translate(-80%, 100%);
+  }
   .team {
     text-align: center;
   }
@@ -2614,7 +2623,17 @@ body.work {
     position: static;
     max-width: 100%;
     padding: 15px;
+    width: 100%;
     font-size: 4vw;
+  }
+  .header-menu-list_item .submenu_wrapper {
+    left: auto;
+    right: 0;
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
   }
   .header-main-description {
     white-space: normal;
@@ -2804,12 +2823,6 @@ body.work {
   }
   .achievements {
     padding-top: 80px;
-  }
-  ::after {
-    display: none;
-  }
-  .serv {
-    display: block;
   }
 }
 @media (max-height: 600px) {
