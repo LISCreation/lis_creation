@@ -2427,15 +2427,25 @@ body.work {
   }
 }
 @media (max-width: 680px) {
+  .header-main {
+    padding: 0 10px;
+  }
+  .header-main-logo {
+    margin-bottom: 15px;
+  }
   .header-main-title {
     font-size: 15vw;
   }
-  .header-main-chant,
-  .header-main-description {
-    padding: 0 5px;
+  .header-main-chant {
+    margin: 0;
+    padding: 15px;
+    font-size: 25px;
   }
   .header-main-chant::after {
     display: none;
+  }
+  .header-main-description {
+    font-size: 14px;
   }
   .header_social {
     display: none;
@@ -2712,6 +2722,12 @@ body.work {
   }
   .achievements {
     padding-top: 80px;
+  }
+  ::after {
+    display: none;
+  }
+  .serv {
+    display: block;
   }
 }
 @media (max-height: 600px) {

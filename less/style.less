@@ -2663,16 +2663,23 @@ body {
 @media(max-width: 680px) {
   .header {
     &-main {
+      padding: 0 10px;
+      &-logo {
+        margin-bottom: 15px;
+      }
       &-title {
         font-size: 15vw;
       }
-      &-chant, &-description{
-        padding: 0 5px;
-      }
       &-chant {
+        margin: 0;
+        padding: 15px;
+        font-size: 25px;
         &::after {
           display: none;
         }
+      }
+      &-description {
+        font-size: 14px;
       }
     }
     &_social {
@@ -3094,6 +3101,12 @@ body {
   }
   .achievements {
     padding-top: 80px;
+  }
+  &::after {
+    display: none;
+  }
+  &.serv {
+    display: block;
   }
 }
 
