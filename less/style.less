@@ -2258,6 +2258,15 @@ body {
       }
     }
     &-header {
+      &-main {
+        .logo {
+          margin-bottom: 50px;
+        }
+        .info {
+          white-space: normal;
+          max-width: 450px;
+        }
+      }
       &-image {
         &_wrapper {
           width: 500px;
@@ -2313,10 +2322,17 @@ body {
     }
   }
   .serv {
+    .listing {
+      padding-top: 0;
+    }
     .process {
+      padding: 100px 0;
       &-info {
         width: 90%;
       }
+    }
+    section {
+      padding: 100px 0 0;
     }
     &-header {
       height: auto;
@@ -2373,7 +2389,6 @@ body {
     }
     &-description {
       font-size: 15px;
-      width: 400px;
       margin: 0 auto;
       white-space: normal;
     }
@@ -2871,9 +2886,30 @@ body {
   }
   .serv {
     &-header {
+      &-image {
+        &_wrapper {
+          margin: 40px 0;
+        }
+      }
+      .container {
+        &-self {
+          padding: 0 10px;
+        }
+      }
+      &-main {
+        padding-left: 30px;
+      }
       &-main {
         .title {
           width: 100%;
+        }
+      }
+    }
+    .listing {
+      &-list {
+        &_item {
+          width: 300px;
+          margin: 0 auto;
         }
       }
     }
@@ -2971,7 +3007,36 @@ body {
       }
     }
   }
+  .serv {
+    &-header {
+      &-image {
+        &_wrapper {
+          margin: 20px 0;
+        }
+      }
+      &-main {
+        .title {
+          font-size: 28px;
+          margin-bottom: 20px;
+          padding-bottom: 20px;
+        }
+        .info {
+          font-size: 14px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
 }
+@media(min-height: 1080px) {
+  .serv {
+    &-header {
+      height: auto;
+      padding-bottom: 90px;
+    }
+  }
+}
+
 @media(max-height: 790px) {
   .global {
     &-sidebar {
@@ -3004,17 +3069,22 @@ body {
     }
   }
 }
+@media(min-width: 871px) and (max-height: 830px){
+  .serv {
+    &-header {
+      height: auto;
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
 @media(max-height: 740px) {
   .header {
-    height: auto;
-    padding-bottom: 20px;
     &-main {
       &-title {
         top: 50%;
       }
-    }
-    &::after {
-      display: none;
     }
     &_mouse {
       &__wrapper {
