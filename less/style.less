@@ -578,6 +578,7 @@ body {
       letter-spacing: 1.2px;
       justify-content: space-between;
       &_item {
+        .transition-3;
         a {
           color: @light;
         }
@@ -602,6 +603,80 @@ body {
         &.current {
           &::after {
             width: 100%;
+          }
+        }
+        &.has-children {
+          padding-right: 25px;
+          cursor: n-resize;
+          &::before {
+            content:'';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            width: 10px;
+            height: 10px;
+            -webkit-transform: translate(-100%, -50%);
+            -moz-transform: translate(-100%, -50%);
+            -ms-transform: translate(-100%, -50%);
+            -o-transform: translate(-100%, -50%);
+            transform: translate(-100%, -50%);
+            background: url(../img/icons/arrow-down.svg) no-repeat center / cover;
+          }
+          &:hover {
+            .submenu_wrapper {
+              display: block;
+            }
+            &::before {
+              -webkit-transform: translate(-100%, -50%) rotate(-180deg);
+              -moz-transform: translate(-100%, -50%) rotate(-180deg);
+              -ms-transform: translate(-100%, -50%) rotate(-180deg);
+              -o-transform: translate(-100%, -50%) rotate(-180deg);
+              transform: translate(-100%, -50%) rotate(-180deg);
+            }
+          }
+        }
+        .submenu {
+          padding: 10px 0;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          border-radius: 5px;
+          background-color: @mono_item;
+          &_wrapper {
+            width: 300px;
+            padding-top: 5px;
+            display: none;
+            overflow: hidden;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            z-index: 21;
+            -webkit-transform: translate(-50%,100%);
+            -moz-transform: translate(-50%,100%);
+            -ms-transform: translate(-50%,100%);
+            -o-transform: translate(-50%,100%);
+            transform: translate(-50%,100%);
+            font-size: 19px;
+            text-transform: none;
+          }
+          &_item {
+            .transition-2;
+            &.active {
+              background-color: @emotion-dark;
+              a {
+                color: #fff;
+              }
+            }
+            a {
+              display: block;
+              padding: 5px 30px;
+              color: @dark;
+            }
+            &:hover {
+              background-color: lighten(@emotion-dark, 2%);
+              a {
+                color: @light;
+              }
+            }
           }
         }
       }
@@ -2947,6 +3022,7 @@ body {
   .header {
     &-menu {
       &-list {
+        padding: 5px;
         font-size: 4.5vw;
       }
     }

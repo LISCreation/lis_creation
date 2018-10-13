@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    //Slider
     var owl = $('.owl-carousel.services-list');
     owl.owlCarousel({
         center: true,
@@ -60,5 +61,5 @@ $(document).ready(function() {
     moreButton.click(function() {
         list.toggleClass('opened');
 
-    })
+    });
 });
