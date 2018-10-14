@@ -1972,6 +1972,10 @@ body.work {
 .serv.promo .process-image_wrapper {
   width: 50%;
 }
+.serv.corp .process-image_wrapper {
+  bottom: -80px;
+  width: 50%;
+}
 @media (max-width: 1585px) {
   .serv-header-image {
     width: 100%;
@@ -1988,6 +1992,9 @@ body.work {
     width: 48vw;
   }
   .serv.promo .process-image_wrapper {
+    width: 50%;
+  }
+  .serv.corp .process-image_wrapper {
     width: 50%;
   }
 }
