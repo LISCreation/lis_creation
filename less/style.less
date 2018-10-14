@@ -1335,6 +1335,7 @@ body {
     }
     .owl {
       &-item {
+        height: 100%!important;
         opacity: .4;
         .btn_roundness {
           background-image: linear-gradient(to right, @space-dark 0%, @space-light 100%);
@@ -1416,6 +1417,8 @@ body {
       }
       &-example {
         margin: 56px 0 30px;
+        height: 170px;
+        object-fit: contain;
       }
       &-price {
         font-size: 18px;
@@ -2175,15 +2178,6 @@ body {
   .team {
     &-slider {
       margin: 0 auto;
-    }
-  }
-  .service {
-    .process {
-      &-image {
-        &_wrapper {
-          bottom: -20px;
-        }
-      }
     }
   }
 

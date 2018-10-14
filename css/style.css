@@ -1263,6 +1263,7 @@ body.work {
   right: 0;
 }
 .services-list .owl-item {
+  height: 100%!important;
   opacity: .4;
   -webkit-transition: all ease .3s;
   -moz-transition: all ease .3s;
@@ -1347,6 +1348,8 @@ body.work {
 }
 .services-list_item-example {
   margin: 56px 0 30px;
+  height: 170px;
+  object-fit: contain;
 }
 .services-list_item-price {
   font-size: 18px;
@@ -2044,9 +2047,6 @@ body.work {
 @media (max-width: 1200px) {
   .team-slider {
     margin: 0 auto;
-  }
-  .service .process-image_wrapper {
-    bottom: -20px;
   }
 }
 @media (max-width: 1140px) {
