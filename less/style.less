@@ -329,7 +329,6 @@ input, button, .btn {
 .section {
   &-info {
     text-align: center;
-    padding: 0 20px;
     margin-bottom: 60px;
   }
   &-header {
@@ -1278,6 +1277,11 @@ body {
   }
 }
 .services {
+  .section {
+    &-info {
+      padding: 0 15px;
+    }
+  }
   padding-top: 172px;
   @keyframes gliss {
     from {
@@ -1999,6 +2003,31 @@ body {
       }
     }
   }
+  &.shop {
+    .serv {
+      &-header {
+        &-main {
+          .title {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+    .process {
+      &-image {
+        &_wrapper {
+          -webkit-transform: none;
+          -moz-transform: none;
+          -ms-transform: none;
+          -o-transform: none;
+          transform: none;
+          bottom: -130px;
+          right: 0;
+          width: 35vw;
+        }
+      }
+    }
+  }
 }
 
 //tmpstyle: MEDIA
@@ -2013,15 +2042,20 @@ body {
       }
     }
     .process {
-      .container {
-        width: 90%;
-        max-width: 90%;
-      }
       &-image {
         &_wrapper {
           right: -50px;
           bottom: -100px;
           width: 60vw;
+        }
+      }
+    }
+    &.shop {
+      .process {
+        &-image {
+          &_wrapper {
+            width: 48vw;
+          }
         }
       }
     }
@@ -2110,6 +2144,18 @@ body {
           right: 0;
           bottom: 0;
           width: 100%;
+        }
+      }
+    }
+    &.shop {
+      .process {
+        &-image {
+          &_wrapper {
+            bottom: 0;
+            right: 0;
+            margin: 0 auto;
+            width: 80%;
+          }
         }
       }
     }
@@ -2352,6 +2398,42 @@ body {
         }
       }
     }
+    &.shop {
+      .serv {
+        &-header {
+          &-content {
+            flex-direction: column-reverse;
+            padding: 0;
+          }
+          &-main {
+            width: 100%;
+            .logo {
+              display: none;
+            }
+            .title {
+              width: inherit;
+              max-width: none;
+              margin-bottom: 10px;
+              padding-bottom: 40px;
+
+              &_wrapper {
+                text-align: center;
+                width: 100%;
+              }
+            }
+            .info {
+              max-width: none;
+            }
+          }
+          &-image {
+            &_wrapper {
+              width: 65%;
+              position: static;
+            }
+          }
+        }
+      }
+    }
   }
 }
 @media (max-width: 870px) {
@@ -2452,6 +2534,30 @@ body {
         }
       }
     }
+    &.shop {
+      .serv {
+        &-header {
+          &-image {
+            &_wrapper {
+              width: 80%;
+            }
+          }
+          &-main {
+            .title {
+              width: 100%;
+              &::after {
+                left: 0;
+                -webkit-transform: none;
+                -moz-transform: none;
+                -ms-transform: none;
+                -o-transform: none;
+                transform: none;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
 @media (max-width: 767px) {
@@ -2463,7 +2569,7 @@ body {
       margin-bottom: 30px;
     }
     &-header {
-      font-size: 30px;
+      font-size: 28px;
     }
     &-description {
       font-size: 15px;
@@ -2731,6 +2837,32 @@ body {
   .callback {
     padding: 50px 0 90px;
   }
+  .serv {
+    .process {
+      .section {
+        &-info {
+          margin-bottom: 30px;
+        }
+      }
+      &-image {
+        &_wrapper {
+          bottom: 0;
+        }
+      }
+      &-info {
+        padding-top: 30px;
+      }
+    }
+    &.shop {
+      .process {
+        &-image {
+          &_wrapper {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
 }
 @media(max-width: 699px) {
   .services {
@@ -2820,6 +2952,15 @@ body {
         .info {
           max-width: 100%;
         }
+      }
+    }
+    .process {
+      &-info {
+        width: 100%;
+        font-size: 14px;
+      }
+      &-text {
+        white-space: normal;
       }
     }
   }
@@ -3006,15 +3147,13 @@ body {
       &-image {
         &_wrapper {
           margin: 40px 0;
+          width: 100%;
         }
       }
       .container {
         &-self {
-          padding: 0 10px;
+          padding: 0 15px;
         }
-      }
-      &-main {
-        padding-left: 30px;
       }
       &-main {
         .title {
@@ -3027,6 +3166,22 @@ body {
         &_item {
           width: 300px;
           margin: 0 auto;
+        }
+      }
+    }
+    .process {
+      &-info {
+        text-align: center;
+      }
+    }
+    &.shop {
+      .serv {
+        &-header {
+          &-image {
+            &_wrapper {
+              width: 100%;
+            }
+          }
         }
       }
     }
