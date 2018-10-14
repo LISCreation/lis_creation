@@ -1,11 +1,18 @@
 <?php
+//Post data
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $email = $_POST['email'];
-// 0 - Поля не заполнены
-// 2 - Поле с номером заполнено не правильно
-// 3 - Поле с почтой заполнено не правильно
-// 4 - Отправка
+
+//Mail info
+$dest = htmlspecialchars('lis.lightinsky@gmail.com');
+$subject = 'Заявка с сайта '.$_SERVER['SERVER_NAME'];
+$msg = htmlspecialchars("Пришла заявка с сайта $_SERVER[SERVER_NAME]:\n
+Имя: $name\n
+Номер телефона: $phone\n
+Электронная почта: $email\n");
+
+
 $response = 0;
 if(isset($name) && isset($phone) && isset($email)) {
     if($name == '' || $phone == '' || $email == '') {
@@ -15,6 +22,7 @@ if(isset($name) && isset($phone) && isset($email)) {
             $response = 'incorrect';
         } else {
             $response = 'send';
+            mail($dest, $subject, $msg, ['From' => "master@$_SERVER[SERVER_NAME]"]);
         }
     }
 }
