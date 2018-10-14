@@ -1915,6 +1915,9 @@ body.work {
 .serv .process_press {
   width: 250px;
 }
+.serv .process-image {
+  object-fit: cover;
+}
 .serv .process-image_wrapper {
   -webkit-transform: scaleY(1.2);
   -moz-transform: scaleY(1.2);
