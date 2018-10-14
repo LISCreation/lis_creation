@@ -195,6 +195,7 @@ input, button, .btn {
     &_up {
       &_icon {
         &-wrapper {
+          .transition-3;
           margin-top: 100px;
           position: relative;
           &::before {
@@ -210,6 +211,9 @@ input, button, .btn {
             -ms-transform: translate(-50%, -100%);
             -o-transform: translate(-50%, -100%);
             transform: translate(-50%, -100%);
+          }
+          &:hover {
+            margin-top: 90px;
           }
         }
       }

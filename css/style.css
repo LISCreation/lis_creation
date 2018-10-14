@@ -98,6 +98,11 @@ button:focus,
   cursor: pointer;
 }
 .global-sidebar_up_icon-wrapper {
+  -webkit-transition: all ease .3s;
+  -moz-transition: all ease .3s;
+  -ms-transition: all ease .3s;
+  -o-transition: all ease .3s;
+  transition: all ease .3s;
   margin-top: 100px;
   position: relative;
 }
@@ -114,6 +119,9 @@ button:focus,
   -ms-transform: translate(-50%, -100%);
   -o-transform: translate(-50%, -100%);
   transform: translate(-50%, -100%);
+}
+.global-sidebar_up_icon-wrapper:hover {
+  margin-top: 90px;
 }
 .global-sidebar_middle .mono {
   overflow: hidden;

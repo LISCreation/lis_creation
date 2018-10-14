@@ -62,4 +62,23 @@ $(document).ready(function() {
         list.toggleClass('opened');
 
     });
+    //Mono slow scroll onclick
+    var monoLink = $('.mono-menu_item');
+    $('.mono-menu_item').click(function(e) {
+        e.preventDefault();
+        monoScroll($(this).find('a').attr('href'));
+    });
+    $('.anchor').click(function(e) {
+        e.preventDefault();
+        monoScroll($(this).attr('href'));
+    });
+    function monoScroll(link) {
+        if(link == "#toTop") {
+            var offset = 0;
+        } else {
+            var offset = $(link).offset().top - 50;
+        }
+        $('html, body').animate({scrollTop: offset}, 1200);
+    }
+    //to Top
 });
