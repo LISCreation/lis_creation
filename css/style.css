@@ -1969,6 +1969,9 @@ body.work {
 .serv.visit .process-image_wrapper {
   bottom: -30px;
 }
+.serv.promo .process-image_wrapper {
+  width: 50%;
+}
 @media (max-width: 1585px) {
   .serv-header-image {
     width: 100%;
@@ -1983,6 +1986,9 @@ body.work {
   }
   .serv.another .process-image_wrapper {
     width: 48vw;
+  }
+  .serv.promo .process-image_wrapper {
+    width: 50%;
   }
 }
 @media (max-width: 1250px) {
