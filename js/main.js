@@ -80,5 +80,4 @@ $(document).ready(function() {
         }
         $('html, body').animate({scrollTop: offset}, 1200);
     }
-    //to Top
 });

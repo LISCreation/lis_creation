@@ -223,11 +223,8 @@ button:focus,
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
 }
-.global-sidebar_down_icon-wrapper:nth-child(1) {
-  margin-bottom: 60px;
-}
-.global-sidebar_down_icon-wrapper:nth-child(2) {
-  margin-bottom: 100px;
+.global-sidebar_down_icon-wrapper {
+  margin-bottom: 20px;
 }
 .global-wrapper {
   width: calc(100% - 80px);
@@ -1431,13 +1428,27 @@ body.work {
   margin: 0;
 }
 .callback-form {
-  display: flex;
-  padding: 50px;
-  background-color: rgba(235, 235, 235, 0.5);
-  justify-content: space-around;
+  padding: 50px 50px 20px;
+  background-color: rgba(235, 235, 235, 0.8);
 }
 .callback-form-button {
   padding: 16px 35px;
+}
+.callback-form_inner {
+  display: flex;
+  justify-content: space-between;
+}
+.callback-form #callback_main_result {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-family: Raleway, Arial, sans-serif;
+  font-weight: 700;
+}
+.callback-form #callback_main_result .bad {
+  color: #eea849;
+}
+.callback-form #callback_main_result .good {
+  color: #5313b8;
 }
 .footer {
   padding: 40px 0;
@@ -2056,6 +2067,23 @@ body.work {
   .team-slider {
     margin: 0 auto;
   }
+  .callback-form_inner {
+    flex-wrap: wrap;
+  }
+  .callback-form .inp_wrapper {
+    width: 33%;
+  }
+  .callback-form .inp_wrapper input {
+    width: 100%;
+  }
+  .callback-form-button_wrapper {
+    width: 100%;
+    text-align: center;
+  }
+  .callback-form-button_wrapper .btn_roundness {
+    margin-top: 20px;
+    width: 33%;
+  }
 }
 @media (max-width: 1140px) {
   .team-slider_item-image {
@@ -2164,7 +2192,7 @@ body.work {
   .why-offers_item {
     margin-bottom: 50px;
   }
-  .callback-form {
+  .callback-form_inner {
     flex-wrap: wrap;
   }
   .callback-form .btn_roundness {
@@ -2887,21 +2915,11 @@ body.work {
   }
 }
 @media (max-height: 790px) {
-  .global-sidebar_middle .mono {
-    padding-top: 0;
-    padding-bottom: 0;
-    position: relative;
-    -webkit-transform: none;
-    -moz-transform: none;
-    -ms-transform: none;
-    -o-transform: none;
-    transform: none;
-  }
-  .global-sidebar_middle .mono-menu_item .tab {
-    white-space: nowrap;
+  .global-sidebar_middle {
+    display: none;
   }
   .global-sidebar_down_icon-wrapper {
-    margin-bottom: 40px !important;
+    margin-bottom: 40px;
   }
 }
 @media (min-width: 871px) and (max-height: 830px) {
@@ -2921,11 +2939,6 @@ body.work {
   }
   .achievements {
     padding-top: 80px;
-  }
-}
-@media (max-height: 600px) {
-  .global-sidebar_middle {
-    display: none;
   }
 }
 @media (max-height: 460px) {

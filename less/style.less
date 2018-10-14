@@ -311,12 +311,7 @@ input, button, .btn {
       }
       &_icon {
         &-wrapper {
-          &:nth-child(1) {
-            margin-bottom: 60px;
-          }
-          &:nth-child(2) {
-            margin-bottom: 100px;
-          }
+          margin-bottom: 20px;
         }
       }
     }
@@ -1503,12 +1498,25 @@ body {
     }
   }
   &-form {
-    display: flex;
-    padding: 50px;
-    background-color: @gray-light;
-    justify-content: space-around;
+    padding: 50px 50px 20px;
+    background-color: rgba(235,235,235,0.8);
     &-button {
       padding: 16px 35px;
+    }
+    &_inner {
+      display: flex;
+      justify-content: space-between;
+    }
+    #callback_main_result {
+      margin-top: 30px;
+      margin-bottom: 0;
+      .bold;
+      .bad {
+        color: @emotion;
+      }
+      .good {
+        color: @space-light;
+      }
     }
   }
 }
@@ -2184,7 +2192,29 @@ body {
       margin: 0 auto;
     }
   }
-
+  .callback {
+    &-form {
+      &_inner {
+        flex-wrap: wrap;
+      }
+      .inp_wrapper {
+        width: 33%;
+        input {
+          width: 100%;
+        }
+      }
+      &-button {
+        &_wrapper {
+          width: 100%;
+          text-align: center;
+          .btn_roundness {
+            margin-top: 20px;
+            width: 33%;
+          }
+        }
+      }
+    }
+  }
 }
 @media(max-width: 1140px) {
   .team {
@@ -2353,7 +2383,9 @@ body {
   }
   .callback {
     &-form {
-      flex-wrap: wrap;
+      &_inner {
+        flex-wrap: wrap;
+      }
       .btn {
         &_roundness {
           width: 100%;
@@ -3316,33 +3348,16 @@ body {
     }
   }
 }
-
 @media(max-height: 790px) {
   .global {
     &-sidebar {
       &_middle {
-        .mono {
-          padding-top: 0;
-          padding-bottom: 0;
-          position: relative;
-          -webkit-transform: none;
-          -moz-transform: none;
-          -ms-transform: none;
-          -o-transform: none;
-          transform: none;
-          &-menu {
-            &_item {
-              .tab {
-                white-space: nowrap;
-              }
-            }
-          }
-        }
+        display: none;
       }
       &_down {
         &_icon {
           &-wrapper {
-            margin-bottom: 40px !important;
+            margin-bottom: 40px;
           }
         }
       }
@@ -3376,17 +3391,6 @@ body {
     padding-top: 80px;
   }
 }
-
-@media(max-height: 600px) {
-  .global {
-    &-sidebar {
-      &_middle {
-        display: none;
-      }
-    }
-  }
-}
-
 @media(max-height: 460px) {
   .header {
     &-main {
