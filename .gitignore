@@ -1,3 +1,4 @@
 #Global .idea ignore#
 .idea
-./**/.idea
+/**/.idea
+/**/.idea/**
