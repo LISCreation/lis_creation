@@ -1,4 +1,3 @@
-@import "http://fonts.fontstorage.com/import/caveat.css";
 @font-face {
   font-family: 'Raleway';
   src: local('Raleway ExtraLight'), local('Raleway-ExtraLight'), url('../fonts/ralewayextralight.woff2') format('woff2'), url('../fonts/ralewayextralight.woff') format('woff'), url('../fonts/ralewayextralight.ttf') format('truetype');
@@ -33,6 +32,18 @@
   font-family: 'Raleway';
   src: local('Raleway Black'), local('Raleway-Black'), url('../fonts/ralewayblack.woff2') format('woff2'), url('../fonts/ralewayblack.woff') format('woff'), url('../fonts/ralewayblack.ttf') format('truetype');
   font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Caveat';
+  src: local('Caveat Regular'), local('Caveat-Regular'), url('../fonts/caveat-400.woff2') format('woff2'), url('../fonts/caveat-400.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Caveat';
+  src: local('Caveat Bold'), local('Caveat-Bold'), url('../fonts/caveat-700.woff2') format('woff2'), url('../fonts/caveat-700.woff') format('woff');
+  font-weight: 700;
   font-style: normal;
 }
 ul {
