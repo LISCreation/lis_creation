@@ -1102,6 +1102,12 @@ body.work {
 .works-list_item:hover .work-opened {
   top: 0;
 }
+.works .btn {
+  max-width: inherit;
+}
+.works .btn_roundness {
+  max-width: 100%;
+}
 .team {
   background: url(../img/light.jpg) no-repeat center / cover;
   color: #fff;
@@ -1417,7 +1423,7 @@ body.work {
   margin: 0;
 }
 .callback {
-  padding: 110px 0 160px!important;
+  padding: 110px 0 160px;
 }
 .callback .section-info {
   margin-bottom: 80px;
@@ -2756,7 +2762,8 @@ body.work {
   .header-menu-list {
     position: static;
     max-width: 100%;
-    padding: 15px;
+    padding: 25px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent);
     width: 100%;
     font-size: 4vw;
   }
@@ -2860,7 +2867,6 @@ body.work {
 }
 @media (max-width: 420px) {
   .header-menu-list {
-    padding: 5px;
     font-size: 4.5vw;
   }
   .work-header-init_service {
@@ -2900,6 +2906,9 @@ body.work {
     font-size: 14px;
     margin-bottom: 5px;
   }
+  .works-link-button {
+    padding: 16px 10px;
+  }
   .footer-contacts {
     text-align: center;
     flex-direction: column;
@@ -2918,6 +2927,9 @@ body.work {
   .serv-header-main .info {
     font-size: 14px;
     margin-bottom: 20px;
+  }
+  .callback-form {
+    padding: 40px 20px 20px 20px;
   }
 }
 @media (min-height: 1080px) {
@@ -2946,8 +2958,11 @@ body.work {
   .header-main-title {
     top: 50%;
   }
+  .header-main-logo {
+    width: 80px;
+  }
   .header_mouse__wrapper {
-    bottom: 5vh;
+    display: none;
   }
   .achievements {
     padding-top: 80px;
@@ -2968,6 +2983,9 @@ body.work {
     width: 80px;
   }
   .header_mouse {
+    display: none;
+  }
+  .header::after {
     display: none;
   }
 }

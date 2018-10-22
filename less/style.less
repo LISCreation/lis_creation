@@ -1171,6 +1171,12 @@ body {
       }
     }
   }
+  .btn {
+    max-width: inherit;
+    &_roundness {
+      max-width: 100%;
+    }
+  }
 }
 .team {
   background: url(../img/light.jpg) no-repeat center / cover;
@@ -1486,7 +1492,7 @@ body {
   }
 }
 .callback {
-  padding: 110px 0 160px!important;
+  padding: 110px 0 160px;
   .section {
     &-info {
       margin-bottom: 80px;
@@ -3107,7 +3113,8 @@ body {
       &-list {
         position: static;
         max-width: 100%;
-        padding: 15px;
+        padding: 25px;
+        background: linear-gradient(180deg, rgba(0,0,0,.5), transparent);
         width: 100%;
         font-size: 4vw;
         &_item {
@@ -3287,7 +3294,6 @@ body {
   .header {
     &-menu {
       &-list {
-        padding: 5px;
         font-size: 4.5vw;
       }
     }
@@ -3346,6 +3352,13 @@ body {
       }
     }
   }
+  .works {
+    &-link {
+      &-button {
+        padding: 16px 10px;
+      }
+    }
+  }
   .footer {
     &-contacts {
       text-align: center;
@@ -3373,6 +3386,11 @@ body {
           margin-bottom: 20px;
         }
       }
+    }
+  }
+  .callback {
+    &-form {
+      padding: 40px 20px 20px 20px;
     }
   }
 }
@@ -3416,10 +3434,13 @@ body {
       &-title {
         top: 50%;
       }
+      &-logo {
+        width: 80px;
+      }
     }
     &_mouse {
       &__wrapper {
-        bottom: 5vh;
+        display: none;
       }
     }
   }
@@ -3443,6 +3464,9 @@ body {
       }
     }
     &_mouse {
+      display: none;
+    }
+    &::after {
       display: none;
     }
   }
