@@ -454,6 +454,7 @@ body {
   font-family: Raleway, Arial, sans-serif;
   font-weight: 400;
   color: #515151;
+  overflow-x: hidden;
   letter-spacing: 1.1px;
 }
 body.work {
@@ -1451,7 +1452,7 @@ body.work {
 }
 .callback-form_inner {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .callback-form #callback_main_result {
   margin-top: 30px;
@@ -1845,10 +1846,6 @@ body.work {
   -ms-transform: translate(-100%, -50%);
   -o-transform: translate(-100%, -50%);
   transform: translate(-100%, -50%);
-}
-.serv section {
-  padding-top: 150px;
-  padding-bottom: 0;
 }
 .serv-header {
   position: relative;
@@ -2319,13 +2316,10 @@ body.work {
     padding-top: 0;
   }
   .serv .process {
-    padding: 100px 0;
+    padding: 70px 0;
   }
   .serv .process-info {
     width: 90%;
-  }
-  .serv section {
-    padding: 100px 0 0;
   }
   .serv-header {
     height: auto;
@@ -2380,11 +2374,6 @@ body.work {
     transform: none;
   }
 }
-/*
-TODO: Меню в услугах расширить / сделать моб.версию меню
-TODO: Добавить расстояние в секции задачи в услугах
-TODO: После формы добавить расстояние
-*/
 @media (max-width: 767px) {
   section {
     padding: 0 0 50px;
@@ -2778,7 +2767,7 @@ TODO: После формы добавить расстояние
   .header-menu-list {
     position: static;
     max-width: 100%;
-    padding: 25px;
+    padding: 25px 15px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent);
     width: 100%;
     font-size: 4vw;
@@ -2851,12 +2840,15 @@ TODO: После формы добавить расстояние
   .work-header .owl-next {
     right: 20px;
   }
+  .serv-header-content_wrapper {
+    padding: 0 15px;
+  }
   .serv-header-image_wrapper {
     margin: 40px 0;
     width: 100%;
   }
   .serv-header .container-self {
-    padding: 0 15px;
+    padding: 0;
   }
   .serv-header-main .title {
     width: 100%;
@@ -2978,7 +2970,13 @@ TODO: После формы добавить расстояние
     width: 80px;
   }
   .header_mouse__wrapper {
+    bottom: 30px;
+  }
+  .header::after {
     display: none;
+  }
+  .header.serv-header::after {
+    display: block;
   }
   .achievements {
     padding-top: 80px;
@@ -3003,5 +3001,8 @@ TODO: После формы добавить расстояние
   }
   .header::after {
     display: none;
+  }
+  .header.serv-header::after {
+    display: block;
   }
 }

@@ -552,6 +552,7 @@ input, button, .btn {
 body {
   .regular;
   color: @dark;
+  overflow-x: hidden;
   letter-spacing: 1.1px;
   &.work {
     letter-spacing: 2.5px;
@@ -1520,7 +1521,7 @@ body {
     }
     &_inner {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
     }
     #callback_main_result {
       margin-top: 30px;
@@ -1907,10 +1908,6 @@ body {
 }
 //tmpstyle: Service
 .serv {
-  section {
-    padding-top: 150px;
-    padding-bottom: 0;
-  }
   &-header {
     position: relative;
     vertical-align: middle;
@@ -2577,13 +2574,10 @@ body {
       padding-top: 0;
     }
     .process {
-      padding: 100px 0;
+      padding: 70px 0;
       &-info {
         width: 90%;
       }
-    }
-    section {
-      padding: 100px 0 0;
     }
     &-header {
       height: auto;
@@ -2651,11 +2645,6 @@ body {
     }
   }
 }
-/*
-TODO: Меню в услугах расширить / сделать моб.версию меню
-TODO: Добавить расстояние в секции задачи в услугах
-TODO: После формы добавить расстояние
-*/
 @media (max-width: 767px) {
   section {
     padding: 0 0 50px;
@@ -3128,7 +3117,7 @@ TODO: После формы добавить расстояние
       &-list {
         position: static;
         max-width: 100%;
-        padding: 25px;
+        padding: 25px 15px;
         background: linear-gradient(180deg, rgba(0,0,0,.5), transparent);
         width: 100%;
         font-size: 4vw;
@@ -3241,6 +3230,11 @@ TODO: После формы добавить расстояние
   }
   .serv {
     &-header {
+      &-content {
+        &_wrapper {
+          padding: 0 15px;
+        }
+      }
       &-image {
         &_wrapper {
           margin: 40px 0;
@@ -3249,7 +3243,7 @@ TODO: После формы добавить расстояние
       }
       .container {
         &-self {
-          padding: 0 15px;
+          padding: 0;
         }
       }
       &-main {
@@ -3455,8 +3449,14 @@ TODO: После формы добавить расстояние
     }
     &_mouse {
       &__wrapper {
-        display: none;
+        bottom: 30px;
       }
+    }
+    &::after {
+      display: none;
+    }
+    &.serv-header::after {
+      display: block;
     }
   }
   .achievements {
@@ -3483,6 +3483,9 @@ TODO: После формы добавить расстояние
     }
     &::after {
       display: none;
+    }
+    &.serv-header::after {
+      display: block;
     }
   }
 }
