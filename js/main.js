@@ -76,7 +76,7 @@ $(document).ready(function() {
         if(link == "#toTop") {
             var offset = 0;
         } else {
-            var offset = $(link).offset().top - 50;
+            var offset = $(link).offset().top;
         }
         $('html, body').animate({scrollTop: offset}, 1200);
     }
