@@ -1776,7 +1776,7 @@ body.work {
   padding: 30px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .work-header-list_wrapper {
   position: fixed;
