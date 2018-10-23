@@ -1,4 +1,9 @@
 $(document).ready(function() {
+    //Loader
+    setTimeout(function() {
+        $('.pre').fadeOut();
+        $('.pre_loader').addClass('loaded');
+    }, 1600);
     //Slider
     var owl = $('.owl-carousel.services-list');
     owl.owlCarousel({
