@@ -403,7 +403,7 @@
             </div>
             <form action="javascript:void(null)" id="callback_main" method="post" class="callback-form">
                 <div class="callback-form_inner">
-                    <div class="inp_wrapper">
+                    <div class="inp_wrapper required">
                         <input type="text" name="name" placeholder="Ваше имя" class="inp callback-form-input">
                         <span class="inp_starlet">*</span>
                     </div>
@@ -420,7 +420,7 @@
                         <input type="number" name="phone" placeholder="Введите номер" class="inp callback-form-input phone_inp">
                         <span class="inp_starlet">*</span>
                     </div>
-                    <div class="inp_wrapper">
+                    <div class="inp_wrapper required">
                         <input type="email" name="email" placeholder="Ваш E-mail" class="inp callback-form-input">
                         <span class="inp_starlet">*</span>
                     </div>
@@ -507,11 +507,10 @@
                 success: function (response) { //Данные отправлены успешно
                     document.querySelector('#callback_main_result').innerHTML = response;
                     setTimeout(function() {
-                        document.getElementById('callback_main').trigger('reset');
+                        $(".inp").val('');
                     }, 1200);
                 }
             });
-            $(this).removeClass('callback-form-button');
         });
 </script>
 <script src="js/jQuery.scrollSpeed.js"></script>
