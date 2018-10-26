@@ -408,14 +408,16 @@ input, button, .btn {
   border: none;
   &_wrapper {
     position: relative;
-    &::after {
-      color: @space-light;
-      content:'*';
-      position: absolute;
-      top: 10px;
-      left: 20px;
-      height: 30px;
-      font-size: 40px;
+    &.required {
+      &::after {
+        color: @space-light;
+        content:'*';
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        height: 30px;
+        font-size: 40px;
+      }
     }
   }
   &_starlet {

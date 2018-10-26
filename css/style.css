@@ -324,7 +324,7 @@ button:focus,
 .inp_wrapper {
   position: relative;
 }
-.inp_wrapper::after {
+.inp_wrapper.required::after {
   color: #5313b8;
   content: '*';
   position: absolute;

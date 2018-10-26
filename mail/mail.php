@@ -11,16 +11,71 @@ require 'PHPMailer/SMTP.php';
 
 //Mail data
 $name = $_POST['name'];
-$phone = $_POST['phone'];
+$phone = $_POST['phone'] != '' ? $_POST['phone'] : false;
+if($phone == false) {
+    $hint = true;
+    $phone = 'Отсутствует';
+}
 $email = $_POST['email'];
+
+//Construction
+$msg = "
+<html>
+<head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <style type='text/css'>
+        table {
+            color: #fff;
+        }
+        table, th, td {
+            padding: 5px;
+            border-radius: 5px;
+        }
+        h3 {
+            background: #5313b8;
+        }
+        h3 > a {
+            color: #fff;
+        }
+        .hint {
+            display: inline-block;
+            margin: 5px;
+            padding: 5px;
+            font-size: 12px;
+            color: gray;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    Заявка с сайта <a href='http://lis-creation.pro'>lis-creation.pro</a>
+    Откройте описание
+    <table border='1' bgcolor='#5313b8'>
+        <tr>
+            <th>Тип заявки</th>
+            <th>Имя</th>
+            <th>Телефон</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>Обратный звонок</td>
+            <td>$name</td>
+            <td>$phone</td>
+            <td>$email</td>
+        </tr>
+    </table>";
+if($hint) {
+    $msg .= "<div class='hint'>*При отсутствии телефона требуется связаться с заказчиком по эл. почте*</div>";
+}
+$msg .= "</body></html>";
 
 //Condition
 $response = 0;
 if(isset($name) && isset($phone) && isset($email)) {
-    if($name == '' || $phone == '' || $email == '') {
+    if($name == '' || $email == '') {
         $response = 'empty';
     } else {
-        if(strlen($name) < 3 || strlen($phone) < 9 || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        if(strlen($name) < 3 || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
             $response = 'incorrect';
         } else {
             //Mail
@@ -37,46 +92,7 @@ if(isset($name) && isset($phone) && isset($email)) {
             $mail->SetFrom('lis-creation@mail.ru', 'Бот рассылки LIS');
             $mail->AddAddress('lis.lightinsky@gmail.com', 'Gromov Alex');
             $mail->Subject = 'Поступила заявка с сайта lis-creation.pro';
-            $mail->MsgHTML("
-            <html>
-            <head>
-                <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
-                <style type='text/css'>
-                    table {
-                        color: #fff;
-                    }
-                    table, th, td {
-                        padding: 5px;
-                        border-radius: 5px;
-                    }
-                    h3 {
-                        background: #5313b8;
-                    }
-                    h3 > a {
-                        color: #fff;
-                    }
-                </style>
-            </head>
-            <body>
-                Заявка с сайта <a href='http://lis-creation.pro'>lis-creation</a>
-                Откройте описание
-                <table border='1' bgcolor='#5313b8'>
-                    <tr>
-                        <th>Тип заявки</th>
-                        <th>Имя</th>
-                        <th>Телефон</th>
-                        <th>Email</th>
-                    </tr>
-                    <tr>
-                        <td>Обратный звонок</td>
-                        <td>$name</td>
-                        <td>$phone</td>
-                        <td>$email</td>
-                    </tr>
-                </table>
-            </body>
-            </html>
-            ");
+            $mail->MsgHTML($msg);
             if($mail->send()) {
                 $response = 'send';
             } else {
