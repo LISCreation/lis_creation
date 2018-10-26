@@ -407,8 +407,17 @@
                         <input type="text" name="name" placeholder="Ваше имя" class="inp callback-form-input">
                         <span class="inp_starlet">*</span>
                     </div>
+                    <style>
+                        form input[type='number'] {
+                            -moz-appearance:textfield;
+                        }
+                        form input::-webkit-outer-spin-button,
+                        form input::-webkit-inner-spin-button {
+                            -webkit-appearance: none;
+                        }
+                    </style>
                     <div class="inp_wrapper">
-                        <input type="tel" name="phone" placeholder="Введите номер" class="inp callback-form-input phone_inp">
+                        <input type="number" name="phone" placeholder="Введите номер" class="inp callback-form-input phone_inp">
                         <span class="inp_starlet">*</span>
                     </div>
                     <div class="inp_wrapper">
@@ -488,7 +497,7 @@
 <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script>
-    $(".callback-form-button").click(function(e){
+    $(".callback-form-button_wrapper").click(function(e){
         e.preventDefault();
             $.ajax({
                 url: 'mail/mail.php', //url страницы (action_ajax_form.php)
@@ -497,6 +506,9 @@
                 data: $("#callback_main").serialize(),  // Сеарилизуем объект
                 success: function (response) { //Данные отправлены успешно
                     document.querySelector('#callback_main_result').innerHTML = response;
+                    setTimeout(function() {
+                        document.getElementById('callback_main').trigger('reset');
+                    }, 1200);
                 }
             });
             $(this).removeClass('callback-form-button');
