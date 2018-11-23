@@ -1,5 +1,5 @@
 //tmpstyle: Colors
-@dark: #515151;
+@dark: #313131;
 @line: #757575;
 @space-dark: #190537;
 @space-light: #5313b8;
@@ -16,44 +16,8 @@
 @overlay: rgba(0,0,0,.4);
 
 //tmpstyle: Fonts
-//Raleway
-
-@font-face {
-  font-family: 'Raleway';
-  src: local('Raleway ExtraLight'), local('Raleway-ExtraLight'), url('../fonts/ralewayextralight.woff2') format('woff2'), url('../fonts/ralewayextralight.woff') format('woff'), url('../fonts/ralewayextralight.ttf') format('truetype');
-  font-weight: 200;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Raleway';
-  src: local('Raleway Light'), local('Raleway-Light'), url('../fonts/ralewaylight.woff2') format('woff2'), url('../fonts/ralewaylight.woff') format('woff'), url('../fonts/ralewaylight.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Raleway';
-  src: local('Raleway Regular'), local('Raleway-Regular'), url('../fonts/ralewayregular.woff2') format('woff2'), url('../fonts/ralewayregular.woff') format('woff'), url('../fonts/ralewayregular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Raleway';
-  src: local('Raleway Medium'), local('Raleway-Medium'), url('../fonts/ralewaymedium.woff2') format('woff2'), url('../fonts/ralewaymedium.woff') format('woff'), url('../fonts/ralewaymedium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Raleway';
-  src: local('Raleway Bold'), local('Raleway-Bold'), url('../fonts/ralewaybold.woff2') format('woff2'), url('../fonts/ralewaybold.woff') format('woff'), url('../fonts/ralewaybold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Raleway';
-  src: local('Raleway Black'), local('Raleway-Black'), url('../fonts/ralewayblack.woff2') format('woff2'), url('../fonts/ralewayblack.woff') format('woff'), url('../fonts/ralewayblack.ttf') format('truetype');
-  font-weight: 900;
-  font-style: normal;
-}
+//GraphikLCG
+@import 'https://cdn.rawgit.com/mfd/e7842774e037edf15919037594a79b2b/raw/665bdfc532094318449f1010323c84013d5af953/graphik.css';
 //Caveat
 @font-face {
   font-family: 'Caveat';
@@ -71,27 +35,27 @@
 
 //tmpstyle: Fonts Models
 .light() {
-  font-family: Raleway, Arial, sans-serif;
+  font-family: 'Graphik', Arial, sans-serif;
   font-weight: 300;
 }
 .regular() {
-  font-family: Raleway, Arial, sans-serif;
+  font-family: 'Graphik', Arial, sans-serif;
   font-weight: 400;
 }
 .medium() {
-  font-family: Raleway, Arial, sans-serif;
+  font-family: 'Graphik', Arial, sans-serif;
   font-weight: 500;
 }
 .semi-bold() {
-  font-family: Raleway, Arial, sans-serif;
+  font-family: 'Graphik', Arial, sans-serif;
   font-weight: 600;
 }
 .bold() {
-  font-family: Raleway, Arial, sans-serif;
-  font-weight: 700;
+  font-family: 'Graphik', Arial, sans-serif;
+  font-weight: 900;
 }
 .black() {
-  font-family: Raleway, Arial, sans-serif;
+  font-family: 'Graphik', Arial, sans-serif;
   font-weight: 900;
 }
 .caveat() {
@@ -425,79 +389,57 @@ input, button, .btn {
   }
 }
 
-@btn-border: 3px;
-.btn {
-  color: @light;
-  padding: 16px 34px;
-  font-size: 16px;
-  -webkit-border-radius: @btn-border;
-  -moz-border-radius: @btn-border;
-  border-radius: @btn-border;
-  z-index: 2;
+.cst_btn {
+  display: inline-block;
   position: relative;
-  background-color: transparent;
-  &_roundness {
-    background-image: linear-gradient(to right, @space-dark 0%, @space-light 100%);
-    -webkit-border-radius: @btn-border;
-    -moz-border-radius: @btn-border;
-    border-radius: @btn-border;
-    display: inline-block;
-    position: relative;
-    &::before {
-      .transition-2;
-      content:'';
-      -webkit-border-radius: @btn-border;
-      -moz-border-radius: @btn-border;
-      border-radius: @btn-border;
-      position: absolute;
-      border: 1px solid #210e3f;
-      bottom: 5px;
-      left: 5px;
-      width: 100%;
-      height: 100%;
+  background: #313131;
+  border-radius: 50px;
+  position: relative;
+  opacity: .9;
+  .transition-3;
+  &.reverse {
+    background: @emotion;
+    &:hover::after {
+      -webkit-transform: scale(1.01);
+      -moz-transform: scale(1.01);
+      -ms-transform: scale(1.01);
+      -o-transform: scale(1.01);
+      transform: scale(1.01);
     }
+  }
+  &:hover {
+    opacity: 1;
     &::after {
-      .transition-2;
-      content:'';
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-image: linear-gradient(to right, @emotion-dark 0%, @emotion 100%);
-      width: 0;
-      height: 100%;
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -ms-transform: scale(1);
+      -o-transform: scale(1);
+      transform: scale(1);
     }
-    &:hover {
-      &::before, &::after {
-        left: 0;
-        bottom: 0;
-      }
-      &::after {
-        width: 100%;
-        animation: buttonFill .3s ease;
-      }
-      @keyframes buttonFill {
-        from {
-          width: 0;
-        }
-        50% {
-          width: 110%;
-        }
-        to {
-          width: 100%;
-        }
-      }
-    }
-    &-reverse {
-      background-image: linear-gradient(to right, @emotion-dark 0%, @emotion 100%);
-      &:before {
-        border: 2px solid @emotion-dark;
-      }
-      &::after {
-        left: 0;
-        right: 0;
-        background-image: linear-gradient(to right, lighten(@space-dark, 20%) 0%, lighten(@space-light, 20%) 100%);
-      }
-    }
+  }
+  &::after {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    background: #5313b8;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+    transition: inherit;
+  }
+  span {
+    position: relative;
+    z-index: 1;
+    display: inherit;
+    padding: 20px 25px;
+    border-radius: inherit;
+    color: #ffffff;
   }
 }
 
@@ -761,7 +703,7 @@ body {
       margin-bottom: 30px;
     }
     &-chant {
-      font-size: 20px;
+      font-size: 30px;
       .bold;
       text-transform: uppercase;
       margin-bottom: 25px;
