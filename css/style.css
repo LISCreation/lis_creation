@@ -92,7 +92,7 @@ button:focus,
   bottom: 0;
   width: 80px;
   height: 100%;
-  background-color: #0d021c;
+  background-color: #5313b8;
   text-align: center;
 }
 .global-sidebar.global-sidebar_work .global-sidebar_up_icon {
@@ -302,6 +302,9 @@ button:focus,
   display: none;
 }
 .cst_btn {
+  -webkit-box-shadow: 0px 0px 19px 0px rgba(50, 50, 50, 0.4);
+  -moz-box-shadow: 0px 0px 19px 0px rgba(50, 50, 50, 0.4);
+  box-shadow: 0px 0px 19px 0px rgba(50, 50, 50, 0.4);
   display: inline-block;
   background: #313131;
   border-radius: 50px;
@@ -792,8 +795,6 @@ body.work {
   -ms-transition: all ease .3s;
   -o-transition: all ease .3s;
   transition: all ease .3s;
-  background-image: linear-gradient(45deg, rgba(244, 107, 69, 0.9) 0%, rgba(238, 168, 73, 0.9) 100%);
-  position: absolute;
   width: 100%;
   -webkit-transform: perspective(500px) rotateX(30deg) scale(0.4);
   -moz-transform: perspective(500px) rotateX(30deg) scale(0.4);
@@ -815,16 +816,6 @@ body.work {
   padding: 0 10px;
   font-size: 18px;
   margin-bottom: 55px;
-}
-.header.portfolio .portfolio-list_item-link .btn_roundness {
-  width: 60%;
-}
-.header.portfolio .portfolio-list_item-link .btn_roundness:hover::before {
-  bottom: 5px;
-  left: 5px;
-}
-.header.portfolio .portfolio-list_item-link .btn_roundness::after {
-  display: none;
 }
 .header.portfolio .portfolio-list_item:nth-child(25n+1) {
   grid-row: span 4;
@@ -939,19 +930,35 @@ body.work {
 .achievements {
   text-align: center;
 }
+.achievements-list_item {
+  background: #5313b8;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  padding: 30px 10px;
+  -webkit-transition: all ease .3s;
+  -moz-transition: all ease .3s;
+  -ms-transition: all ease .3s;
+  -o-transition: all ease .3s;
+  transition: all ease .3s;
+}
+.achievements-list_item:hover {
+  background: #5d15cf;
+}
 .achievements-list_item-num {
   font-size: 80px;
   font-family: 'Graphik', Arial, sans-serif;
   font-weight: 900;
-  background-image: linear-gradient(0deg, #190537, #5313b8 70%);
+  background: #fff;
+  opacity: .8;
   color: #fff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 10px -10px 0 rgba(84, 19, 184, 0.1);
 }
 .achievements-list_item-designation {
   font-size: 20px;
-  color: #5313b8;
+  color: #fff;
+  margin: 0;
 }
 .works {
   text-align: center;
@@ -1091,13 +1098,10 @@ body.work {
 .works .btn {
   max-width: inherit;
 }
-.works .btn_roundness {
-  max-width: 100%;
-}
 .team {
   background: url(../img/light.jpg) no-repeat center / cover;
   color: #fff;
-  padding: 0;
+  padding: 0 0 40px;
 }
 .team .section-info {
   margin-top: 130px;
@@ -1173,7 +1177,7 @@ body.work {
 }
 .team-desc {
   white-space: pre-line;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .team-desc p {
   margin: 0;
@@ -1194,9 +1198,6 @@ body.work {
   -moz-border-radius: 50%;
   border-radius: 50%;
   border: 2px dashed #fff;
-}
-.team .btn_roundness {
-  margin-bottom: 100px;
 }
 .team-button {
   padding: 14px 61px;
@@ -1269,34 +1270,8 @@ body.work {
   -o-transition: all ease .3s;
   transition: all ease .3s;
 }
-.services-list .owl-item .btn_roundness {
-  background-image: linear-gradient(to right, #190537 0%, #5313b8 100%);
-}
-.services-list .owl-item .btn_roundness::before {
-  border: 2px solid #5313b8;
-}
-.services-list .owl-item .btn_roundness:hover::before {
-  bottom: 5px;
-  left: 5px;
-}
-.services-list .owl-item .btn_roundness:hover::after {
-  display: none;
-}
 .services-list .owl-item.center {
   opacity: 1;
-}
-.services-list .owl-item.center .btn_roundness {
-  background-image: linear-gradient(to right, #f48f45 0%, #eea849 100%);
-}
-.services-list .owl-item.center .btn_roundness::before {
-  border: 2px solid #eea849;
-}
-.services-list .owl-item.center .btn_roundness::after {
-  display: block;
-}
-.services-list .owl-item.center .btn_roundness:hover::before {
-  left: 0;
-  bottom: 0;
 }
 .services-list .owl-dots {
   display: flex;
@@ -2097,10 +2072,6 @@ body.work {
     width: 100%;
     text-align: center;
   }
-  .callback-form-button_wrapper .btn_roundness {
-    margin-top: 20px;
-    width: 33%;
-  }
 }
 @media (max-width: 1140px) {
   .team-slider_item-image {
@@ -2217,10 +2188,6 @@ body.work {
   }
   .callback-form_inner {
     flex-wrap: wrap;
-  }
-  .callback-form .btn_roundness {
-    width: 100%;
-    text-align: center;
   }
   .callback .inp {
     width: 100%;
@@ -2474,9 +2441,6 @@ body.work {
   .team-desc {
     margin-bottom: 0;
     text-align: left;
-  }
-  .team .btn_roundness {
-    margin: 0 auto 50px;
   }
   .services {
     padding-top: 50px;
@@ -2791,9 +2755,6 @@ body.work {
   }
   .header.portfolio .portfolio-list_item-label {
     font-size: 15px;
-  }
-  .header.portfolio .portfolio-list_item-link .btn_roundness {
-    width: 80%;
   }
   .team-slider {
     width: 100%;
