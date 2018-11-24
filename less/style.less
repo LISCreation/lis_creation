@@ -361,6 +361,9 @@ input, button, .btn {
   }
 }
 .inp {
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
   padding: 20px 35px;
   font-size: 14px;
   .light;
@@ -372,10 +375,9 @@ input, button, .btn {
         color: @space-light;
         content:'*';
         position: absolute;
-        top: 10px;
+        top: 20px;
         left: 20px;
-        height: 30px;
-        font-size: 40px;
+        font-size: 20px;
       }
     }
   }
@@ -1168,13 +1170,13 @@ body {
       text-align: right;
       background-color: @light;
       color: #000000;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      border-radius: 20px;
       .block-shadow;
       position: absolute;
       .caveat;
       &-image {
-        -webkit-border-radius: inherit;
-        -moz-border-radius: inherit;
-        border-radius: inherit;
         padding-top: 20px;
         width: 100%;
         height: 315px;
@@ -1325,6 +1327,17 @@ body {
         padding: 0 20px;
         justify-content: center;
         margin-top: 50px;
+        button {
+          @border-radius_slider: 30px;
+          &:first-child{
+            border-top-left-radius: @border-radius_slider;
+            border-bottom-left-radius: @border-radius_slider;
+          }
+          &:last-child{
+            border-top-right-radius: @border-radius_slider;
+            border-bottom-right-radius: @border-radius_slider;
+          }
+        }
       }
       &-dot {
         background-color: @ghosty!important;
@@ -1339,6 +1352,9 @@ body {
       margin: 40px 15px;
       position: relative;
       .block-shadow;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      border-radius: 25px;
       padding: 40px;
       text-align: center;
       &-title {
@@ -1448,6 +1464,9 @@ body {
   }
   &-form {
     padding: 50px 50px 20px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
     background-color: rgba(235,235,235,0.8);
     &-button {
       padding: 16px 35px;
