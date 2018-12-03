@@ -1978,6 +1978,7 @@ body.work {
   padding: 0 40px;
 }
 .serv-header-content {
+  position: relative;
   padding-top: 100px;
   display: flex;
   margin: auto;
@@ -2169,7 +2170,6 @@ body.work {
   }
   .serv-header-content {
     justify-content: flex-start;
-    position: relative;
   }
   .serv-header-image_wrapper {
     position: absolute;
