@@ -85,9 +85,6 @@ $(document).ready(function() {
         }
         $('html, body').animate({scrollTop: offset}, 1200);
     }
-    $(function() {
-        $.scrollSpeed(120, 1200);
-    });
     var isMobile = {
         Android: function() {
             return navigator.userAgent.match(/Android/i);
@@ -113,4 +110,15 @@ $(document).ready(function() {
     }
     $('li.menu-item-has-children > a').click(function(e) {e.preventDefault()});
     $('li').on('mousemove', function(e) {e.preventDefault()});
+
+    $('.services-list_item-morebtn').on('click', function(e) {
+        e.preventDefault();
+        var sliderItem = $(this).parent().parent().parent();
+        sliderItem.addClass('opened');
+    });
+    $('.panel_back').on('click', function(e) {
+        e.preventDefault();
+        var sliderItem = $(this).parent().parent();
+        sliderItem.removeClass('opened');
+    })
 });
