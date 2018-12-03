@@ -114,6 +114,7 @@ $(document).ready(function() {
     $('.services-list_item-morebtn').on('click', function(e) {
         e.preventDefault();
         var sliderItem = $(this).parent().parent().parent();
+        $('.services-list_item_wrapper').removeClass('opened');
         sliderItem.addClass('opened');
     });
     $('.panel_back').on('click', function(e) {
