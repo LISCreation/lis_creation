@@ -785,6 +785,7 @@ body {
   &.portfolio {
     background: transparent;
     height: auto;
+    padding-top: 0;
     padding-bottom: 150px;
     &::after {
       content:'';
@@ -1205,7 +1206,7 @@ body {
     &_item {
       text-align: right;
       background-color: @light;
-      color: #000000;
+      color: @dark;
       -webkit-border-radius: 50px;
       -moz-border-radius: 50px;
       border-radius: 20px;
@@ -1839,6 +1840,12 @@ body {
         z-index: 2;
         display: flex;
         justify-content: space-around;
+        > div {
+          width: 100%/3;
+          display: flex;
+          justify-content: center;
+          padding: 0 5px;
+        }
       }
     }
     &-slider {

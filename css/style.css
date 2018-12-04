@@ -710,6 +710,7 @@ body.work {
 .header.portfolio {
   background: transparent;
   height: auto;
+  padding-top: 0;
   padding-bottom: 150px;
 }
 .header.portfolio::after {
@@ -1158,7 +1159,7 @@ body.work {
 .team-slider_item {
   text-align: right;
   background-color: #fff;
-  color: #000000;
+  color: #313131;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   border-radius: 20px;
@@ -1784,6 +1785,12 @@ body.work {
   z-index: 2;
   display: flex;
   justify-content: space-around;
+}
+.work-header-init__list > div {
+  width: 33.33333333%;
+  display: flex;
+  justify-content: center;
+  padding: 0 5px;
 }
 .work-header-slider {
   top: 0;
