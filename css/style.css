@@ -1764,7 +1764,7 @@ body.work {
 .work-header-init_wrapper {
   padding-bottom: 150px;
   position: relative;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 50%, transparent);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 80%, transparent);
   z-index: 2;
 }
 .work-header-init_service {
