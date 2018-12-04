@@ -2099,6 +2099,9 @@ body.work {
   right: -150px;
   width: 800px;
 }
+.serv .process-button {
+  padding: 0 35px;
+}
 .serv.another .serv-header-main .title {
   font-size: 30px;
 }
