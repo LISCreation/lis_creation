@@ -466,7 +466,11 @@ body.work {
   height: 90px;
   width: 100%;
 }
+.header-menu {
+  position: relative;
+}
 .header-menu-list {
+  z-index: 1;
   width: 450px;
   margin: 0 auto;
   padding: 40px 0;
@@ -588,7 +592,6 @@ body.work {
 .header-main {
   text-align: center;
   position: absolute;
-  z-index: 1;
   top: 50%;
   left: 0;
   width: 100%;
@@ -1554,6 +1557,9 @@ body.work {
 }
 .callback-form-button {
   padding: 16px 35px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
 }
 .callback-form_inner {
   display: flex;
