@@ -1015,16 +1015,16 @@ body.work {
 }
 .header-menu-list {
   z-index: 1;
-  width: 450px;
   margin: 0 auto;
   padding: 40px 0;
   display: flex;
   text-transform: uppercase;
   font-size: 20px;
   letter-spacing: 1.2px;
-  justify-content: space-between;
+  justify-content: center;
 }
 .header-menu-list_item {
+  margin: 0 10px;
   -webkit-transition: all ease .3s;
   -moz-transition: all ease .3s;
   -ms-transition: all ease .3s;
