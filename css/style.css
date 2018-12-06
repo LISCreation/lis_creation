@@ -1396,7 +1396,7 @@ body.work {
 }
 .header.portfolio .header-main {
   position: static;
-  margin-top: 50px;
+  padding-top: 70px;
   -webkit-transform: none;
   -moz-transform: none;
   -ms-transform: none;
@@ -3580,7 +3580,6 @@ body.work {
     position: static;
     max-width: 100%;
     padding: 25px 15px;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent);
     width: 100%;
     font-size: 4vw;
   }
