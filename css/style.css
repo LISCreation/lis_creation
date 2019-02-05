@@ -1146,7 +1146,6 @@ body.work {
   overflow: auto;
   border: 1px solid #ffffff;
   z-index: 20;
-  padding: 15px 0;
   background-color: rgba(83, 19, 184, 0.8);
   text-align: center;
   -webkit-transition: all ease .3s;
@@ -1177,6 +1176,9 @@ body.work {
 }
 .header-menu-list_mbl.opened .header-menu-list_mbl-clicker span:last-child {
   opacity: 0;
+}
+.header-menu-list_mbl .clicker_area {
+  padding: 15px 0;
 }
 .header-menu-list_mbl-clicker {
   margin: 0 auto;
@@ -1391,7 +1393,7 @@ body.work {
   left: 0;
   height: 100%;
   width: 100%;
-  background: url(https://eleetweb.com/wp-content/uploads/2016/09/banner-1.jpg) no-repeat center / cover;
+  background: url(../img/portfolio_bg.jpg) no-repeat center / cover;
   z-index: -1;
 }
 .header.portfolio .header-main {
