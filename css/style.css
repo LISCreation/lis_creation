@@ -113,8 +113,22 @@ button:focus,
   -ms-transition: all ease .3s;
   -o-transition: all ease .3s;
   transition: all ease .3s;
-  margin-top: 100px;
+  margin-top: -50px;
   position: relative;
+}
+@keyframes jumpUp {
+  from {
+    margin-top: -50px;
+  }
+  70% {
+    margin-top: 130px;
+  }
+  85% {
+    margin-top: 80px;
+  }
+  to {
+    margin-top: 100px;
+  }
 }
 .global-sidebar_up_icon-wrapper::before {
   content: '';
@@ -123,12 +137,15 @@ button:focus,
   left: 50%;
   background-color: #fff;
   width: 1px;
-  height: 120px;
+  height: 360px;
   -webkit-transform: translate(-50%, -100%);
   -moz-transform: translate(-50%, -100%);
   -ms-transform: translate(-50%, -100%);
   -o-transform: translate(-50%, -100%);
   transform: translate(-50%, -100%);
+}
+.global-sidebar_up_icon-wrapper.protrude {
+  animation: jumpUp .5s ease forwards;
 }
 .global-sidebar_up_icon-wrapper:hover {
   margin-top: 90px;
@@ -366,10 +383,9 @@ button:focus,
   position: relative;
   z-index: 20;
 }
-.social_item svg {
-  fill: #fff;
-  width: 30px;
-  height: 30px;
+.social_item img {
+  width: 35px;
+  height: 35px;
 }
 @keyframes hintSlide {
   from {
@@ -1046,16 +1062,6 @@ body.work {
   -o-transform: translate(-100%, -50%);
   transform: translate(-100%, -50%);
   background: url(../img/icons/arrow-down.svg) no-repeat center / cover;
-}
-.header-menu-list_item.has-children:hover .submenu_wrapper {
-  display: block;
-}
-.header-menu-list_item.has-children:hover::before {
-  -webkit-transform: translate(-100%, -50%) rotate(-180deg);
-  -moz-transform: translate(-100%, -50%) rotate(-180deg);
-  -ms-transform: translate(-100%, -50%) rotate(-180deg);
-  -o-transform: translate(-100%, -50%) rotate(-180deg);
-  transform: translate(-100%, -50%) rotate(-180deg);
 }
 .header-menu-list_item .submenu {
   padding: 10px 0;

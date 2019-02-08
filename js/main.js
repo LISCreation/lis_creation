@@ -128,7 +128,24 @@ $(document).ready(function() {
         $(this).parent().toggleClass('opened');
         $(this).next('.list').slideToggle();
     });
-    $('.header-menu-list_item.has-children').on('click', function() {
-        $(this).find('submenu_wrapper').slideToggle();
+    $('.header-menu-list_item.has-children').on('click', function(e) {
+        e.preventDefault();
+        if($(this).find('.submenu_wrapper').is(':visible')) {
+            $(this).find('.submenu_wrapper').hide();
+        } else {
+            $('.submenu_wrapper').hide();
+            $(this).find('.submenu_wrapper').show();
+
+        }
+    });
+
+    // Sidebar
+    $(window).scroll(function() {
+        var up_arrow = $('.global-sidebar_up_icon-wrapper');
+        if($(document).scrollTop() > 300) {
+            up_arrow.addClass('protrude');
+        } else {
+            up_arrow.removeClass('protrude');
+        }
     });
 });
