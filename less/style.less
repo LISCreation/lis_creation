@@ -458,41 +458,6 @@ input, button, .btn {
       fill: @light;
       width: 30px;
       height: 30px;
-      .transition-3;
-      &:hover {
-        fill: @emotion;
-      }
-      @tg_color: #31A8DF;
-      @vk_color: #4D75A3;
-      @whp_color: #3FB92E;
-      @sk_color: #00AEF0;
-      @ins_color: #FD3573;
-
-      &#telegramIcon, &#telegramIconFooter {
-        &:hover {
-          fill: @tg_color;
-        }
-      }
-      &#vkIcon, &#vkIconFooter {
-        &:hover {
-          fill: @vk_color;
-        }
-      }
-      &#whatsappIcon, &#whatsappIconFooter {
-        &:hover {
-          fill: @whp_color;
-        }
-      }
-      &#skypeIcon, &#skypeIconFooter {
-        &:hover {
-          fill: @sk_color;
-        }
-      }
-      &#instagramIcon, &#instagramIconFooter {
-        &:hover {
-          fill: @ins_color;
-        }
-      }
     }
   }
 }
@@ -2062,6 +2027,7 @@ body {
   }
 }
 .services {
+  padding-top: 120px;
   .section {
     &-info {
       padding: 0 15px;
@@ -3139,6 +3105,7 @@ body {
       }
       &-button {
         &_wrapper {
+          margin-top: 20px;
           width: 100%;
           text-align: center;
         }
@@ -3153,8 +3120,11 @@ body {
         &-image {
           height: 240px;
         }
+        &:first-child {
+          top: -200px;
+        }
         &:last-child {
-          bottom: -40px;
+          bottom: 100px;
         }
       }
     }
@@ -3173,15 +3143,6 @@ body {
     &-wrapper {
       width: 100%;
       float: left;
-    }
-  }
-  .team {
-    &-slider {
-      &_item {
-        &:nth-child(2) {
-          top: 220px;
-        }
-      }
     }
   }
   .work {
@@ -3309,9 +3270,6 @@ body {
   .team {
     &-slider {
       &_item {
-        &:last-child {
-          bottom: 0;
-        }
       }
     }
   }
@@ -3333,7 +3291,7 @@ body {
     }
     &-link, .inp_wrapper {
       width: 45%;
-      margin-bottom: 20px;
+      margin-top: 20px;
     }
 
     .section {
@@ -3432,19 +3390,6 @@ body {
     }
   }
   .team {
-    &-slider {
-      &_item {
-        &:first-child {
-          top: -20px;
-        }
-        &:nth-child(2) {
-          top: 285px;
-        }
-        &:last-child {
-          bottom: -100px;
-        }
-      }
-    }
     &-desc {
       white-space: normal;
       p {
@@ -3622,7 +3567,7 @@ body {
         }
         &:last-child {
           position: absolute;
-          top: 260px;
+          top: 60px;
           left: 40px;
           bottom: auto;
         }
@@ -3808,7 +3753,7 @@ body {
     }
   }
   .callback {
-    padding: 50px 0 90px;
+    padding: 50px 0 130px!important;
   }
   .serv {
     .process {

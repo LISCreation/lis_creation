@@ -370,34 +370,6 @@ button:focus,
   fill: #fff;
   width: 30px;
   height: 30px;
-  -webkit-transition: all ease .3s;
-  -moz-transition: all ease .3s;
-  -ms-transition: all ease .3s;
-  -o-transition: all ease .3s;
-  transition: all ease .3s;
-}
-.social_item svg:hover {
-  fill: #eea849;
-}
-.social_item svg#telegramIcon:hover,
-.social_item svg#telegramIconFooter:hover {
-  fill: #31A8DF;
-}
-.social_item svg#vkIcon:hover,
-.social_item svg#vkIconFooter:hover {
-  fill: #4D75A3;
-}
-.social_item svg#whatsappIcon:hover,
-.social_item svg#whatsappIconFooter:hover {
-  fill: #3FB92E;
-}
-.social_item svg#skypeIcon:hover,
-.social_item svg#skypeIconFooter:hover {
-  fill: #00AEF0;
-}
-.social_item svg#instagramIcon:hover,
-.social_item svg#instagramIconFooter:hover {
-  fill: #FD3573;
 }
 @keyframes hintSlide {
   from {
@@ -1925,6 +1897,9 @@ body.work {
 .team-button {
   padding: 14px 61px;
 }
+.services {
+  padding-top: 120px;
+}
 .services .section-info {
   padding: 0 15px;
 }
@@ -2911,6 +2886,7 @@ body.work {
     width: 100%;
   }
   .callback-form-button_wrapper {
+    margin-top: 20px;
     width: 100%;
     text-align: center;
   }
@@ -2919,8 +2895,11 @@ body.work {
   .team-slider_item-image {
     height: 240px;
   }
+  .team-slider_item:first-child {
+    top: -200px;
+  }
   .team-slider_item:last-child {
-    bottom: -40px;
+    bottom: 100px;
   }
   .serv .listing {
     padding-top: 90px;
@@ -2933,9 +2912,6 @@ body.work {
   .global-wrapper {
     width: 100%;
     float: left;
-  }
-  .team-slider_item:nth-child(2) {
-    top: 220px;
   }
   .work-header_back__wrapper {
     display: block;
@@ -3025,9 +3001,6 @@ body.work {
     width: 42.6%;
     margin-bottom: 30px;
   }
-  .team-slider_item:last-child {
-    bottom: 0;
-  }
   .why-offers_item {
     margin-bottom: 50px;
   }
@@ -3040,7 +3013,7 @@ body.work {
   .callback-link,
   .callback .inp_wrapper {
     width: 45%;
-    margin-bottom: 20px;
+    margin-top: 20px;
   }
   .callback .section-info {
     margin-bottom: 30px;
@@ -3102,15 +3075,6 @@ body.work {
   }
   .header.portfolio .portfolio-list_item:nth-child(25n+25) {
     grid-row: span 3;
-  }
-  .team-slider_item:first-child {
-    top: -20px;
-  }
-  .team-slider_item:nth-child(2) {
-    top: 285px;
-  }
-  .team-slider_item:last-child {
-    bottom: -100px;
   }
   .team-desc {
     white-space: normal;
@@ -3266,7 +3230,7 @@ body.work {
   }
   .team-slider_item:last-child {
     position: absolute;
-    top: 260px;
+    top: 60px;
     left: 40px;
     bottom: auto;
   }
@@ -3434,7 +3398,7 @@ body.work {
     margin-top: 40px;
   }
   .callback {
-    padding: 50px 0 90px;
+    padding: 50px 0 130px!important;
   }
   .serv .process .section-info {
     margin-bottom: 30px;
