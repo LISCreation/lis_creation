@@ -51,7 +51,7 @@
     </div>
     <div class="global-sidebar_down">
         <div class="global-sidebar_down_icon-wrapper">
-            <a href="tel:79384067802"><img src="img/icons/call.svg" alt="Позвонить!" class="global-sidebar_icon"></a>
+            <img data-open="callback" src="img/icons/call.svg" alt="Позвонить!" class="global-sidebar_icon">
         </div>
         <div class="global-sidebar_down_icon-wrapper">
             <a href="mailto:lis.lightinsky@gmail.com"><img src="img/icons/email.svg" alt="Позвонить!" class="global-sidebar_icon"></a>
@@ -183,19 +183,19 @@
                 <div class="row">
                     <div class="col-md-4 mb-4 mb-md-0">
                         <div class="achievements-list_item">
-                            <div class="achievements-list_item-num">4+</div>
+                            <div class="achievements-list_item-num">4</div>
                             <p class="achievements-list_item-designation">года успешного опыта</p>
                         </div>
                     </div>
                     <div class="col-md-4 mb-4 mb-md-0">
                         <div class="achievements-list_item">
-                            <div class="achievements-list_item-num">59+</div>
+                            <div class="achievements-list_item-num">59</div>
                             <p class="achievements-list_item-designation">клиентов и команд</p>
                         </div>
                     </div>
                     <div class="col-md-4 mb-4 mb-md-0">
                         <div class="achievements-list_item">
-                            <div class="achievements-list_item-num">76</div>
+                            <div class="achievements-list_item-num">87</div>
                             <p class="achievements-list_item-designation">выполненных проектов</p>
                         </div>
                     </div>
@@ -315,7 +315,7 @@
                         <div class="services-list_item_distance">
                             <h3 class="services-list_item-title">Landing Page1</h3>
                             <img src="img/services/landing.png" alt="Landing Page by LIS" class="services-list_item-example">
-                            <p class="services-list_item-price">от <span>19 990</span> р.</p>
+                            <!--<p class="services-list_item-price">от <span>19 990</span> р.</p>-->
                             <hr>
                             <a href="#" class="services-list_item-morebtn">
                                 <p>КОМПЛЕКТАЦИЯ</p>
@@ -344,7 +344,7 @@
                         <div class="services-list_item_distance">
                             <h3 class="services-list_item-title">Landing Page2</h3>
                             <img src="img/services/landing.png" alt="Landing Page by LIS" class="services-list_item-example">
-                            <p class="services-list_item-price">от <span>19 990</span> р.</p>
+                            <!--<p class="services-list_item-price">от <span>19 990</span> р.</p>-->
                             <hr>
                             <a href="#" class="services-list_item-morebtn">
                                 <p>КОМПЛЕКТАЦИЯ</p>
@@ -373,7 +373,7 @@
                         <div class="services-list_item_distance">
                             <h3 class="services-list_item-title">Landing Page3</h3>
                             <img src="img/services/landing.png" alt="Landing Page by LIS" class="services-list_item-example">
-                            <p class="services-list_item-price">от <span>19 990</span> р.</p>
+                            <!--<p class="services-list_item-price">от <span>19 990</span> р.</p>-->
                             <hr>
                             <a href="#" class="services-list_item-morebtn">
                                 <p>КОМПЛЕКТАЦИЯ</p>
@@ -402,7 +402,7 @@
                         <div class="services-list_item_distance">
                             <h3 class="services-list_item-title">Landing Page4</h3>
                             <img src="img/services/landing.png" alt="Landing Page by LIS" class="services-list_item-example">
-                            <p class="services-list_item-price">от <span>19 990</span> р.</p>
+                            <!--<p class="services-list_item-price">от <span>19 990</span> р.</p>-->
                             <hr>
                             <a href="#" class="services-list_item-morebtn">
                                 <p>КОМПЛЕКТАЦИЯ</p>
@@ -431,7 +431,7 @@
                         <div class="services-list_item_distance">
                             <h3 class="services-list_item-title">Landing Page5</h3>
                             <img src="img/services/landing.png" alt="Landing Page by LIS" class="services-list_item-example">
-                            <p class="services-list_item-price">от <span>19 990</span> р.</p>
+                            <!--<p class="services-list_item-price">от <span>19 990</span> р.</p>-->
                             <hr>
                             <a href="#" class="services-list_item-morebtn">
                                 <p>КОМПЛЕКТАЦИЯ</p>
@@ -460,7 +460,7 @@
                         <div class="services-list_item_distance">
                             <h3 class="services-list_item-title">Landing Page6</h3>
                             <img src="img/services/landing.png" alt="Landing Page by LIS" class="services-list_item-example">
-                            <p class="services-list_item-price">от <span>19 990</span> р.</p>
+                            <!--<p class="services-list_item-price">от <span>19 990</span> р.</p>-->
                             <hr>
                             <a href="#" class="services-list_item-morebtn">
                                 <p>КОМПЛЕКТАЦИЯ</p>
@@ -599,16 +599,46 @@
             </div>
             <div class="footer-develope">
                 <p class="footer-develope_string">Design by <strong>LIS Creation</strong></p>
-                <p class="footer-develope_string">Все права защищены / 2014-2018</p>
+                <p class="footer-develope_string">Все права защищены / 2015-2019</p>
             </div>
         </div>
     </footer>
+</div>
+<div class="modal-windows">
+    <div class="window" data-window="callback">
+        <div class="window-content">
+            <form action="javascript:void(null)" id="callback_modal" method="post" class="callback-form">
+                <div class="cross close_form d-none d-md-block"></div>
+                <div class="window-content">
+                    <h3 class="window-header text-center" style="font-size: 20px;">Напишите свои контактные данные и мы свяжемся с вами</h3>
+                    <hr color="#5313b8">
+                    <div>
+                        <div class="inp_wrapper mb-3 required">
+                            <input type="text" name="name" placeholder="Ваше имя" class="inp callback-form-input">
+                            <span class="inp_starlet">*</span>
+                        </div>
+                        <div class="inp_wrapper mb-3">
+                            <input type="number" name="phone" placeholder="Введите номер" class="inp callback-form-input phone_inp">
+                            <span class="inp_starlet">*</span>
+                        </div>
+                        <div class="inp_wrapper mb-3 required">
+                            <input type="email" name="email" placeholder="Ваш E-mail" class="inp callback-form-input">
+                            <span class="inp_starlet">*</span>
+                        </div>
+                        <div class="callback-form-button_wrapper">
+                            <a href="#" class="cst_btn"><span>Хочу такой сайт</span></a>                    </div>
+                    </div>
+                </div>
+            </form>
+            <div class="close_form d-block d-md-none text-center text-white">Закрыть</div>
+        </div>
+    </div>
 </div>
 <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/jquery.spincrement.min.js"></script>
 <script>
-    $(".callback-form-button_wrapper").click(function(e){
+    $("#callback_main .callback-form-button_wrapper").click(function(e){
         e.preventDefault();
             $.ajax({
                 url: 'mail/mail.php', //url страницы (action_ajax_form.php)
@@ -623,6 +653,28 @@
                 }
             });
         });
+</script>
+<script src="js/jquery.paroller.min.js"></script>
+<script>
+    //cst_btn
+    $('.header').paroller({
+        factor: 0.7,
+        //type: 'background'
+    });
+    $('.team').paroller({
+        factor: 0.3,
+        factorXs: 0
+        //type:'background'
+    });
+    $('.header-main-title').paroller({
+        factor: 0.3,
+        type: 'foreground'
+    });
+    $('.callback').paroller({
+        factor: 0.2,
+        factorXs: 0,
+        type: 'foreground',
+    })
 </script>
 <script src="js/main.js"></script>
 </body>

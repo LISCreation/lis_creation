@@ -129,13 +129,30 @@ $(document).ready(function() {
         $(this).next('.list').slideToggle();
     });
     $('.header-menu-list_item.has-children').on('click', function(e) {
-        e.preventDefault();
         if($(this).find('.submenu_wrapper').is(':visible')) {
             $(this).find('.submenu_wrapper').hide();
         } else {
+            e.preventDefault();
             $('.submenu_wrapper').hide();
             $(this).find('.submenu_wrapper').show();
 
+        }
+    });
+
+    //Forms
+    $('[data-open]').click(function() {
+       var call_name = $(this).attr('data-open');
+       $('.window').hide();
+       $('.window[data-window=' + call_name + ']').show();
+       $('.modal-windows').fadeIn();
+    });
+    $('.close_form').click(function() {
+        $('.modal-windows').fadeOut();
+    });
+    $(document).mouseup(function (e){
+        if (!$('.window').is(e.target) // если клик был не по нашему блоку
+            && $('.window').has(e.target).length === 0) { // и не по его дочерним элементам
+            $('.modal-windows').fadeOut(); // скрываем его
         }
     });
 
