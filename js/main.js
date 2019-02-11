@@ -140,6 +140,7 @@ $(document).ready(function() {
     });
 
     // Sidebar
+    var show = true;
     $(window).scroll(function() {
         var up_arrow = $('.global-sidebar_up_icon-wrapper');
         if($(document).scrollTop() > 300) {
@@ -147,5 +148,16 @@ $(document).ready(function() {
         } else {
             up_arrow.removeClass('protrude');
         }
+        var number_place = $('.achievements-list_item-num');
+        if(!show) return false;
+        if($(document).scrollTop() > number_place.offset().top - 500) {
+            number_place.spincrement({
+                thousandSeparator: "",
+                duration: 1200
+            });
+            console.log('Hello!');
+            show = false;
+        }
     });
+    $('')
 });
