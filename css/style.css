@@ -2094,6 +2094,9 @@ body.work {
 .services-list_item_back-btn:hover::after {
   display: none;
 }
+.services-list_item-allinfo {
+  height: 100px;
+}
 .services-list_item-title {
   font-family: 'Graphik', Arial, sans-serif;
   font-weight: 600;
