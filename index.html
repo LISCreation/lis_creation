@@ -65,7 +65,7 @@
                 <li class="header-menu-list_item"><a href="#">Главная</a></li>
                 <li class="header-menu-list_item"><a href="#">Портфолио</a></li>
                 <li class="header-menu-list_item has-children">
-                    Акции
+                    <a href="javascript:void(null)">Акции</a>
                     <div class="submenu_wrapper">
                         <ul class="submenu">
                             <li><a href="#">Акция 1 lorem lorem</a></li>
@@ -100,23 +100,23 @@
                     </div>
                 </div>
                 <ul class="list">
-                    <li><a href="#">Главная</a></li>
-                    <li><a href="#">Портфолио</a></li>
-                    <li class="has-children">
-                        Акции
+                    <li class="header-menu-list_item"><a href="#">Главная</a></li>
+                    <li class="header-menu-list_item"><a href="#">Портфолио</a></li>
+                    <li class="header-menu-list_item has-children">
+                        <a href="javascript:void(null)">Акции</a>
                         <div class="submenu_wrapper">
                             <ul class="submenu">
-                                <li><a href="#">Акция 1 lorem lorem</a></li>
-                                <li class="current"><a href="#">Акция 1</a></li>
-                                <li><a href="#">Акция 2</a></li>
-                                <li><a href="#">Акция 3</a></li>
-                                <li><a href="#">Акция 4</a></li>
-                                <li><a href="#">Акция 5555555</a></li>
+                                <li><a href="#">Landing Page</a></li>
+                                <li class="current"><a href="#">Сайт-визитка</a></li>
+                                <li><a href="#">Интернет-магазин</a></li>
+                                <li><a href="#">Корпоративный сайт</a></li>
+                                <li><a href="#">Промо-сайт</a></li>
+                                <li><a href="#">Блог</a></li>
                             </ul>
                         </div>
                     </li>
                     <li class="header-menu-list_item has-children">
-                        Услуги
+                        <a href="javascript:void(null)">Услуги</a>
                         <div class="submenu_wrapper">
                             <ul class="submenu">
                                 <li><a href="#">Landing Page</a></li>
@@ -295,7 +295,7 @@
                             Хотите продающий сайт? Теперь вы знаете к кому
                             обращаться!</p>
                     </div>
-                    <a href="#" class="cst_btn reverse"><span>Смотрите наши кейсы</span></a>
+                    <a href="javascript:void(null)" data-open="callback" class="cst_btn reverse"><span>Свяжитесь с нами!</span></a>
                 </div>
 
             </div>
@@ -655,27 +655,6 @@
         });
 </script>
 <script src="js/jquery.paroller.min.js"></script>
-<script>
-    //cst_btn
-    $('.header').paroller({
-        factor: 0.7,
-        //type: 'background'
-    });
-    $('.team').paroller({
-        factor: 0.3,
-        factorXs: 0
-        //type:'background'
-    });
-    $('.header-main-title').paroller({
-        factor: 0.3,
-        type: 'foreground'
-    });
-    $('.callback').paroller({
-        factor: 0.2,
-        factorXs: 0,
-        type: 'foreground',
-    })
-</script>
 <script src="js/main.js"></script>
 </body>
 </html>
