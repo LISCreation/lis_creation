@@ -3207,6 +3207,30 @@ body.work {
   }
 }
 @media (max-width: 870px) {
+  .header-main {
+    padding-right: 100px;
+    padding-left: 30px;
+    text-align: left;
+  }
+  .header-main-chant::after {
+    width: 300px;
+    left: 0;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+  }
+  .header-main-logo {
+    margin-left: 50px;
+  }
+  .header-main-logo_wrapper {
+    width: 100%;
+    text-align: center;
+  }
+  .header_social {
+    right: 30px;
+  }
   .header.portfolio .portfolio-list_item {
     grid-column: span 2!important;
   }
@@ -3578,9 +3602,11 @@ body.work {
 @media (max-width: 680px) {
   .header-main {
     padding: 0 10px;
+    text-align: center;
   }
   .header-main-logo {
     margin-bottom: 15px;
+    margin-left: 0;
   }
   .header-main-title {
     font-size: 15vw;

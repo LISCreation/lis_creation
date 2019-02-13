@@ -3512,6 +3512,32 @@ body {
 }
 @media (max-width: 870px) {
   .header {
+    &-main {
+      padding-right: 100px;
+      padding-left: 30px;
+      text-align: left;
+      &-chant {
+        &::after {
+          width: 300px;
+          left: 0;
+          -webkit-transform: none;
+          -moz-transform: none;
+          -ms-transform: none;
+          -o-transform: none;
+          transform: none;
+        }
+      }
+      &-logo {
+        margin-left: 50px;
+        &_wrapper {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+    &_social {
+      right: 30px;
+    }
     &.portfolio {
       .portfolio {
         &-list {
@@ -3955,8 +3981,10 @@ body {
   .header {
     &-main {
       padding: 0 10px;
+      text-align: center;
       &-logo {
         margin-bottom: 15px;
+        margin-left: 0;
       }
       &-title {
         font-size: 15vw;
