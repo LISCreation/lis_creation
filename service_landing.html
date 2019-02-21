@@ -139,7 +139,7 @@
                                 увеличить продажи конкретного товара или услуги
                                 с помощью одной-единственной страницы.</p>
                         </div>
-                        <a href="#" class="cst_btn reverse"><span>Узнайте подробнее!</span></a>
+                        <a href="javascript:void(null)" data-open="callback" class="cst_btn reverse"><span>Узнайте подробнее!</span></a>
                     </div>
                     <div class="serv-header-image_wrapper">
                         <img src="img/services/landing.png" class="serv-header-image" alt="Landing page одностраничный">
@@ -526,6 +526,36 @@
             </div>
         </div>
     </footer>
+    <div class="modal-windows">
+        <div class="window" data-window="callback">
+            <div class="window-content">
+                <form action="javascript:void(null)" id="callback_modal" method="post" class="callback-form">
+                    <div class="cross close_form d-none d-md-block"></div>
+                    <div class="window-content">
+                        <h3 class="window-header text-center" style="font-size: 20px;">Напишите свои контактные данные и мы свяжемся с вами</h3>
+                        <hr color="#5313b8">
+                        <div>
+                            <div class="inp_wrapper mb-3 required">
+                                <input type="text" name="name" placeholder="Ваше имя" class="inp callback-form-input">
+                                <span class="inp_starlet">*</span>
+                            </div>
+                            <div class="inp_wrapper mb-3">
+                                <input type="number" name="phone" placeholder="Введите номер" class="inp callback-form-input phone_inp">
+                                <span class="inp_starlet">*</span>
+                            </div>
+                            <div class="inp_wrapper mb-3 required">
+                                <input type="email" name="email" placeholder="Ваш E-mail" class="inp callback-form-input">
+                                <span class="inp_starlet">*</span>
+                            </div>
+                            <div class="callback-form-button_wrapper">
+                                <a href="#" class="cst_btn"><span>Хочу такой сайт</span></a>                    </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="close_form d-block d-md-none text-center text-white">Закрыть</div>
+            </div>
+        </div>
+    </div>
 </div>
 <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
