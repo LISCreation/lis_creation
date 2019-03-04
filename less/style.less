@@ -13,10 +13,46 @@
 @gray-light: rgba(235,235,235, .5);
 @overlay: rgba(0,0,0,.4);
 @emotion_gradient: linear-gradient(45deg,rgba(244,107,69,0.9) 0,rgba(238,168,73,0.9) 100%);
+@srv_gradient: linear-gradient(45deg, #f84892 0, rgba(238, 168, 73, 0.9) 100%);
 
 //tmpstyle: Fonts
 //GraphikLCG
 @import 'https://cdn.rawgit.com/mfd/e7842774e037edf15919037594a79b2b/raw/665bdfc532094318449f1010323c84013d5af953/graphik.css';
+// ProximaNova
+@font-face {
+	font-family: 'ProximaNova';
+	src: url('../fonts/ProximaNova-Regular.eot');
+	src: local('Proxima Nova Regular'), local('ProximaNova-Regular'),
+		url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova-Regular.woff') format('woff'),
+		url('../fonts/ProximaNova-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ProximaNova';
+	src: url('../fonts/ProximaNova-Light.eot');
+	src: local('Proxima Nova Light'), local('ProximaNova-Light'),
+		url('../fonts/ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova-Light.woff') format('woff'),
+		url('../fonts/ProximaNova-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ProximaNova';
+	src: url('../fonts/ProximaNova-Black.eot');
+	src: local('Proxima Nova Black'), local('ProximaNova-Black'),
+		url('../fonts/ProximaNova-Black.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova-Black.woff') format('woff'),
+		url('../fonts/ProximaNova-Black.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+
 //Caveat
 @font-face {
   font-family: 'Caveat';
@@ -119,7 +155,7 @@ a {
   text-decoration: none!important;
   color: @light;
   &:hover, &:focus {
-    color: @emotion;
+    
   }
 }
 img, video, iframe {
@@ -334,8 +370,11 @@ input, button, .btn {
     }
   }
   &-wrapper {
-    width: calc(100% - 80px);
-    float: right;
+    width:calc(~"100% - 80px");
+    margin-left: 80px;
+		@media screen and (max-width: 1100px){
+			margin-left: 0;
+		}
     &.portfolio-wrapper {
       .footer {
         margin-top: 0;
@@ -407,6 +446,33 @@ input, button, .btn {
   &_starlet {
     display: none;
   }
+}
+
+.btn_srv {
+	position: relative;
+	background: transparent;
+	border-radius: 50px;
+	position: relative;
+	.transition-3;
+	border: 1px solid #ec70a4;
+	padding: 9px 23px;
+	font-family: 'ProximaNova';
+	font-weight: 900;
+	font-size: 14px;
+	&:hover {
+		border-color: transparent;
+		background: @srv_gradient;
+		color: #333;
+	}
+	&:active {
+		color: #FFF;
+		background: @srv_gradient !important;
+	}
+	&.btn_nav {
+		@media screen and (max-width: 1200px) {
+			display: none;
+		}
+	}
 }
 
 .cst_btn {
@@ -1160,38 +1226,31 @@ body {
   .container-fluid {
     padding: 0;
   }
-
   color: @light;
-  background: url(../img/light-night.jpg) no-repeat center / cover;
+  background: url(../img/srv_new/serv_main-bg.jpg) no-repeat center / cover;
   height: 100vh;
   min-height: 500px;
   position: relative;
-
-  &::before {
-    .ov-handler;
-  }
-
   &::after {
     content: '';
-    background: url(../img/wave.png) repeat-x;
     bottom: 0;
     left: 0;
     position: absolute;
-    height: 90px;
     width: 100%;
+		display: none;		
   }
+	
 
   &-menu {
     position: relative;
 
     li {
-      padding: 0 15px;
+      
     }
 
     &-list {
       z-index: 1;
       margin: 0 auto;
-      padding: 40px 0;
       display: flex;
       text-transform: uppercase;
       font-size: 20px;
@@ -1199,11 +1258,15 @@ body {
       justify-content: center;
 
       &_item {
-        margin: 0 10px;
+        margin: 0 25px;
         .transition-3;
-
+				@media screen and (max-width: 1200px) {
+					margin: 0 10px;
+				}
         a {
           color: @light;
+					font-family: 'ProximaNova';
+					font-weight: 300;
         }
 
         position: relative;
@@ -1215,7 +1278,7 @@ body {
           right: 0;
           height: 2px;
           width: 0;
-          background-color: @light;
+          background: @srv_gradient;
           .transition-3;
         }
 
@@ -1235,7 +1298,7 @@ body {
 
         &.has-children {
           cursor: n-resize;
-
+					font-weight: 300;
           &::before {
             content: '';
             position: absolute;
@@ -1414,7 +1477,7 @@ body {
           display: none;
           margin: 0;
           overflow: auto;
-          max-height: calc(100vh - 85px);
+          max-height: calc(~"100vh - 85px");
 
           li {
             margin: 5px 0;
@@ -2508,6 +2571,12 @@ body {
       border: none;
       color: #ffffff;
       cursor: pointer;
+			&_wrapper {
+				.offer__cta {
+					margin-top: 0;
+					color: #fff;
+				}
+			}
     }
     &_inner {
       display: flex;
@@ -2918,17 +2987,37 @@ body {
   }
 }
 //tmpstyle: Service
+.service {
+	font-family: 'ProximaNova';
+	font-weight: normal;
+}
 .serv {
   &-header {
     position: relative;
     vertical-align: middle;
-    &::after {
-      background-image: url(../img/wave_serv.png);
-      height: 145px;
-    }
-    .container-self {
-      padding: 0 40px;
-    }
+		padding-top: 40px;
+		height: auto;
+		padding-bottom: 100px;
+		.logo {
+			display: flex;
+			align-items: center;
+			font-weight: 900;
+			@media screen and (max-width: 768px){
+				display: none;
+			}
+			&__text {
+				color: @emotion;
+				background: @srv_gradient;
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				margin: 0;
+				font-size: 20px;
+				margin-left: 10px;								
+				span {
+					text-transform: uppercase;
+				}
+			}
+		}
     &-content {
       position: relative;
       padding-top: 100px;
@@ -3100,13 +3189,253 @@ body {
     }
   }
 }
+
+
+// NEW SERVICES OFFER
+.main-content {
+	margin-top: 120px;
+	overflow: hidden;
+	padding-bottom: 60px;
+	@media screen and (max-width: 768px){
+		margin-top: 50px;
+		padding-bottom: 40px;
+	}
+}
+.offer {
+	&__title {
+		font-weight: 900;
+		font-size: 80px;
+		line-height: 1em;
+		@media screen and (max-width: 1200px){
+			font-size: 68px;
+		}
+		@media screen and (max-width: 992px){
+			font-size: 48px;
+		}
+		@media screen and (max-width: 576px){
+			font-size: 42px;
+		}
+		&::after {
+			content: '';
+			width: 100px;
+			height: 6px;
+			background: #f84892;
+			display: block;
+			margin-top: 25px;
+		}
+	}
+	&__text {
+		font-size: 20px;
+		margin-top: 25px;
+		span {
+			color: @emotion;
+		}
+	}
+	&__cta {
+		padding: 15px 45px;
+		background: @srv_gradient;
+		font-size: 16px;
+		margin-top: 35px;
+		&:hover {
+			color: #ffffff;
+			-webkit-box-shadow: 0 0 70px 5px rgba(248, 72, 146, 0.9);
+			-moz-box-shadow: 0 0 70px 5px rgba(248, 72, 146, 0.9);
+			box-shadow: 0 0 70px 5px rgba(248, 72, 146, 0.9);
+		}
+		&:active {
+			background: @srv_gradient !important;
+			color: #fff;
+		}
+	}
+}
+.main-mocup {
+	img {
+		max-width: inherit;
+		width: 200%;
+		margin-left: -60%;
+		margin-top: -5%;
+	}
+}
+.main-desc {
+	margin-top: 60px;
+	@media screen and (max-width: 768px){
+		margin-top: 10px;
+	}
+	.desc {
+		&__title {
+			font-size: 35px;
+			font-weight: 900;
+			margin: 0;
+			margin-bottom: 20px;
+			&::after {
+				content: '';
+				width: 100px;
+				height: 6px;
+				background: #f84892;
+				display: block;
+				margin-top: 25px;
+			}
+		}
+		&__text {
+			font-size: 16px;
+			span {
+				color: @emotion;
+				font-weight: bold;
+			}
+		}
+	}
+}
+
+.section-title {
+	font-weight: 900;
+	font-size: 35px;
+	color: #000000;
+	&::after {
+		content: '';
+		width: 100px;
+		height: 6px;
+		background: #f84892;
+		display: block;
+		margin: 0 auto;
+		margin-top: 25px;		
+	}
+}
+
+.advantages-section {
+	padding: 90px 0 100px;
+	background: #fff url(../img/srv_new/adv-bg.jpg) no-repeat center center / cover;
+	.advantages-title{
+		margin-bottom: 30px;
+		text-align: center;
+	}
+	.advantages__item {
+		text-align: center;
+		margin-top: 15px;
+		h3 {
+			font-size: 20px;
+			font-weight: 900;
+			margin-top: 15px;
+			margin-bottom: 10px;
+			color: #000;
+		}
+	}
+	.dont-all {
+		border-top: 1px solid #c4c4c4;
+		margin-top: 30px;
+		padding-top: 30px;
+		text-align: center;
+		&-title {
+			font-size: 28px;
+			font-weight: bold;
+		}
+	}
+}
+.stages-of-creation {
+	.creation-title {
+		&::after {
+			margin-left: 0;
+		}
+	}
+	.create__items {
+		margin-top: 50px;
+		position: relative;
+		padding-top: 80px;
+		.count {
+			position: absolute;
+			top: 0;
+			left: 6%;
+			font-size: 200px;
+			color: #000;
+			opacity: 0.07;
+			font-weight: 900;
+			line-height: 0.75em;
+		}
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		h3 {
+			font-size: 20px;
+			font-weight: 900;
+			color: #000;
+		}
+		.create__item {
+			color: #000;
+			font-size: 16px;			
+			letter-spacing: 0;
+			position: relative;
+			padding-left: 23px;
+			&::before {
+				content: '';
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 11px;
+				width: 15px;
+				height: 1px;
+				background: #f84892;
+			}
+		}
+
+	}
+}
+.cost-section {
+	background: #f7f7f7;
+	padding: 90px 0px 100px;
+	.cost-title {
+		text-align: center;
+		margin-bottom: 40px;
+	}
+	.price {
+		background: #fff;
+		padding: 15px 0;
+		border-radius: 10px;
+		@media screen and (max-width: 992px){
+			margin-top: 50px;
+		}
+		&__list {
+			width: 80%;
+			margin: 0 auto;
+		}
+		&__item {
+			border-bottom: 1px solid #d9d9d9;
+			padding-bottom: 16px;
+			margin-top: 15px;
+			letter-spacing: 0;
+			&:last-child {
+				border-bottom: none;
+			}
+			span {
+				color: @emotion;
+				background: @srv_gradient;
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				font-size: 20px;
+				font-weight: 900;
+			}
+		}		
+	}
+	.offer__cta {
+		width: 100%;
+		&:nth-child(3) {
+			background: transparent;
+			color: #000;
+			&:active {
+				background: transparent !important;
+				color: #000;
+			}
+		}
+	}
+}
+
 .modal-windows {
   display: none;
   position: fixed;
   top: 0;
   right: 0;
   z-index: 20;
-  width: calc(100% - 80px);
+  width: calc(~"100% - 80px");
   height: 100%;
   background: @overlay;
   -webkit-background-size: 30%;
@@ -3394,7 +3723,6 @@ body {
     }
     &-wrapper {
       width: 100%;
-      float: left;
     }
   }
   .modal-windows {
@@ -3696,6 +4024,7 @@ body {
     &-header {
       height: auto;
       padding-bottom: 70px;
+			overflow: hidden;
       &-content {
         flex-direction: column-reverse;
         padding: 0;
@@ -4463,7 +4792,7 @@ body {
     }
   }
 }
-@media(max-width: 400px) {
+@media(max-width: 440px) {
   .header {
     &-main {
       &-title {

@@ -112,7 +112,10 @@ $(document).ready(function() {
     });
 
     //Forms
-    $('[data-open]').click(function() {
+		
+
+	$('a[data-open="callback"]').click(function(e) {
+			e.preventDefault();					 
        var call_name = $(this).attr('data-open');
        $('.window').hide();
        $('.window[data-window=' + call_name + ']').show();
@@ -202,7 +205,6 @@ $(document).ready(function() {
     });
     var monoMenuDOM = document.querySelector('.mono-menu'),
         monoMenuItemDOM;
-    console.log(monoMenuDOM);
     monoMenuList.forEach(function(monoMenuItem) {
        monoMenuItemDOM = document.createElement('li');
        monoMenuItemDOM.className = 'mono-menu_item';
