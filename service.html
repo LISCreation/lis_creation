@@ -10,7 +10,7 @@
     <meta name="description" content="Креативная команда LIS Creation предлагает услуги по разработке веб-сайтов любой сложности. Начиная от красивой посадочной страницы Landing Page, приносящей огромное кол-во лидов, и заканчивая большим корпоративным сайтом, решающим сложные задачи, а также блогом, приносящим постоянное число посетителей. Работаем с 2014 года!">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="clearfix service">
 <div class="global-sidebar  global-sidebar_service__landing">
@@ -46,7 +46,7 @@
     </div>
     <div class="global-sidebar_down">
         <div class="global-sidebar_down_icon-wrapper">
-            <img src="img/icons/call.svg" alt="Позвонить!" class="global-sidebar_icon">
+            <img data-open="callback" src="img/icons/call.svg" alt="Позвонить!" class="global-sidebar_icon">
         </div>
         <div class="global-sidebar_down_icon-wrapper">
             <img src="img/icons/email.svg" alt="Позвонить!" class="global-sidebar_icon">
@@ -55,13 +55,21 @@
 </div>
 <div class="global-wrapper serv">
     <header class="header serv-header" id="header">
-        <div class="container-self">
+        <div class="container d-flex justify-content-between align-items-center">
+						<a href="index.html" class="logo">
+							<img src="img/srv_new/logo_lamp.png" alt="LisCreation">
+							<p class="logo__text">
+								<span>Lis</span> Creation
+							</p>
+						</a>						
             <nav class="header-menu">
                 <ul class="header-menu-list d-sm-flex d-none">
-                    <li class="header-menu-list_item"><a href="#">Главная</a></li>
-                    <li class="header-menu-list_item"><a href="#">Портфолио</a></li>
+                    <li class="header-menu-list_item"><a href="javascript:void(null)">Главная</a></li>
+                    <li class="header-menu-list_item"><a href="javascript:void(null)">Портфолио</a></li>
                     <li class="header-menu-list_item has-children">
-                        Акции
+												<a href="javascript:void(null)">
+													Акции
+												</a>												
                         <div class="submenu_wrapper">
                             <ul class="submenu">
                                 <li><a href="#">Акция 1 lorem lorem</a></li>
@@ -74,7 +82,9 @@
                         </div>
                     </li>
                     <li class="header-menu-list_item has-children">
-                        Услуги
+												<a href="javascript:void(null)">
+													Услуги
+												</a>                        
                         <div class="submenu_wrapper">
                             <ul class="submenu">
                                 <li><a href="#">Landing Page</a></li>
@@ -99,7 +109,7 @@
                         <li><a href="#">Главная</a></li>
                         <li><a href="#">Портфолио</a></li>
                         <li class="has-children">
-                            Акции
+														<a href="javascript:void(null)">Акции</a>                           
                             <div class="submenu_wrapper">
                                 <ul class="submenu">
                                     <li><a href="#">Акция 1 lorem lorem</a></li>
@@ -112,7 +122,8 @@
                             </div>
                         </li>
                         <li class="header-menu-list_item has-children">
-                            Услуги
+                            <a href="javascript:void(null)">Услуги</a>
+														
                             <div class="submenu_wrapper">
                                 <ul class="submenu">
                                     <li><a href="#">Landing Page</a></li>
@@ -126,316 +137,335 @@
                         </li>
                     </ul>
                 </div>
-            </nav>
-            <div class="serv-header-content_wrapper">
-                <div class="serv-header-content">
-                    <div class="serv-header-main">
-                        <div class="title_wrapper">
-                            <img src="img/logo_lis-creation.png" alt="LIS Creation (Light in Sky) Logo" class="logo">
-                            <h1 class="title">Landing Page</h1>
-                        </div>
-                        <div class="info">
-                            <p>Landing Page это способ привлечь новых клиентов,
-                                увеличить продажи конкретного товара или услуги
-                                с помощью одной-единственной страницы.</p>
-                        </div>
-                        <a href="javascript:void(null)" data-open="callback" class="cst_btn reverse"><span>Узнайте подробнее!</span></a>
-                    </div>
-                    <div class="serv-header-image_wrapper">
-                        <img src="img/services/landing.png" class="serv-header-image" alt="Landing page одностраничный">
-                    </div>
-                </div>
-            </div>
+            </nav>  
+						<a href="#" data-open="callback" class="btn btn_srv btn_nav">Заказать сайт</a>          
         </div>
+				<div class="main-content">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="offer">
+									<h1 class="offer__title">
+										Landing Page под ключ
+									</h1>
+									<p class="offer__text">
+										Увеличим ваш оборот продаж<br> за <span>одну неделю!</span>
+									</p>
+									<a href="#" data-open="callback" class="offer__cta btn btn_srv">
+										Узнать больше
+									</a>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="main-mocup">
+									<img src="img/srv_new/serv_mokups.png" alt="Mocup presentation">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main-desc">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-9 col-lg-7">
+								<div class="desc">
+									<h3 class="desc__title">
+										Landing Page
+									</h3>
+									<p class="desc__text">
+										<span>Лендинг</span>, или <span>landing page</span> — это одностраничный сайт, главная цель которого - продать товар или услугу. При создании
+										лендинга основную ставку делают на <span>маркетинг</span>, дизайн и моушен-дизайн.
+									</p>
+									<p class="desc__text">
+										Landing page должен быть красивым и завораживать посетителя ровно до такой степени, чтобы он не думая захотел товар, а
+										лучше - два. Поэтому лендинг пейдж без хорошего маркетолога — деньги на ветер.
+									</p>
+									<p class="desc__text">
+										Landing page создается именно под <span>контекстную рекламу</span> (Яндекс Директ и Google Adwords), так как продвигать его в
+										естественной выдаче по подавляющему большинству запросов не удастся ввиду всего одной страницы на сайте.
+									</p>
+									<a href="#" data-open="callback" class="offer__cta btn btn_srv">
+										Остались вопросы?
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
     </header>
-    <section class="listing tasks" id="tasks">
-        <div class="container">
-            <div class="section-info">
-                <h2 class="section-header">Задачи Landing Page</h2>
-                <p class="section-description">Landing Page представляет посетителю уникальное товарное
-                    предложение, и содержит в себе максимум информации при минимуме
-                    объема. Ее цель – привлечь и задержать посетителя, подталкивая
-                    его к тому, чтобы стать Вашим клиентом.</p>
-            </div>
-            <div class="listing-list tasks-list">
-                <div class="row">
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="listing-list_item tasks-list_item">
-                            <div class="listing-list_item-icon tasks-list_item-icon"><img src="img/icons/services/startup.svg" alt="Rocket LIS"></div>
-                            <p class="listing-list_item-designation tasks-list_item-designation">Призыв к активному действию. Это может быть регистрация или покупка</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="listing-list_item tasks-list_item">
-                            <div class="listing-list_item-icon tasks-list_item-icon"><img src="img/icons/services/approve.svg" alt="Rocket LIS"></div>
-                            <p class="listing-list_item-designation tasks-list_item-designation">Максимум информативности при минимальной текстовой загрузке</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="listing-list_item tasks-list_item">
-                            <div class="listing-list_item-icon tasks-list_item-icon"><img src="img/icons/services/responsive.svg" alt="Rocket LIS"></div>
-                            <p class="listing-list_item-designation tasks-list_item-designation">Доступность страницы для пользователя на любых устройствах</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="listing-list_item tasks-list_item">
-                            <div class="listing-list_item-icon tasks-list_item-icon"><img src="img/icons/services/competition.svg" alt="Rocket LIS"></div>
-                            <p class="listing-list_item-designation tasks-list_item-designation">Привлечь внимание и превратить посетителя сайта в покупателя</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="process">
-        <div class="container">
-            <div class="section-info">
-                <h2 class="section-header">создание landing page</h2>
-                <p class="section-description">Когда требуется обратить внимание клиента на ваш определенный товар
-                    или услугу, то значит, вам необходим Landing - продающая страница!
-                    Наша команда профессионалов предлагает интересные решения
-                    для эффективной продажи и продвижения
-                    вашего товара или услуги. </p>
-            </div>
-            <div class="process-info">
-                <p class="process-text"><strong>Команда LIS Creation</strong> разработает для Вас продающий
-                    Landing Page с учетом специфики товара/услуги,
-                    а так же анализом рынка и конкуренов.
-                </p>
-                <div class="process-numbers">
-                    <p class="process-price">Срок разработки проекта - <span>14-21 дней</span></p>
-                    <p class="process-duration">Стоимость проекта - <span>от 21 990 руб.</span></p>
-                </div>
-                <div class="process-button"><a href="#" class="cst_btn reverse works-link anchor"><span>Смотрите наши кейсы</span></a></div>
-            </div>
-            <div class="process-image_wrapper">
-                <img src="img/services/landings.png" alt="3d example from works" class="process-image">
-            </div>
-        </div>
-    </section>
-    <section class="listing offer" id="offer">
-        <div class="container">
-            <div class="section-info">
-                <h2 class="section-header">Что мы  предлагаем?</h2>
-                <p class="section-description">Для Вашего удобства мы разработали систему «под ключ» - от вашей
-                    идеи до продвижения на передовые позиции в интернете.
-                    Мы работаем только на результат!</p>
-            </div>
-            <div class="listing-list offer-list">
-                <div class="row">
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="listing-list_item offer-list_item">
-                            <div class="listing-list_item-icon offer-list_item-icon"><img src="img/icons/services/pixel.svg" alt="Rocket LIS"></div>
-                            <p class="listing-list_item-designation offer-list_item-designation">Разработаем уникальный, современный и продающий дизайн сайта</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="listing-list_item offer-list_item">
-                            <div class="listing-list_item-icon offer-list_item-icon"><img src="img/icons/services/tap.svg" alt="Rocket LIS"></div>
-                            <p class="listing-list_item-designation offer-list_item-designation">Адаптивная верстка HTML5/CSS3 и SEO оптимизация</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="listing-list_item offer-list_item">
-                            <div class="listing-list_item-icon offer-list_item-icon"><img src="img/icons/services/testing.svg" alt="Rocket LIS"></div>
-                            <p class="listing-list_item-designation offer-list_item-designation">Первичное наполнение сайта контентом, размещение на хостинге</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="listing-list_item offer-list_item">
-                            <div class="listing-list_item-icon offer-list_item-icon"><img src="img/icons/services/timeline.svg" alt="Rocket LIS"></div>
-                            <p class="listing-list_item-designation offer-list_item-designation">Продвижение сайта в топ и настройка контекстной рекламы</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="services" id="services">
-        <div class="container-fluid p-0">
-            <div class="section-info">
-                <h2 class="section-header">наши услуги</h2>
-                <p class="section-description">За 4 года более восьмидесяти клиентов стали довольными
-                    обладателями собственных страниц в интернете. Наша задача,
-                    чтобы посетители страницы стали вашими покупателями.</p>
-            </div>
-            <div class="services-list owl-carousel">
-                <article class="services-list_item_wrapper">
-                    <div class="services-list_item">
-                        <div class="services-list_item_distance">
-                            <h3 class="services-list_item-title">Landing Page1</h3>
-                            <img src="img/services/landing.png" alt="Landing Page by LIS" class="services-list_item-example">
-                            <p class="services-list_item-price">от <span>19 990</span> р.</p>
-                            <hr>
-                            <a href="#" class="services-list_item-morebtn">
-                                <p>КОМПЛЕКТАЦИЯ</p>
-                            </a>
-                            <hr>
-                            <a href="#" class="cst_btn services-list_item-btn"><span>Хочу такой сайт</span></a>
-                        </div>
-                    </div>
-                    <div class="services-list_item_back">
-                        <div class="panel panel_back">
-                            <img class="work-header_back" style="transform: rotate(90deg);" src="img/icons/arrow-down.svg" alt=""> <span>Назад</span>
-                        </div>
-                        <ul class="services-list_item-apps">
-                            <li class="services-list_item-apps_thing">Адаптивная верстка HTML5/CSS3</li>
-                            <li class="services-list_item-apps_thing">Мобильная версия сайта</li>
-                            <li class="services-list_item-apps_thing">Уникальный дизайн</li>
-                            <li class="services-list_item-apps_thing">SEO оптимизация</li>
-                            <li class="services-list_item-apps_thing">Размещение на хостинге</li>
-                        </ul>
-                        <a href="#" class="cst_btn reverse services-list_item_back-btn"><span>Узнайте подробнее!</span></a>
-                    </div>
-                </article>
-
-                <article class="services-list_item_wrapper">
-                    <div class="services-list_item">
-                        <div class="services-list_item_distance">
-                            <h3 class="services-list_item-title">Landing Page2</h3>
-                            <img src="img/services/landing.png" alt="Landing Page by LIS" class="services-list_item-example">
-                            <p class="services-list_item-price">от <span>19 990</span> р.</p>
-                            <hr>
-                            <a href="#" class="services-list_item-morebtn">
-                                <p>КОМПЛЕКТАЦИЯ</p>
-                            </a>
-                            <hr>
-                            <a href="#" class="cst_btn services-list_item-btn"><span>Хочу такой сайт</span></a>
-                        </div>
-                    </div>
-                    <div class="services-list_item_back">
-                        <div class="panel panel_back">
-                            <img class="work-header_back" style="transform: rotate(90deg);" src="img/icons/arrow-down.svg" alt=""> <span>Назад</span>
-                        </div>
-                        <ul class="services-list_item-apps">
-                            <li class="services-list_item-apps_thing">Адаптивная верстка HTML5/CSS3</li>
-                            <li class="services-list_item-apps_thing">Мобильная версия сайта</li>
-                            <li class="services-list_item-apps_thing">Уникальный дизайн</li>
-                            <li class="services-list_item-apps_thing">SEO оптимизация</li>
-                            <li class="services-list_item-apps_thing">Размещение на хостинге</li>
-                        </ul>
-                        <a href="#" class="cst_btn reverse services-list_item_back-btn"><span>Узнайте подробнее!</span></a>
-                    </div>
-                </article>
-
-                <article class="services-list_item_wrapper">
-                    <div class="services-list_item">
-                        <div class="services-list_item_distance">
-                            <h3 class="services-list_item-title">Landing Page3</h3>
-                            <img src="img/services/landing.png" alt="Landing Page by LIS" class="services-list_item-example">
-                            <p class="services-list_item-price">от <span>19 990</span> р.</p>
-                            <hr>
-                            <a href="#" class="services-list_item-morebtn">
-                                <p>КОМПЛЕКТАЦИЯ</p>
-                            </a>
-                            <hr>
-                            <a href="#" class="cst_btn services-list_item-btn"><span>Хочу такой сайт</span></a>
-                        </div>
-                    </div>
-                    <div class="services-list_item_back">
-                        <div class="panel panel_back">
-                            <img class="work-header_back" style="transform: rotate(90deg);" src="img/icons/arrow-down.svg" alt=""> <span>Назад</span>
-                        </div>
-                        <ul class="services-list_item-apps">
-                            <li class="services-list_item-apps_thing">Адаптивная верстка HTML5/CSS3</li>
-                            <li class="services-list_item-apps_thing">Мобильная версия сайта</li>
-                            <li class="services-list_item-apps_thing">Уникальный дизайн</li>
-                            <li class="services-list_item-apps_thing">SEO оптимизация</li>
-                            <li class="services-list_item-apps_thing">Размещение на хостинге</li>
-                        </ul>
-                        <a href="#" class="cst_btn reverse services-list_item_back-btn"><span>Узнайте подробнее!</span></a>
-                    </div>
-                </article>
-
-                <article class="services-list_item_wrapper">
-                    <div class="services-list_item">
-                        <div class="services-list_item_distance">
-                            <h3 class="services-list_item-title">Landing Page4</h3>
-                            <img src="img/services/landing.png" alt="Landing Page by LIS" class="services-list_item-example">
-                            <p class="services-list_item-price">от <span>19 990</span> р.</p>
-                            <hr>
-                            <a href="#" class="services-list_item-morebtn">
-                                <p>КОМПЛЕКТАЦИЯ</p>
-                            </a>
-                            <hr>
-                            <a href="#" class="cst_btn services-list_item-btn"><span>Хочу такой сайт</span></a>
-                        </div>
-                    </div>
-                    <div class="services-list_item_back">
-                        <div class="panel panel_back">
-                            <img class="work-header_back" style="transform: rotate(90deg);" src="img/icons/arrow-down.svg" alt=""> <span>Назад</span>
-                        </div>
-                        <ul class="services-list_item-apps">
-                            <li class="services-list_item-apps_thing">Адаптивная верстка HTML5/CSS3</li>
-                            <li class="services-list_item-apps_thing">Мобильная версия сайта</li>
-                            <li class="services-list_item-apps_thing">Уникальный дизайн</li>
-                            <li class="services-list_item-apps_thing">SEO оптимизация</li>
-                            <li class="services-list_item-apps_thing">Размещение на хостинге</li>
-                        </ul>
-                        <a href="#" class="cst_btn reverse services-list_item_back-btn"><span>Узнайте подробнее!</span></a>
-                    </div>
-                </article>
-
-                <article class="services-list_item_wrapper">
-                    <div class="services-list_item">
-                        <div class="services-list_item_distance">
-                            <h3 class="services-list_item-title">Landing Page5</h3>
-                            <img src="img/services/landing.png" alt="Landing Page by LIS" class="services-list_item-example">
-                            <p class="services-list_item-price">от <span>19 990</span> р.</p>
-                            <hr>
-                            <a href="#" class="services-list_item-morebtn">
-                                <p>КОМПЛЕКТАЦИЯ</p>
-                            </a>
-                            <hr>
-                            <a href="#" class="cst_btn services-list_item-btn"><span>Хочу такой сайт</span></a>
-                        </div>
-                    </div>
-                    <div class="services-list_item_back">
-                        <div class="panel panel_back">
-                            <img class="work-header_back" style="transform: rotate(90deg);" src="img/icons/arrow-down.svg" alt=""> <span>Назад</span>
-                        </div>
-                        <ul class="services-list_item-apps">
-                            <li class="services-list_item-apps_thing">Адаптивная верстка HTML5/CSS3</li>
-                            <li class="services-list_item-apps_thing">Мобильная версия сайта</li>
-                            <li class="services-list_item-apps_thing">Уникальный дизайн</li>
-                            <li class="services-list_item-apps_thing">SEO оптимизация</li>
-                            <li class="services-list_item-apps_thing">Размещение на хостинге</li>
-                        </ul>
-                        <a href="#" class="cst_btn reverse services-list_item_back-btn"><span>Узнайте подробнее!</span></a>
-                    </div>
-                </article>
-
-                <article class="services-list_item_wrapper">
-                    <div class="services-list_item">
-                        <div class="services-list_item_distance">
-                            <h3 class="services-list_item-title">Landing Page6</h3>
-                            <img src="img/services/landing.png" alt="Landing Page by LIS" class="services-list_item-example">
-                            <p class="services-list_item-price">от <span>19 990</span> р.</p>
-                            <hr>
-                            <a href="#" class="services-list_item-morebtn">
-                                <p>КОМПЛЕКТАЦИЯ</p>
-                            </a>
-                            <hr>
-                            <a href="#" class="cst_btn services-list_item-btn"><span>Хочу такой сайт</span></a>
-                        </div>
-                    </div>
-                    <div class="services-list_item_back">
-                        <div class="panel panel_back">
-                            <img class="work-header_back" style="transform: rotate(90deg);" src="img/icons/arrow-down.svg" alt=""> <span>Назад</span>
-                        </div>
-                        <ul class="services-list_item-apps">
-                            <li class="services-list_item-apps_thing">Адаптивная верстка HTML5/CSS3</li>
-                            <li class="services-list_item-apps_thing">Мобильная версия сайта</li>
-                            <li class="services-list_item-apps_thing">Уникальный дизайн</li>
-                            <li class="services-list_item-apps_thing">SEO оптимизация</li>
-                            <li class="services-list_item-apps_thing">Размещение на хостинге</li>
-                        </ul>
-                        <a href="#" class="cst_btn reverse services-list_item_back-btn"><span>Узнайте подробнее!</span></a>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
+		<section class="advantages-section">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<h2 class="advantages-title section-title">
+							Преимущества Landing Page
+						</h2>						
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="advantages__item">
+							<img src="img/srv_new/lp.png" alt="landing page">
+							<h3>Первое преимущество</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+								magna aliqua. </p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="advantages__item">
+							<img src="img/srv_new/lp.png" alt="landing page">
+							<h3>Второе преимущество</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+								magna aliqua. </p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="advantages__item">
+							<img src="img/srv_new/lp.png" alt="landing page">
+							<h3>Третий пункт здесь</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+								magna aliqua. </p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="advantages__item">
+							<img src="img/srv_new/lp.png" alt="landing page">
+							<h3>Преимущество номер 4</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+								magna aliqua. </p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="advantages__item">
+							<img src="img/srv_new/lp.png" alt="landing page">
+							<h3>Пятое преимущество</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+								magna aliqua. </p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="advantages__item">
+							<img src="img/srv_new/lp.png" alt="landing page">
+							<h3>Последнее преимущество здесь</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+								magna aliqua. </p>
+						</div>
+					</div>
+				</div>
+				<div class="dont-all">
+					<div class="row">
+						<div class="col">
+							<h4 class="dont-all-title">
+								И это ещё не всё!
+							</h4>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<a href="#" data-open="callback" class="offer__cta btn btn_srv">
+								Узнайте больше!
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="stages-of-creation">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<h2 class="creation-title section-title">
+							Этапы создания Landing Page
+						</h2>
+					</div>
+				</div>
+				<div class="row justify-content-sm-center">
+					<div class="col-12 col-sm-6 col-lg-4">
+						<div class="create__items">
+							<span class="count">01</span>
+							<img src="img/srv_new/learning.png" alt="landing page">
+							<h3>Формирование задач</h3>
+							<ul class="create__list">
+								<li class="create__item">
+									Сбор данных
+								</li>
+								<li class="create__item">
+									Анализ ниши
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-4">
+						<div class="create__items">
+							<span class="count">02</span>
+							<img src="img/srv_new/prototype.png" alt="landing page">
+							<h3>Проектирование</h3>
+							<ul class="create__list">
+								<li class="create__item">
+									Составление плана + ТЗ
+								</li>
+								<li class="create__item">
+									Создание прототипа
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-4">
+						<div class="create__items">
+							<span class="count">03</span>
+							<img src="img/srv_new/prototyping.png" alt="landing page">
+							<h3>Дизайн сайта</h3>
+							<ul class="create__list">
+								<li class="create__item">
+									Проектироание интерфейса сайта
+								</li>
+								<li class="create__item">
+									Создание дизайна основной и моб. версий
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-4">
+						<div class="create__items">
+							<span class="count">04</span>
+							<img src="img/srv_new/web.png" alt="landing page">
+							<h3>Верстка</h3>
+							<ul class="create__list">
+								<li class="create__item">
+									Вёрстка (html, css) и размещение элементов
+								</li>
+								<li class="create__item">
+									Настройка функциональности
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-4">
+						<div class="create__items">
+							<span class="count">05</span>
+							<img src="img/srv_new/control-system.png" alt="landing page">
+							<h3>Программинг</h3>
+							<ul class="create__list">
+								<li class="create__item">
+									Посадка на CMS (Систему управления)
+								</li>
+								<li class="create__item">
+									Автоматизация действий и процессов
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-4">
+						<div class="create__items">
+							<span class="count">06</span>
+							<img src="img/srv_new/browser.png" alt="landing page">
+							<h3>Наполнение</h3>
+							<ul class="create__list">
+								<li class="create__item">
+									Составление ТЗ для копирайтера
+								</li>
+								<li class="create__item">
+									Написание и внедрение текстов
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-4">
+						<div class="create__items">
+							<span class="count">07</span>
+							<img src="img/srv_new/checklist.png" alt="landing page">
+							<h3>Тестирование сайта</h3>
+							<ul class="create__list">
+								<li class="create__item">
+									Глобальное тестирование перед запуском
+								</li>
+								<li class="create__item">
+									Тестирование на нескольких устройствах
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-4">
+						<div class="create__items">
+							<span class="count">08</span>
+							<img src="img/srv_new/viral-marketing.png" alt="landing page">
+							<h3>Запуск</h3>
+							<ul class="create__list">
+								<li class="create__item">
+									Обучение представителей заказчика
+								</li>
+								<li class="create__item">
+									Передача заказчику всех материалов
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-12 col-sm-6 col-lg-4">
+						<div class="create__items">
+							<span class="count">09</span>
+							<img src="img/srv_new/conversation.png" alt="landing page">
+							<h3>Поддержка сайта</h3>
+							<ul class="create__list">
+								<li class="create__item">
+									Дальнейшая поддержка заказчика
+								</li>
+								<li class="create__item">
+									Возможность внедрить в сайт новый
+									функционал
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col text-center">
+						<a href="#" data-open="callback" class="offer__cta btn btn_srv">
+							Начнем работать!
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="cost-section">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<h2 class="cost-title section-title">
+							Стоимость Landing Page
+						</h2>
+					</div>
+				</div>
+				<div class="row justify-content-md-center justify-content-lg-between align-items-center">
+					<div class="col-lg-8">
+						<img src="img/srv_new/Stuff.png" alt="Стоимость проекта">
+					</div>
+					<div class="col-md-8 col-lg-4 col-xl-3">
+						<div class="price">
+							<ul class="price__list">
+								<li class="price__item">
+									Цена: <span>от 15 000 р.</span>
+								</li>
+								<li class="price__item">
+									Сроки: <span>15 - 30 дней.</span>
+								</li>
+								<li class="price__item">
+									Конверсия: <span>15 - 20%</span>
+								</li>
+								<li class="price__item">
+									Окупаемость: <span>1 месяц.</span>
+								</li>
+							</ul>
+						</div>
+						<a href="#" data-open="callback" class="offer__cta btn btn_srv">
+							Заказать сайт!
+						</a>
+						<a href="#" data-open="callback" class="offer__cta btn btn_srv">
+							Сайт в рассрочку
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
     <section class="callback" id="callback">
         <div class="container">
             <div class="section-info">
@@ -458,7 +488,7 @@
                         <span class="inp_starlet">*</span>
                     </div>
                     <div class="callback-form-button_wrapper">
-                        <input type="submit" value="Оставить заявку" class="cst_btn reverse callback-form-button">
+                        <input type="submit" value="Оставить заявку" class="offer__cta btn btn_srv">
                     </div>
                 </div>
                 <div id="callback_main_result"></div>
@@ -474,7 +504,7 @@
                         <li class="footer-contacts_item" id="phone"><a href="tel:79883648614">+7 (988) 364-86-14</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-sm-5 col-10 ml-auto mr-auto">
+                <div class="d-none col-lg-3 col-sm-5 col-10 ml-auto mr-auto">
                     <ul class="social footer_social">
                         <li class="social_item footer_social_item">
                             <a href="#" target="_blank" title="VK">
@@ -548,7 +578,8 @@
                                 <span class="inp_starlet">*</span>
                             </div>
                             <div class="callback-form-button_wrapper">
-                                <a href="#" class="cst_btn"><span>Хочу такой сайт</span></a>                    </div>
+                                <a href="#" class="offer__cta btn btn_srv"><span>Хочу такой сайт</span></a> 
+																</div>
                         </div>
                     </div>
                 </form>
@@ -558,6 +589,7 @@
     </div>
 </div>
 <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="js/jquery.paroller.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/main.min.js"></script>
 </body>
