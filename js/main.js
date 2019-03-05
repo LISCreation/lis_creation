@@ -114,7 +114,7 @@ $(document).ready(function() {
     //Forms
 		
 
-	$('a[data-open="callback"]').click(function(e) {
+	$('[data-open="callback"]').click(function(e) {
 			e.preventDefault();					 
        var call_name = $(this).attr('data-open');
        $('.window').hide();
