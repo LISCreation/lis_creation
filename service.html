@@ -6,7 +6,9 @@
           content="width=device-width, initial-scale=1.0, maximum-scale=1.3">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>LIS Creation - Место, где рождаются сайты</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+	<link rel="icon" href="favicon.png" type="image/png">
+	<link rel="shortcut icon" href="favicon.png" type="image/png">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
     <meta name="description" content="Креативная команда LIS Creation предлагает услуги по разработке веб-сайтов любой сложности. Начиная от красивой посадочной страницы Landing Page, приносящей огромное кол-во лидов, и заканчивая большим корпоративным сайтом, решающим сложные задачи, а также блогом, приносящим постоянное число посетителей. Работаем с 2014 года!">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
@@ -14,42 +16,29 @@
 </head>
 <body class="clearfix service">
 <div class="global-sidebar  global-sidebar_service__landing">
-    <!--spare_html: Mono Menu-->
-    <div class="global-sidebar_up">
-        <div class="global-sidebar_up_icon-wrapper">
-            <img class="global-sidebar_icon global-sidebar_up_icon" src="img/icons/up.svg" alt="Вверх">
-        </div>
-    </div>
-    <div class="global-sidebar_middle">
-        <nav class="mono">
-            <ul class="mono-menu">
+	<div class="global-sidebar_up">
+		<div class="global-sidebar_up_icon-wrapper">
+			<a href="#toTop" class="anchor"><img class="global-sidebar_icon global-sidebar_up_icon" src="img/icons/up.svg" alt="Вверх"></a>
+		</div>
+	</div>
+	<div class="global-sidebar_middle">
+		<nav class="mono">
+			<ul class="mono-menu">
+				<!--
+                Template:
                 <li class="mono-menu_item">
-                    <a class="anchor" href="#"><div class="tab">Начало экрана</div></a>
+                    <a href="#XXX"><div class="tab">YYY</div></a>
                 </li>
-                <li class="mono-menu_item">
-                    <a class="anchor" href="#"><div class="tab">Начало экрана 2</div></a>
-                </li>
-                <li class="mono-menu_item">
-                    <a class="anchor" href="#"><div class="tab">Начало экрана Начало экрана</div></a>
-                </li>
-                <li class="mono-menu_item">
-                    <a class="anchor" href="#"><div class="tab">Начало экрана Начало экранаНачало экрана</div></a>
-                </li>
-                <li class="mono-menu_item">
-                    <a class="anchor" href="#"><div class="tab">Начало экрана Начало экрана</div></a>
-                </li>
-                <li class="mono-menu_item">
-                    <a class="anchor" href="#"><div class="tab">Начало экрана 32</div></a>
-                </li>
-            </ul>
-        </nav>
-    </div>
+                -->
+			</ul>
+		</nav>
+	</div>
     <div class="global-sidebar_down">
         <div class="global-sidebar_down_icon-wrapper">
             <img data-open="callback" src="img/icons/call.svg" alt="Позвонить!" class="global-sidebar_icon">
         </div>
         <div class="global-sidebar_down_icon-wrapper">
-            <img src="img/icons/email.svg" alt="Позвонить!" class="global-sidebar_icon">
+			<a href="mailto:lis.lightinsky@gmail.com"><img src="img/icons/email.svg" alt="Написать на lis.lightinsky@gmail.com" class="global-sidebar_icon"></a>
         </div>
     </div>
 </div>
@@ -137,9 +126,9 @@
                         </li>
                     </ul>
                 </div>
-            </nav>  
-						<a href="#" data-open="callback" class="btn btn_srv btn_nav">Заказать сайт</a>          
-        </div>
+            </nav>
+			<a href="#" data-open="callback" class="btn btn_srv btn_nav">Заказать сайт</a>
+		</div>
 				<div class="main-content">
 					<div class="container">
 						<div class="row">
@@ -164,7 +153,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="main-desc">
+				<section class="main-desc" id="description" data-section-zone="Что такое Landing Page?">
 					<div class="container">
 						<div class="row">
 							<div class="col-md-9 col-lg-7">
@@ -191,9 +180,9 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</section>
     </header>
-		<section class="advantages-section">
+		<section class="advantages-section" id="advantages-section" data-section-zone="Преимущества">
 			<div class="container">
 				<div class="row">
 					<div class="col">
@@ -270,7 +259,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="stages-of-creation">
+		<section class="stages-of-creation" id="stages" data-section-zone="Этапы создания">
 			<div class="container">
 				<div class="row">
 					<div class="col">
@@ -426,7 +415,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="cost-section">
+		<section class="cost-section" id="cost" data-section-zone="Стоимость">
 			<div class="container">
 				<div class="row">
 					<div class="col">
@@ -466,7 +455,7 @@
 				</div>
 			</div>
 		</section>
-    <section class="callback" id="callback">
+    <section class="callback" id="callback" data-section-zone="Заказать звонок">
         <div class="container">
             <div class="section-info">
                 <h2 class="section-header">свяжитесь с нами</h2>
