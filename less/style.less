@@ -1166,7 +1166,6 @@ body {
   .container-fluid {
     padding: 0;
   }
-  padding-top: 40px;
   color: @light;
   background: url(../img/light-night.jpg) no-repeat center / cover;
   height: 100vh;
@@ -1183,6 +1182,7 @@ body {
   }
 
   &-menu {
+    padding-top: 40px;
     position: relative;
 
     li {
@@ -1699,9 +1699,14 @@ body {
           }
 
           &-btn {
-            margin: 0 auto;
-            width: auto;
-            display: inline-block;
+            background: @srv_gradient;
+            &:hover {
+              -webkit-transform: scale(1.2);
+              -moz-transform: scale(1.2);
+              -ms-transform: scale(1.2);
+              -o-transform: scale(1.2);
+              transform: scale(1.2);
+            }
           }
 
           &-image {
@@ -2937,6 +2942,10 @@ body {
     &::before {
       display: none;
     }
+    .header-menu {
+      padding-top: 0;
+    }
+    padding-top: 40px;
     position: relative;
     background-image: url(../img/srv_new/serv_main-bg.jpg);
     vertical-align: middle;

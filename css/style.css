@@ -963,7 +963,6 @@ body.work {
   }
 }
 .header {
-  padding-top: 40px;
   color: #fff;
   background: url(../img/light-night.jpg) no-repeat center / cover;
   height: 100vh;
@@ -983,6 +982,7 @@ body.work {
   background-color: rgba(0, 0, 0, 0.4);
 }
 .header-menu {
+  padding-top: 40px;
   position: relative;
 }
 .header-menu-list {
@@ -1463,9 +1463,14 @@ body.work {
   display: block;
 }
 .header.portfolio .portfolio-list_item-btn {
-  margin: 0 auto;
-  width: auto;
-  display: inline-block;
+  background: linear-gradient(45deg, #f84892 0, rgba(238, 168, 73, 0.9) 100%);
+}
+.header.portfolio .portfolio-list_item-btn:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
 }
 .header.portfolio .portfolio-list_item-image {
   -webkit-transition: all ease .3s;
@@ -2682,6 +2687,7 @@ body.work {
   font-weight: normal;
 }
 .serv-header {
+  padding-top: 40px;
   position: relative;
   background-image: url(../img/srv_new/serv_main-bg.jpg);
   vertical-align: middle;
@@ -2690,6 +2696,9 @@ body.work {
 }
 .serv-header::before {
   display: none;
+}
+.serv-header .header-menu {
+  padding-top: 0;
 }
 .serv-header .logo {
   display: flex;
