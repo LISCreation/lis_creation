@@ -339,7 +339,9 @@ button:focus,
   position: absolute;
   top: 20px;
   left: 20px;
-  font-size: 20px;
+  font-family: 'ProximaNova', Arial, sans-serif;
+  font-weight: 900;
+  font-size: 25px;
 }
 .inp_starlet {
   display: none;
@@ -1153,7 +1155,6 @@ body.work {
 }
 .header-menu-list_mbl .clicker_area {
   padding: 10px 0;
-  margin-bottom: 10px;
 }
 .header-menu-list_mbl-clicker {
   margin: 0 auto;
@@ -1199,7 +1200,7 @@ body.work {
 }
 .header-menu-list_mbl .list {
   display: none;
-  margin: 0;
+  margin: 10px 0 0;
   overflow: auto;
   max-height: calc(100vh - 85px);
 }
@@ -1451,7 +1452,7 @@ body.work {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(45deg, rgba(244, 107, 69, 0.9) 0, rgba(238, 168, 73, 0.9) 100%);
+  background: linear-gradient(45deg, #f84892 0, rgba(238, 168, 73, 0.5) 100%);
 }
 .header.portfolio .portfolio-list_item-label {
   text-transform: uppercase;
@@ -1463,9 +1464,14 @@ body.work {
   display: block;
 }
 .header.portfolio .portfolio-list_item-btn {
-  background: linear-gradient(45deg, #f84892 0, rgba(238, 168, 73, 0.9) 100%);
+  background: rgba(255, 255, 255, 0.5);
+  color: #313131;
+  font-family: 'ProximaNova', Arial, sans-serif;
+  font-weight: 900;
 }
-.header.portfolio .portfolio-list_item-btn:hover {
+.header.portfolio .portfolio-list_item-btn:hover,
+.header.portfolio .portfolio-list_item-btn:active {
+  background: #fff!important;
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
@@ -2242,6 +2248,9 @@ body.work {
 .callback {
   padding: 60px 0 160px;
 }
+.callback .inp_wrapper {
+  margin: 0 5px;
+}
 .callback .section-info {
   margin-bottom: 80px;
 }
@@ -2267,7 +2276,9 @@ body.work {
 }
 .callback-form_inner {
   display: flex;
-  justify-content: space-around;
+}
+.callback-form_inner input {
+  font-size: 18px;
 }
 .callback-form #callback_main_result {
   margin-top: 30px;
@@ -2957,7 +2968,7 @@ body.work {
 .section-title {
   font-weight: 900;
   font-size: 35px;
-  color: #000000;
+  color: #313131;
 }
 .section-title::after {
   content: '';
@@ -2985,7 +2996,7 @@ body.work {
   font-weight: 900;
   margin-top: 15px;
   margin-bottom: 10px;
-  color: #000;
+  color: #313131;
 }
 .advantages-section .dont-all {
   border-top: 1px solid #c4c4c4;
@@ -3010,7 +3021,7 @@ body.work {
   top: 0;
   left: 6%;
   font-size: 200px;
-  color: #000;
+  color: #313131;
   opacity: 0.07;
   font-weight: 900;
   line-height: 0.75em;
@@ -3023,10 +3034,10 @@ body.work {
 .stages-of-creation .create__items h3 {
   font-size: 20px;
   font-weight: 900;
-  color: #000;
+  color: #313131;
 }
 .stages-of-creation .create__items .create__item {
-  color: #000;
+  color: #313131;
   font-size: 16px;
   letter-spacing: 0;
   position: relative;
@@ -3086,11 +3097,11 @@ body.work {
 }
 .cost-section .offer__cta:nth-child(3) {
   background: transparent;
-  color: #000;
+  color: #313131;
 }
 .cost-section .offer__cta:nth-child(3):active {
   background: transparent !important;
-  color: #000;
+  color: #313131;
 }
 .modal-windows {
   display: none;
@@ -3174,6 +3185,9 @@ body.work {
   -ms-transform: translate(-50%, -50%) rotate(45deg);
   -o-transform: translate(-50%, -50%) rotate(45deg);
   transform: translate(-50%, -50%) rotate(45deg);
+}
+.modal-windows .window .close_form {
+  margin-top: 20px;
 }
 @media (max-width: 1585px) {
   .serv-header-image {
@@ -3278,19 +3292,20 @@ body.work {
   .team-slider {
     margin: 0 auto;
   }
+  .callback-form {
+    max-width: 800px;
+    margin: 0 auto;
+  }
   .callback-form_inner {
     flex-wrap: wrap;
+    justify-content: space-between;
   }
   .callback-form .inp_wrapper {
-    width: 33%;
+    width: calc(50% - 5px);
+    margin: 15px 0 0 0;
   }
   .callback-form .inp_wrapper input {
     width: 100%;
-  }
-  .callback-form-button_wrapper {
-    margin-bottom: 20px;
-    width: 100%;
-    text-align: center;
   }
   .modal-windows .window .inp_wrapper {
     width: 100%;
@@ -3419,9 +3434,7 @@ body.work {
   .callback .inp {
     width: 100%;
   }
-  .callback-link,
   .callback .inp_wrapper {
-    width: 45%;
     margin-top: 20px;
   }
   .callback .section-info {
@@ -3836,6 +3849,10 @@ body.work {
   }
   .callback {
     padding: 50px 0 130px!important;
+  }
+  .callback-form {
+    max-width: none;
+    padding: 20px 20px 5px 20px;
   }
   .serv .process .section-info {
     margin-bottom: 30px;

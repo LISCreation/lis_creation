@@ -455,35 +455,42 @@
 				</div>
 			</div>
 		</section>
-    <section class="callback" id="callback" data-section-zone="Заказать звонок">
-        <div class="container">
-            <div class="section-info">
-                <h2 class="section-header">свяжитесь с нами</h2>
-                <p class="section-description">Заполните форму и мы с Вами свяжемся
-                    в ближайшее время!</p>
-            </div>
-            <form action="javascript:void(null)" id="callback_main" method="post" class="callback-form">
-                <div class="callback-form_inner">
-                    <div class="inp_wrapper">
-                        <input type="text" name="name" placeholder="Ваше имя" class="inp callback-form-input">
-                        <span class="inp_starlet">*</span>
-                    </div>
-                    <div class="inp_wrapper">
-                        <input type="tel" name="phone" placeholder="Введите номер" class="inp callback-form-input phone_inp">
-                        <span class="inp_starlet">*</span>
-                    </div>
-                    <div class="inp_wrapper">
-                        <input type="email" name="email" placeholder="Ваш E-mail" class="inp callback-form-input">
-                        <span class="inp_starlet">*</span>
-                    </div>
-                    <div class="callback-form-button_wrapper">
-                        <input type="submit" value="Оставить заявку" class="offer__cta btn btn_srv">
-                    </div>
-                </div>
-                <div id="callback_main_result"></div>
-            </form>
-        </div>
-    </section>
+	<section class="callback" id="callback" data-section-zone="Заказать звонок">
+		<div class="container">
+			<div class="section-info">
+				<h2 class="section-header">свяжитесь с нами</h2>
+				<p class="section-description">Заполните форму и мы с Вами свяжемся
+					в ближайшее время!</p>
+			</div>
+			<form action="javascript:void(null)" id="callback_main" method="post" class="callback-form">
+				<div class="callback-form_inner">
+					<div class="inp_wrapper required">
+						<input type="text" name="name" placeholder="Ваше имя" class="inp callback-form-input">
+						<span class="inp_starlet">*</span>
+					</div>
+					<style>
+						form input[type='number'] {
+							-moz-appearance:textfield;
+						}
+						form input::-webkit-outer-spin-button,
+						form input::-webkit-inner-spin-button {
+							-webkit-appearance: none;
+						}
+					</style>
+					<div class="inp_wrapper">
+						<input type="number" name="phone" placeholder="Введите номер" class="inp callback-form-input phone_inp">
+					</div>
+					<div class="inp_wrapper required">
+						<input type="email" name="email" placeholder="Ваш E-mail" class="inp callback-form-input">
+					</div>
+					<div class="callback-form-button_wrapper inp_wrapper">
+						<input type="submit" value="Оставить заявку" class="offer__cta btn btn_srv">
+					</div>
+				</div>
+				<div id="callback_main_result"></div>
+			</form>
+		</div>
+	</section>
     <footer class="footer" id="footer">
         <div class="container">
             <div class="row">
@@ -545,37 +552,36 @@
             </div>
         </div>
     </footer>
-    <div class="modal-windows">
-        <div class="window" data-window="callback">
-            <div class="window-content">
-                <form action="javascript:void(null)" id="callback_modal" method="post" class="callback-form">
-                    <div class="cross close_form d-none d-md-block"></div>
-                    <div class="window-content">
-                        <h3 class="window-header text-center" style="font-size: 20px;">Напишите свои контактные данные и мы свяжемся с вами</h3>
-                        <hr color="#5313b8">
-                        <div>
-                            <div class="inp_wrapper mb-3 required">
-                                <input type="text" name="name" placeholder="Ваше имя" class="inp callback-form-input">
-                                <span class="inp_starlet">*</span>
-                            </div>
-                            <div class="inp_wrapper mb-3">
-                                <input type="number" name="phone" placeholder="Введите номер" class="inp callback-form-input phone_inp">
-                                <span class="inp_starlet">*</span>
-                            </div>
-                            <div class="inp_wrapper mb-3 required">
-                                <input type="email" name="email" placeholder="Ваш E-mail" class="inp callback-form-input">
-                                <span class="inp_starlet">*</span>
-                            </div>
-                            <div class="callback-form-button_wrapper">
-                                <a href="#" class="offer__cta btn btn_srv"><span>Хочу такой сайт</span></a> 
-																</div>
-                        </div>
-                    </div>
-                </form>
-                <div class="close_form d-block d-md-none text-center text-white">Закрыть</div>
-            </div>
-        </div>
-    </div>
+	<div class="modal-windows">
+		<div class="window" data-window="callback">
+			<div class="window-content">
+				<form action="javascript:void(null)" id="callback_modal" method="post" class="callback-form">
+					<div class="cross close_form d-none d-md-block"></div>
+					<div class="window-content">
+						<h3 class="window-header text-center" style="font-size: 20px;">Напишите свои контактные данные и мы свяжемся с вами</h3>
+						<hr color="#5313b8">
+						<div>
+							<div class="inp_wrapper mb-3 required">
+								<input type="text" name="name" placeholder="Ваше имя" class="inp callback-form-input">
+								<span class="inp_starlet">*</span>
+							</div>
+							<div class="inp_wrapper mb-3">
+								<input type="number" name="phone" placeholder="Введите номер" class="inp callback-form-input phone_inp">
+								<span class="inp_starlet">*</span>
+							</div>
+							<div class="inp_wrapper mb-3 required">
+								<input type="email" name="email" placeholder="Ваш E-mail" class="inp callback-form-input">
+								<span class="inp_starlet">*</span>
+							</div>
+							<div class="callback-form-button_wrapper">
+								<a href="#" data-open="callback" class="offer__cta btn btn_srv d-block">Отправить</a>
+							</div>
+						</div>
+				</form>
+				<div class="close_form d-block d-md-none text-center text-white">Закрыть</div>
+			</div>
+		</div>
+	</div>
 </div>
 <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="js/jquery.paroller.min.js"></script>

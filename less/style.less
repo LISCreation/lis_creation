@@ -12,8 +12,8 @@
 @footer-dark: #1A0A33;
 @gray-light: rgba(235,235,235, .5);
 @overlay: rgba(0,0,0,.4);
-@emotion_gradient: linear-gradient(45deg,rgba(244,107,69,0.9) 0,rgba(238,168,73,0.9) 100%);
 @srv_gradient: linear-gradient(45deg, #f84892 0, rgba(238, 168, 73, 0.9) 100%);
+@srv_gradient_portfolio: linear-gradient(45deg, #f84892 0, rgba(238, 168, 73, 0.5) 100%);
 
 //tmpstyle: Fonts
 //GraphikLCG
@@ -440,7 +440,8 @@ input, button, .btn {
         position: absolute;
         top: 20px;
         left: 20px;
-        font-size: 20px;
+        .bold;
+        font-size: 25px;
       }
     }
   }
@@ -1369,9 +1370,7 @@ body {
 
         .clicker_area {
           padding: 10px 0;
-          margin-bottom: 10px;
         }
-
         &-clicker {
           margin: 0 auto;
           height: 20px;
@@ -1416,7 +1415,7 @@ body {
 
         .list {
           display: none;
-          margin: 0;
+          margin: 10px 0 0;
           overflow: auto;
           max-height: calc(~"100vh - 85px");
 
@@ -1686,7 +1685,7 @@ body {
             left: 0;
             width: 100%;
             height: 100%;
-            background: @emotion_gradient;
+            background: @srv_gradient_portfolio;
           }
 
           &-label {
@@ -1699,8 +1698,11 @@ body {
           }
 
           &-btn {
-            background: @srv_gradient;
-            &:hover {
+            background: rgba(255,255,255,.5);
+            color: @dark;
+            .bold;
+            &:hover, &:active {
+              background: #fff!important;
               -webkit-transform: scale(1.2);
               -moz-transform: scale(1.2);
               -ms-transform: scale(1.2);
@@ -2498,6 +2500,11 @@ body {
 }
 .callback {
   padding: 60px 0 160px;
+  .inp {
+    &_wrapper {
+      margin: 0 5px;
+    }
+  }
   .section {
     &-info {
       margin-bottom: 80px;
@@ -2519,14 +2526,16 @@ body {
       cursor: pointer;
 			&_wrapper {
 				.offer__cta {
-					margin-top: 0;
-					color: #fff;
+                  margin-top: 0;
+                  color: #fff;
 				}
 			}
     }
     &_inner {
       display: flex;
-      justify-content: space-around;
+      input {
+        font-size: 18px;
+      }
     }
     #callback_main_result {
       margin-top: 30px;
@@ -3242,7 +3251,7 @@ body {
 .section-title {
 	font-weight: 900;
 	font-size: 35px;
-	color: #000000;
+	color: @dark;
 	&::after {
 		content: '';
 		width: 100px;
@@ -3269,7 +3278,7 @@ body {
 			font-weight: 900;
 			margin-top: 15px;
 			margin-bottom: 10px;
-			color: #000;
+			color: @dark;
 		}
 	}
 	.dont-all {
@@ -3298,7 +3307,7 @@ body {
 			top: 0;
 			left: 6%;
 			font-size: 200px;
-			color: #000;
+			color: @dark;
 			opacity: 0.07;
 			font-weight: 900;
 			line-height: 0.75em;
@@ -3311,10 +3320,10 @@ body {
 		h3 {
 			font-size: 20px;
 			font-weight: 900;
-			color: #000;
+			color: @dark;
 		}
 		.create__item {
-			color: #000;
+			color: @dark;
 			font-size: 16px;
 			letter-spacing: 0;
 			position: relative;
@@ -3373,10 +3382,10 @@ body {
 		width: 100%;
 		&:nth-child(3) {
 			background: transparent;
-			color: #000;
+			color: @dark;
 			&:active {
 				background: transparent !important;
-				color: #000;
+				color: @dark;
 			}
 		}
 	}
@@ -3459,6 +3468,9 @@ body {
           transform: translate(-50%, -50%) rotate(45deg);
         }
       }
+    }
+    .close_form {
+      margin-top: 20px;
     }
   }
 }
@@ -3619,20 +3631,21 @@ body {
   }
   .callback {
     &-form {
+      max-width: 800px;
+      margin: 0 auto;
       &_inner {
         flex-wrap: wrap;
+        justify-content: space-between;
       }
       .inp_wrapper {
-        width: 33%;
+        width: calc(50% - 5px);
+        margin: 15px 0 0 0;
         input {
           width: 100%;
         }
       }
       &-button {
         &_wrapper {
-          margin-bottom: 20px;
-          width: 100%;
-          text-align: center;
         }
       }
     }
@@ -3823,8 +3836,7 @@ body {
     .inp {
       width: 100%;
     }
-    &-link, .inp_wrapper {
-      width: 45%;
+    .inp_wrapper {
       margin-top: 20px;
     }
 
@@ -4318,6 +4330,10 @@ body {
   }
   .callback {
     padding: 50px 0 130px!important;
+    &-form {
+      max-width: none;
+      padding: 20px 20px 5px 20px;
+    }
   }
   .serv {
     .process {

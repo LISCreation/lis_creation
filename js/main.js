@@ -184,13 +184,15 @@ $(document).ready(function() {
             up_arrow.removeClass('protrude');
         }
         var number_place = $('.achievements-list_item-num');
-        if(!show) return false;
-        if($(document).scrollTop() > number_place.offset().top - 500) {
-            number_place.spincrement({
-                thousandSeparator: "",
-                duration: 1200
-            });
-            show = false;
+        if(number_place.length) {
+            if(!show) return false;
+            if($(document).scrollTop() > number_place.offset().top - 500) {
+                number_place.spincrement({
+                    thousandSeparator: "",
+                    duration: 1200
+                });
+                show = false;
+            }
         }
     });
     var sectionZoneList = document.querySelectorAll('[data-section-zone]'),
